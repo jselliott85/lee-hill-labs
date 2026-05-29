@@ -3,13 +3,20 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Lee Hill Labs",
-  description: "Presentation workspace and deck template for Lee Hill Labs.",
+  description: "The coordination layer communities need.",
   icons: {
     icon: "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>L</text></svg>",
   },
-  robots: {
-    index: false,
-    follow: false,
+  openGraph: {
+    title: "Lee Hill Labs",
+    description: "The coordination layer communities need.",
+    images: [{ url: '/og-image.png', width: 1200, height: 630 }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: "Lee Hill Labs",
+    description: "The coordination layer communities need.",
+    images: ['/og-image.png'],
   },
 };
 

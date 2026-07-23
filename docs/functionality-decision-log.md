@@ -130,12 +130,13 @@ When `devlog` appears, capture the decision here, organize it by feature area, a
 - Open questions: Which roles are eligible for succession, and can users opt out before an incident?
 - Source: `devlog` discussion on chain of succession and active-user role handling.
 
-## 2026-07-23 - Temporal Access Control Layer for Household Profiles
-- **Context**: Solo founder product decision to implement a time-bounded permission engine for sensitive household details (e.g., door codes, access tokens, lockboxes, pet data).
-- **Core Requirements**:
-  - Expose explicit sharing triggers in two core UI layouts: the active Assistance Request workflow and directly on a target User Profile details card.
-  - All shared credentials must bind to a specific expiration timestamp natively (`1-day` default, `1-week`, or user-defined custom duration).
-- **Technical Enforcement**: The underlying data layer must automatically expire the temporary access token once the system clock passes the duration timestamp, immediately re-masking the data fields for the receiving user.
+### 2026-07-23 - Temporal Access Control Layer for Household Profiles
+
+- **Product rule**: Implement a time-bounded permission engine for sensitive household details (e.g., door codes, access tokens, lockboxes, pet data) (`devlog`).
+- **User story seed**: As a user, I need to expose explicit sharing triggers in the active Assistance Request workflow or directly on a target User Profile details card so responders have time-bounded access to my property metrics.
+- **Data / logic notes**: All shared credentials must bind to a specific expiration timestamp natively (`1-day` default, `1-week`, or custom duration). The underlying data layer must automatically expire the temporary access token and re-mask fields instantly upon crossing the expiration timestamp.
+- **Open questions**: Are there override controls for users to manually revoke a token before the expiration timestamp lapses?
+- **Source**: Solo founder product design directive.
 
 ### 2026-07-23 - Full 4-Phase Resilience Lifecycle MVP Scope
 
@@ -144,6 +145,14 @@ When `devlog` appears, capture the decision here, organize it by feature area, a
 - **Data / logic notes**: App architecture must support state transitions between phases at both the household and group levels, tracking separate UI states and feature permissions based on the active phase.
 - **Open questions**: What automation triggers the shift from Peace Time to Call To Arms on a community scale, and who has the authority to declare the transition?
 - **Source**: Solo founder architectural directive.
+
+### 2026-07-23 - Stale Data Connection Logic & Peer Presence
+
+- **Product rule**: The application enforces a strict 5-minute server handshake timeout. Passing this window triggers an active "Connection Lost" interface locally and flags the user's status as "Offline" to their group to prevent reliance on outdated information during incidents (`devlog`).
+- **User story seed**: As an incident responder or group member, I need to know instantly if a neighbor's safety status or location data is older than 5 minutes so I do not make critical rescue assumptions based on stale coordinates.
+- **Data / logic notes**: Requires a background heartbeat service tracking the last successful synchronization timestamp. Deep local database caching protocols are explicitly deferred to MVP field and user testing.
+- **Open questions**: How gracefully does the UI transition back to active state when a low-bandwidth or intermittent connection flashes on and off?
+- **Source**: Solo founder product design directive.
 
 ## Export Format
 

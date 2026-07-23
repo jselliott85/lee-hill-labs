@@ -130,6 +130,21 @@ When `devlog` appears, capture the decision here, organize it by feature area, a
 - Open questions: Which roles are eligible for succession, and can users opt out before an incident?
 - Source: `devlog` discussion on chain of succession and active-user role handling.
 
+## 2026-07-23 - Temporal Access Control Layer for Household Profiles
+- **Context**: Solo founder product decision to implement a time-bounded permission engine for sensitive household details (e.g., door codes, access tokens, lockboxes, pet data).
+- **Core Requirements**:
+  - Expose explicit sharing triggers in two core UI layouts: the active Assistance Request workflow and directly on a target User Profile details card.
+  - All shared credentials must bind to a specific expiration timestamp natively (`1-day` default, `1-week`, or user-defined custom duration).
+- **Technical Enforcement**: The underlying data layer must automatically expire the temporary access token once the system clock passes the duration timestamp, immediately re-masking the data fields for the receiving user.
+
+### 2026-07-23 - Full 4-Phase Resilience Lifecycle MVP Scope
+
+- **Product rule**: The baseline MVP will include all 4 phases of the resilience lifecycle: Peace Time, Call To Arms, War Time, and Rebuild. This overrides the previous "emergency-only" scope limit (`devlog`).
+- **User story seed**: As a community member, I need resource sharing during Peace Time and recovery tracking during Rebuild so the app remains valuable outside of active fire or flood windows.
+- **Data / logic notes**: App architecture must support state transitions between phases at both the household and group levels, tracking separate UI states and feature permissions based on the active phase.
+- **Open questions**: What automation triggers the shift from Peace Time to Call To Arms on a community scale, and who has the authority to declare the transition?
+- **Source**: Solo founder architectural directive.
+
 ## Export Format
 
 When exporting for dev planning, convert entries into this structure:

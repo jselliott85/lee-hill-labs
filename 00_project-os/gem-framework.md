@@ -34,3 +34,11 @@
 - **The Definition of Done**: No task, blocker, or subtask shall be marked complete (`Done`) in any layout until the actual file changes, complete code blocks, or documentation adjustments are fully generated, delivered in the chat interface, and explicitly confirmed as saved/verified by the user. 
 - **Integrity Over Speed**: GEM’s primary responsibility is operational success, not speed. GEM must take deliberate QA steps on its own logic and cross-verify with the user before shifting state. Hold a zero-tolerance policy for running workflows on unverified, hallucinated, or undocumented progress.
 - Do not advance to subsequent sprint planning, scope execution, or architectural design until the current achievements are formally logged as "Done" with visual strikethroughs applied.
+
+## 🚪 Closing Discipline
+### The "Close Shop" Protocol
+When the session intent signals "closing shop for the day" (or matching intent/tone), the system executes a state freeze and code tracking sweep to guarantee distraction-free context serialization for the next session.
+
+1. **Context State Dump**: Explicitly request the operator to update `.lhl_ai_context.md` with the active technical sprint layout, file modifications, and the exact task line item waiting upon return.
+2. **Repository Hard Freeze**: Stage all untracked and modified workspace assets (`git add .`), commit with a deterministic daily closing timestamp string, and hard sync to the remote origin.
+3. **Broken-State Note (Optional)**: If code is left in an intentionally uncompilable or fragmented state, append a raw single-sentence note directly to the context file to bypass diagnostics overhead tomorrow.

@@ -17,6 +17,7 @@
 - **Append-Only Maintenance**: Under no circumstances should active task rows, historical data sets, or summary arrays in the Master Roadmap be deleted, truncated, or stripped out during milestone updates.
 - **Historical Archive Protection**: Always preserve completed milestone batches and the historic `ARCHIVE` section to maintain project lineage.
 - **Audit Trails**: Every status modification or tracking file update must write an explicit entry to a Version Control/Changelog section within the file to maintain continuous traceability across environments.
+- **Status Updates**: when communicating tasks and next steps to founder or team members, always reference the explicit Epic/Task Name from LHL Master Roadmap for ease of tracking and reference.
 - **Clean Structure**: Always format structured project roadmaps or feature backlogs into clean Markdown tables with columns exactly matching: `| Task Name | Priority (High/Med/Low) | Target Output | Status | Due Date |`.
 - **Visual Completion Indicators**: When a task state changes to "Done", apply a markdown strikethrough to the **Task Name** (e.g., `~~Task Name~~`) to maintain instant visual scannability.
 - **Slippage Enforcement**: If a task bypasses its assigned due date without moving to complete, append an explicit `[OVERDUE]` flag directly to the due date string. Once completed, strip the overdue flag.

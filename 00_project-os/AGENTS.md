@@ -1,48 +1,70 @@
-# Shared Instructions - Lee Hill Labs
+# Shared Instructions — Lee Hill Labs (LHL App)
+
+## Current Focus
+
+Build toward a working MVP of the LHL App (community emergency coordination mobile app). The pitch deck / presentation project (`public/presentation/`) is **paused** — do not treat it as active work, do not "helpfully" continue it, and do not delete it. Revisit only when John explicitly reopens it. Its rules now live in `docs/archive/presentation-agents.md`.
 
 ## Read First
 
-Before any work:
+Before meaningful work, read in this order:
 
-1. `docs/brief.md`
-2. `docs/current-state.md`
-3. `docs/architecture.md`
-4. `docs/design-system.md`
-5. `docs/grain-background-presets.md`
-6. `docs/functionality-decision-log.md`
-7. `docs/handoff.md`
+1. `docs/00-current-state.md`
+2. `docs/02-product-brief.md`
+3. `docs/03-mvp-requirements.md`
+4. `docs/04-decision-log.md`
+5. `docs/11-john-project-handoff.md` (background/glossary — read once, not every session)
+6. `00_project-os/.lhl_ai_context.md` (live session sync — see below)
 
-## Project Goal
+If any of these conflict, resolve using the **Source-of-Truth Order** below. Do not guess; state the conflict and ask.
 
-Build a standalone presentation project for Lee Hill Labs. Keep the technical foundation stable while Claude develops the outline, slide content, and visual language.
+## Source-of-Truth Order
 
-## Rules
+1. Approved decision log — `docs/04-decision-log.md`
+2. Approved product brief / MVP requirements — `docs/02-product-brief.md`, `docs/03-mvp-requirements.md`
+3. Approved design, engineering, and QA rules
+4. Current-state record — `docs/00-current-state.md`
+5. Asana task status
+6. Google Drive working documents
+7. Figma comments
+8. Chat messages, meeting notes, brainstorming
 
-- Keep the repo deployable at all times.
-- Keep edits small and reviewable.
-- Do not add dependencies unless clearly justified.
-- Preserve the static presentation architecture unless the task explicitly changes it.
-- Keep visual assets in `public/assets/`.
-- Keep presentation shell files in `public/presentation/`.
+An idea mentioned in a meeting, email, or chat is never automatically approved scope.
+
+## Core Rules
+
+- No launch date is approved. Do not invent one, do not treat an old date as current.
+- Do not restore or reference Phred (retired legacy system).
+- Do not start production app code outside `01_app/`.
+- Do not choose a backend, auth, notification, or map/data provider without a documented, approved decision.
+- Explain technical terms in plain language — John is a non-technical founder. Don't assume familiarity with terminal, Git, or hosting concepts.
 - Call out assumptions instead of silently making them.
-- When the user says `devlog`, capture the functional product rule in `docs/functionality-decision-log.md` for future user-story/dev-planning export.
+- Keep edits small and reviewable. Don't add dependencies without clear justification.
+- When John says `devlog`, capture the functional product rule in `docs/functionality-decision-log.md`.
 
-## Frontend Expectations
+## Roadmap & PM Tracking Protocol
 
-- Strong hierarchy, clean alignment, and intentional responsive behavior.
-- Presentation slides are 16:9 and scale proportionally in browser.
-- Preserve the Wrenching 101 presentation interaction model: same index/password page pattern, same animated blob/grain background behavior, same browser-deck navigation approach.
-- Grain backgrounds must use the locked presets in `docs/grain-background-presets.md`: `Original MTTL Grain Background` or `Presentation Grain Background`; palette swaps may change hex colors only.
-- Use the Lee Hill Labs swatch palette in `docs/design-system.md` across all presentation colors.
-- Use Gotham for all typography: black/heavy for headlines, medium for subheads and markers, light/regular for body copy.
-- Avoid in-slide instructional text about controls or implementation details.
-- Verify mobile and desktop behavior before calling presentation work complete.
+- **Single canonical roadmap**: `docs/00-master-roadmap.md`. The Google Sheet is a downstream, human-glanceable mirror — not the source of truth.
+- **Append-only**: never delete or truncate historical task rows, completed batches, or the archive section.
+- **Audit trail**: every status change gets a line in the Changelog section of the roadmap file.
+- **Table schema** (exact columns): `| Task Name | Priority (High/Med/Low) | Target Output | Status | Due Date |`
+- **Done tasks**: strikethrough the Task Name (`~~Task Name~~`).
+- **Overdue tasks**: append `[OVERDUE]` to the due date string; remove it once complete.
+- Reference the exact Epic/Task Name when communicating status, for traceability.
 
-## Output
+## GEM Handover Workflow
 
-At the end of every task:
+- `00_project-os/.lhl_ai_context.md` is the live sync file between Claude Code and GEM (Gemini, running in Google Workspace).
+- **Read-only for GEM.** Only John or Claude Code write to it.
+- GEM takes orders only — it applies status changes from this file to the Google Sheet, and may *suggest* (never implement) new roadmap entries based on summarized emails.
+- Claude Code updates this file at the end of any session that changes roadmap-relevant state.
 
-- Summarize files changed.
-- Note risks or regressions.
-- Update `docs/current-state.md` when state or decisions change.
-- Update `docs/handoff.md` before switching tools or ending a substantial session.
+## Closing Discipline
+
+At the end of a substantial session:
+
+1. Summarize what changed, in plain language.
+2. List anything unresolved or blocked.
+3. Update `docs/00-current-state.md` if state or decisions changed.
+4. Update `00_project-os/.lhl_ai_context.md` with the current sprint line, technical state, and next entry point.
+5. Stage, commit, and push if a remote exists.
+6. Do not mark anything "Done" in the roadmap until the actual change is verified and confirmed by John — not just generated.

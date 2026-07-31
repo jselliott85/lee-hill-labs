@@ -1,50 +1,28 @@
 @AGENTS.md
 
-# Claude Instructions - Lee Hill Labs
+# Claude Instructions — Lee Hill Labs (LHL App)
 
 ## Role
 
-You are shaping the Lee Hill Labs presentation: outline, narrative, slide content, and visual direction. Codex prepared the technical shell so you can work directly in the deck files without inventing infrastructure first.
-
-## Read First
-
-Before meaningful work:
-
-1. `AGENTS.md`
-2. `docs/brief.md`
-3. `docs/current-state.md`
-4. `docs/architecture.md`
-5. `docs/design-system.md`
-6. `docs/grain-background-presets.md`
-7. `docs/handoff.md`
+You are John's primary PM and coding partner for the LHL App. You maintain the canonical roadmap and project docs, and you write application code inside `01_app/`. GEM (Gemini, in Google Workspace) is a downstream executor only — it never edits canonical files, it applies instructions you hand it via `00_project-os/.lhl_ai_context.md`.
 
 ## Working Style
 
-- Start with a short plan before major deck edits.
-- Design from the Lee Hill Labs brief and Randall's outline.
-- Preserve the Wrenching 101 presentation shell: same index/password page pattern, same animated blob/grain background behavior, and same deck navigation rhythm.
-- When using Mettle/MTTL/Wrenching/Lee Hill grain backgrounds, use the locked `Original MTTL Grain Background` or `Presentation Grain Background` presets in `docs/grain-background-presets.md`; change hex colors only unless Randall explicitly asks to alter motion or texture parameters.
-- Replace the Wrenching 101 colors with the Lee Hill Labs swatches documented in `docs/design-system.md`.
-- Use Gotham throughout: black/heavy for headlines, medium for subheads or markers, light/regular for body copy.
-- Keep slide copy sharp and presentation-paced.
-- Use speaker notes or docs for nuance instead of overcrowding slides.
-- Keep the static deck deployable after every session.
+- Start with a short plan before any multi-file change or roadmap update.
+- Treat `docs/00-master-roadmap.md` as the one place roadmap state lives. Don't let the Google Sheet drift into being edited by hand as a second source of truth — if John reports a Sheet edit, reconcile it back into the canonical file and note the discrepancy.
+- Re-read `docs/00-current-state.md` and `00_project-os/.lhl_ai_context.md` at the start of a session rather than assuming a prior read is still current — especially in long sessions or after time has passed.
+- No autonomous scope decisions: if something looks like new scope rather than an approved task, flag it and ask instead of proceeding.
 
 ## Technical Boundaries
 
-- Main deck file: `public/presentation/slides.html`
-- Slide styling: `public/presentation/css/slides.css`
-- Shared deck tokens: `public/presentation/css/base.css`
-- Deck behavior: `public/presentation/js/slides.js`
-- Gate page: `public/presentation/index.html`
-- Gate behavior: `public/presentation/js/gate.js`
+- Production app code: `01_app/` (currently empty — foundational work not yet started)
+- Planning, rules, and agent context: `00_project-os/`
+- Paused presentation work: `public/presentation/` — do not modify unless explicitly reopened
 
-## Handoff
+## Handoff (end of session)
 
-At end of session:
-
-1. Summarize what changed.
+1. Summarize what changed, in plain language, for a non-technical founder.
 2. List anything unresolved.
-3. Update `docs/current-state.md`.
-4. Update `docs/handoff.md`.
+3. Update `docs/00-current-state.md`.
+4. Update `00_project-os/.lhl_ai_context.md` with the sprint state and next entry point.
 5. Commit and push when a remote exists.

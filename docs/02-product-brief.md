@@ -26,7 +26,7 @@ MVP development of ECA is the project's highest priority. Investor-presentation 
 The approved decision log currently establishes:
 
 - A four-phase resilience lifecycle: Ready, Alert, Active Incident, and Recovery.
-- MVE-1 is the first validation slice within the MVP. It exercises all four lifecycle phases through phase change, preparedness checklist, community request, offer, Active Incident regression, and Recovery request flows.
+- MVE-1 is the first validation slice within the MVP. It exercises all four lifecycle phases through phase change, community request, offer, Active Incident regression, and Recovery request flows.
 - A five-minute connection-staleness threshold for representing a user as offline to their group.
 - Time-bounded access to sensitive household details, with a one-day default and explicit expiry.
 - Separation between private tasks, community help requests, and answered requests.

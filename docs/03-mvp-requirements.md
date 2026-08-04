@@ -8,7 +8,7 @@ MVP scope is being defined. This document records requirements already supported
 
 - The product must support the four resilience phases: Ready, Alert, Active Incident, and Recovery.
 - MVE-1 is the first validation slice inside MVP scope, not a post-MVP expansion.
-- MVE-1 must validate the approved lifecycle flows: phase change, preparedness checklist, community request, offer post, Active Incident regression, and Recovery request.
+- MVE-1 must validate the approved lifecycle flows: phase change, community request, offer post, Active Incident regression, and Recovery request.
 - Sensitive household information must use time-bounded access, expire automatically, and be re-masked after expiry.
 - A user whose last successful server handshake is more than five minutes old must be represented as offline to their group.
 - Private preparedness tasks must be distinct from group help requests and answered requests.
@@ -30,3 +30,4 @@ MVP scope is being defined. This document records requirements already supported
 - Investor-presentation changes
 - Production deployment commitments or launch-date assumptions
 - Post-MVP low-bandwidth/satellite enhancements, which remain in `docs/future-roadmap-backlog.md`
+- Structured preparedness-checklist feature; a future admin-uploaded-resources concept remains in `docs/future-roadmap-backlog.md`

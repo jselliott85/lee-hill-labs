@@ -16,7 +16,6 @@ Before marking any task Complete, verify its Target Output and ask John for expl
 | Founder Transition & Admin | Knowledge Transfer Session | Med | Schedule and execute a live, recorded technical handover session with Randall in his limited advisory capacity | In Progress | 2026-08-21 |
 | Founder Transition & Admin | Final Signatures | Med | Route and execute electronic signatures for founder transitions | Not Started — dependent on Legal Review Prep | 2026-08-25 |
 | ECA MVP Foundation | Resolve lint configuration | High | `npm run lint` completes successfully with a documented ESLint setup | Not Started | 2026-08-05 |
-| Technical & AI Setup | Install Figma MCP for Claude Code | High | Connect Claude Code to Figma's remote MCP server and verify it can read the approved resilience-lifecycle FigJam board | Complete | Historical: 2026-08-04 |
 | ECA Product Design | Consolidate Resilience Lifecycle FigJam comments | High | Review and resolve open comments on the approved lifecycle board; record resulting decisions in canonical repo documents | Not Started | 2026-08-06 |
 | ECA Product Design | Finish approved user flows and low-fidelity screens | High | Approved flows and low-fidelity states for MVE-1 across Ready, Alert, Active Incident, and Recovery | Not Started — after MVP scope reconciliation | 2026-08-19 |
 | ECA Product Design | Blocker 5: Cross-Platform UI Synchronization | Med | Audit approved Figma frames and lock reusable iOS/Android layout and component rules | Not Started — after user flows and low-fidelity screens | 2026-08-21 |
@@ -59,6 +58,7 @@ Before marking any task Complete, verify its Target Output and ask John for expl
 | Technical & AI Setup | Sign in to GitHub Copilot / Cursor in VS Code | High | Verify an active AI programming assistant in the local workspace | Complete | Historical: 2026-07-24 |
 | Technical & AI Setup | Authenticate VS Code AI Coding Extension | High | Complete editor account sign-in for autocomplete and line-by-line generation | Complete | Historical: no date recorded |
 | Technical & AI Setup | Verify Local Dev Server Script Execution | High | Run the baseline start command and verify local front-end compilation | Complete | Historical: no date recorded |
+| Technical & AI Setup | Install Figma MCP for Claude Code | High | Connect Claude Code to Figma's remote MCP server and verify it can read the approved resilience-lifecycle FigJam board | Complete | Historical: 2026-08-04 |
 | Business Infrastructure & Ops | Initialize Master PM Log Sheet | Low | Create the original Google Sheet visual roadmap | Complete — retired at Markdown cutover | Historical: 2026-07-22 |
 | Business Infrastructure & Ops | Define Connector Architecture | Med | Define Claude/Codex workspace access and GEM's Google Workspace-only supporting role | Complete | Historical: 2026-07-22 |
 | Blockers | Blocker 1: Phase Expansion Scope Freeze | High | Log the final four-phase expansion decision in the decision log | Complete | Historical: 2026-07-24 |

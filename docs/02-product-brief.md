@@ -25,7 +25,8 @@ MVP development of ECA is the project's highest priority. Investor-presentation 
 
 The approved decision log currently establishes:
 
-- A four-phase resilience lifecycle: Peace Time, Call To Arms, War Time, and Rebuild.
+- A four-phase resilience lifecycle: Ready, Alert, Active Incident, and Recovery.
+- MVE-1 is the first validation slice within the MVP. It exercises all four lifecycle phases through phase change, preparedness checklist, community request, offer, Active Incident regression, and Recovery request flows.
 - A five-minute connection-staleness threshold for representing a user as offline to their group.
 - Time-bounded access to sensitive household details, with a one-day default and explicit expiry.
 - Separation between private tasks, community help requests, and answered requests.
@@ -39,3 +40,4 @@ See `docs/04-decision-log.md` for the full, controlling record.
 - What information sources, if any, can be represented as official or verified?
 - Which backend, authentication, notification, and map/data providers meet the approved product needs?
 - What is the final product name?
+- Which exact screens, states, and acceptance criteria complete MVE-1 after the approved FigJam comments are reconciled?

@@ -19,7 +19,7 @@
 - **Audit Trails**: Every status modification or tracking file update must write an explicit entry to a Version Control/Changelog section within the file to maintain continuous traceability across environments.
 - **Status Updates**: when communicating tasks and next steps to founder or team members, always reference the explicit Epic/Task Name from LHL Master Roadmap for ease of tracking and reference.
 - **Clean Structure**: Always format structured project roadmaps or feature backlogs into clean Markdown tables with columns exactly matching: `| Task Name | Priority (High/Med/Low) | Target Output | Status | Due Date |`.
-- **Visual Completion Indicators**: When a task state changes to "Done", apply a markdown strikethrough to the **Task Name** (e.g., `~~Task Name~~`) to maintain instant visual scannability.
+- **Completion Indicators**: Completed tasks are identified by `Complete` status, a historical completion date, and placement in the roadmap Archive. Do not apply strikethrough formatting to task names.
 - **Slippage Enforcement**: If a task bypasses its assigned due date without moving to complete, append an explicit `[OVERDUE]` flag directly to the due date string. Once completed, strip the overdue flag.
 
 ## AI Workflow Loops
@@ -33,7 +33,7 @@
 - **Strict Completion Protocol**: The absolute first action following the successful verification of any milestone or subtask block is an explicit action to **MARK THEM COMPLETE** in the active tracker. 
 - **The Definition of Done**: No task, blocker, or subtask shall be marked complete (`Done`) in any layout until the actual file changes, complete code blocks, or documentation adjustments are fully generated, delivered in the chat interface, and explicitly confirmed as saved/verified by the user. 
 - **Integrity Over Speed**: GEM’s primary responsibility is operational success, not speed. GEM must take deliberate QA steps on its own logic and cross-verify with the user before shifting state. Hold a zero-tolerance policy for running workflows on unverified, hallucinated, or undocumented progress.
-- Do not advance to subsequent sprint planning, scope execution, or architectural design until the current achievements are formally logged as "Done" with visual strikethroughs applied.
+- Do not advance to subsequent sprint planning, scope execution, or architectural design until the current achievements are formally recorded according to the canonical roadmap protocol.
 
 ## 🚪 Closing Discipline
 ### The "Close Shop" Protocol

@@ -17,6 +17,7 @@ The former investor presentation is retained in `public/presentation/` as a paus
 - Legacy presentation: static HTML/CSS/JS under `public/presentation/` (paused)
 - Repository: `main` tracks `origin/main`; the configured remote is `https://github.com/jselliott85/lee-hill-labs.git`
 - Roadmap: `docs/00-master-roadmap.md` is the sole canonical tracker; the former Google Sheet is retired and retained only as an external personal backup.
+- Asana: retired as a task tracker; exports are historical reference only.
 - GEM: read-only Google Workspace support; it may summarize and propose work but cannot change canonical project records.
 
 ## Validation Snapshot
@@ -36,6 +37,7 @@ The former investor presentation is retained in `public/presentation/` as a paus
 ## Resume Here
 
 1. Approve the initial MVP scope and success criteria in `docs/03-mvp-requirements.md`.
-2. Turn approved scope into roadmap tasks in `docs/00-master-roadmap.md`.
-3. Resolve the lint configuration before establishing CI.
-4. Scaffold the approved first MVP slice in `01_app/`.
+2. Install and verify Figma MCP for Claude Code, then reconcile open Resilience Lifecycle FigJam comments.
+3. Finish and approve MVE-1 user flows, low-fidelity screens, and cross-platform component rules.
+4. Resolve the lint configuration and approve each technical-foundation decision gate.
+5. Choose the production mobile-app repository name, then scaffold the approved MVE-1 slice.

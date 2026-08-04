@@ -25,9 +25,9 @@ If any of these conflict, resolve using the **Source-of-Truth Order** below. Do 
 2. Approved product brief / MVP requirements — `docs/02-product-brief.md`, `docs/03-mvp-requirements.md`
 3. Approved design, engineering, and QA rules
 4. Current-state record — `docs/00-current-state.md`
-5. Asana task status
-6. Google Drive working documents
-7. Figma comments
+5. Google Drive working documents
+6. Figma comments
+7. Historical Asana exports
 8. Chat messages, meeting notes, brainstorming
 
 An idea mentioned in a meeting, email, or chat is never automatically approved scope.
@@ -38,6 +38,7 @@ An idea mentioned in a meeting, email, or chat is never automatically approved s
 - Do not restore or reference Phred (retired legacy system).
 - Do not start production app code outside `01_app/`.
 - Do not choose a backend, auth, notification, or map/data provider without a documented, approved decision.
+- Complete and approve MVP user flows, low-fidelity screens, and reusable cross-platform design rules before final technical architecture decisions or production implementation.
 - Explain technical terms in plain language — John is a non-technical founder. Don't assume familiarity with terminal, Git, or hosting concepts.
 - Call out assumptions instead of silently making them.
 - Keep edits small and reviewable. Don't add dependencies without clear justification.
@@ -47,11 +48,24 @@ An idea mentioned in a meeting, email, or chat is never automatically approved s
 
 - **Single canonical roadmap**: `docs/00-master-roadmap.md`. Google Sheets is retired as a task tracker and must not be maintained as a competing record.
 - **Append-only**: never delete or truncate historical task rows, completed batches, or the archive section.
-- **Audit trail**: every status change gets a line in the Changelog section of the roadmap file.
+- **Completion approval**: always ask John before marking a task Complete. Verification alone is not permission to change the task status.
+- **Completion handling**: never delete a completed row. Set its Status to `Complete`, replace its Due Date with `Historical: YYYY-MM-DD` using the actual completion date, and move the full row to the Archive section. Do not strikethrough completed task names; Archive placement is the visual completion indicator.
+- **Changelog scope**: a changelog entry is not required when the only roadmap action is marking an approved task Complete and archiving its row. Continue to log task additions, removals, scope changes, reprioritization, scheduling changes, superseded decisions, and other material roadmap changes.
 - **Table schema** (exact columns): `| Epic | Task Name | Priority | Target Output | Status | Due Date |`
-- **Done tasks**: strikethrough the Task Name (`~~Task Name~~`).
 - **Overdue tasks**: append `[OVERDUE]` to the due date string; remove it once complete.
 - Reference the exact Epic/Task Name when communicating status, for traceability.
+
+## Multi-Agent Editing Protocol
+
+- Only one agent may write to canonical project files at a time. Do not run concurrent Claude and Codex editing sessions against the same repository.
+- Before editing, run `git status` and re-read every target file. Treat existing modifications as another operator's work and preserve them.
+- Claim the current work block in `00_project-os/.lhl_ai_context.md` with the active agent, exact roadmap task, reserved files, and start time.
+- Update only the claimed task and files. Do not opportunistically change adjacent roadmap rows or decisions.
+- A task may be marked Complete only when its Target Output is verified and John explicitly confirms completion.
+- When a roadmap change requires a changelog entry, name the affected task, evidence or reason, agent, and date.
+- At handoff, update `00_project-os/.lhl_ai_context.md`, clear the active claim, and report files changed, validation performed, unresolved issues, and the next task.
+- Stage explicit files only; never use `git add .`. Commit one coherent work block before switching agents whenever practical.
+- If another agent's uncommitted changes overlap a target file, stop and reconcile the diff before editing.
 
 ## GEM Handover Workflow
 
@@ -68,5 +82,5 @@ At the end of a substantial session:
 2. List anything unresolved or blocked.
 3. Update `docs/00-current-state.md` if state or decisions changed.
 4. Update `00_project-os/.lhl_ai_context.md` with the current sprint line, technical state, and next entry point.
-5. Stage, commit, and push if a remote exists.
+5. Stage only task-related files. Commit and push when John requests it or the work block explicitly includes repository synchronization.
 6. Do not mark anything "Done" in the roadmap until the actual change is verified and confirmed by John — not just generated.

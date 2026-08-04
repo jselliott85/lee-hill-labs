@@ -22,6 +22,25 @@ This is the source of truth for approved operating and product decisions. Add ne
 - Claude and Codex maintain approved roadmap updates in Git.
 - GEM is a read-only supporting agent: it may summarize Google Workspace material and propose tasks, but may not create, edit, or change the status of canonical roadmap or project records.
 
+## 2026-08-04 — Resilience Lifecycle Terminology
+
+- Ready, Alert, Active Incident, and Recovery are the canonical names for LHL's four resilience lifecycle phases.
+- These names supersede earlier phase labels throughout requirements, roadmap planning, design references, and future implementation copy.
+- This terminology change does not alter the approved decision that all four lifecycle phases are part of MVP scope.
+- MVE-1 is the first validation slice within MVP scope. It covers the approved lifecycle flows across all four phases and is not a post-MVP expansion.
+
+## 2026-08-04 — Product Design Before Technical Architecture
+
+- Approve user flows, low-fidelity screens, and reusable cross-platform design rules before approving providers or beginning production application code.
+- Technical architecture decisions are separate gates for backend, authentication, notifications, maps/external data, offline/secure storage, and mobile build delivery.
+- Each technical gate closes only when its own approved decision is recorded in this log.
+
+## 2026-08-04 — Asana Retirement
+
+- Asana is retired as an LHL task tracker following the completed data rescue and communications decommission.
+- Historical Asana exports may be used as reference material, but they do not outrank or modify the canonical Git-tracked roadmap.
+- `docs/00-master-roadmap.md` remains the sole canonical task tracker.
+
 ## Product Decisions
 
 The detailed functional product rules are maintained in `docs/functionality-decision-log.md`. The following entries are currently controlling:

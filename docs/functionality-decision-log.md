@@ -140,11 +140,27 @@ When `devlog` appears, capture the decision here, organize it by feature area, a
 
 ### 2026-07-23 - Full 4-Phase Resilience Lifecycle MVP Scope
 
-- **Product rule**: The baseline MVP will include all 4 phases of the resilience lifecycle: Peace Time, Call To Arms, War Time, and Rebuild. This overrides the previous "emergency-only" scope limit (`devlog`).
-- **User story seed**: As a community member, I need resource sharing during Peace Time and recovery tracking during Rebuild so the app remains valuable outside of active fire or flood windows.
+- **Product rule**: The baseline MVP will include all 4 phases of the resilience lifecycle: Ready, Alert, Active Incident, and Recovery. This overrides the previous "emergency-only" scope limit (`devlog`).
+- **User story seed**: As a community member, I need resource sharing during Ready and recovery tracking during Recovery so the app remains valuable outside of active fire or flood windows.
 - **Data / logic notes**: App architecture must support state transitions between phases at both the household and group levels, tracking separate UI states and feature permissions based on the active phase.
-- **Open questions**: What automation triggers the shift from Peace Time to Call To Arms on a community scale, and who has the authority to declare the transition?
+- **Open questions**: What automation triggers the shift from Ready to Alert on a community scale, and who has the authority to declare the transition?
 - **Source**: Solo founder architectural directive.
+
+### 2026-08-04 - Resilience Lifecycle Terminology
+
+- **Product rule**: Use Ready, Alert, Active Incident, and Recovery as the canonical names for the four resilience lifecycle phases across product requirements, roadmap work, design references, and implementation copy (`devlog`).
+- **User story seed**: As a community member, I need calm, plain-language phase names so the app communicates urgency without militarized framing.
+- **Data / logic notes**: This is a terminology change only. It does not alter the approved four-phase lifecycle or expand implementation scope.
+- **Open questions**: Which exact screens, interaction states, and acceptance criteria complete MVE-1?
+- **Source**: Founder terminology decision after review of the Production Waterfall and Resilience Lifecycle FigJam boards.
+
+### 2026-08-04 - MVE-1 Is the First MVP Validation Slice
+
+- **Product rule**: MVE-1 is the first validation slice within MVP scope and must exercise Ready, Alert, Active Incident, and Recovery; it is not a post-MVP expansion (`devlog`).
+- **User story seed**: As a community member, I need the first validated product slice to preserve the same navigation and core coordination model as conditions move across the full resilience lifecycle.
+- **Data / logic notes**: MVE-1 covers phase change, preparedness checklist, community request, offer post, Active Incident regression, and Recovery request flows. Detailed screens, interaction states, and acceptance criteria remain subject to design review.
+- **Open questions**: What minimum screen/state inventory proves each flow on both iOS and Android?
+- **Source**: Founder-approved reconciliation of Claude's strategic audit with the Resilience Lifecycle FigJam board.
 
 ### 2026-07-23 - Stale Data Connection Logic & Peer Presence
 

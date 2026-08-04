@@ -6,7 +6,9 @@ MVP scope is being defined. This document records requirements already supported
 
 ## Approved MVP Constraints
 
-- The product must support the four resilience phases: Peace Time, Call To Arms, War Time, and Rebuild.
+- The product must support the four resilience phases: Ready, Alert, Active Incident, and Recovery.
+- MVE-1 is the first validation slice inside MVP scope, not a post-MVP expansion.
+- MVE-1 must validate the approved lifecycle flows: phase change, preparedness checklist, community request, offer post, Active Incident regression, and Recovery request.
 - Sensitive household information must use time-bounded access, expire automatically, and be re-masked after expiry.
 - A user whose last successful server handshake is more than five minutes old must be represented as offline to their group.
 - Private preparedness tasks must be distinct from group help requests and answered requests.
@@ -21,6 +23,7 @@ MVP scope is being defined. This document records requirements already supported
 - Minimum data model and privacy permissions
 - Success criteria, usability checks, and acceptance criteria
 - Approved technical architecture and service providers
+- Resolved FigJam comments plus approved user flows, low-fidelity screens, reusable component rules, and required interaction states
 
 ## Non-Goals for the Current Planning Stage
 

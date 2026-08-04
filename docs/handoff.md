@@ -1,5 +1,7 @@
 # Handoff - Lee Hill Labs
 
+> Historical record of the paused investor-presentation project. It is retained for provenance and does not describe active LHL priorities, ownership, deployment, or next steps. Refer to `docs/00-current-state.md`, `docs/04-decision-log.md`, and `docs/00-master-roadmap.md` for current information.
+
 ## Latest Handoff - 2026-05-01
 
 Slide 17 headshot polish: RF crop adjusted, both headshots doubled in size.

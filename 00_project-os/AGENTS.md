@@ -4,6 +4,8 @@
 
 Build toward a working MVP of the LHL App (community emergency coordination mobile app). The pitch deck / presentation project (`public/presentation/`) is **paused** — do not treat it as active work, do not "helpfully" continue it, and do not delete it. Revisit only when John explicitly reopens it. Its rules now live in `docs/archive/presentation-agents.md`.
 
+John Elliott is the sole founder, operator, and project decision-maker. Randall Fransen is not an active contributor, has no project access, and may be consulted only in a limited advisory capacity at John's discretion. Record any change to this operating status in `docs/04-decision-log.md`.
+
 ## Read First
 
 Before meaningful work, read in this order:
@@ -43,10 +45,10 @@ An idea mentioned in a meeting, email, or chat is never automatically approved s
 
 ## Roadmap & PM Tracking Protocol
 
-- **Single canonical roadmap**: `docs/00-master-roadmap.md`. The Google Sheet is a downstream, human-glanceable mirror — not the source of truth.
+- **Single canonical roadmap**: `docs/00-master-roadmap.md`. Google Sheets is retired as a task tracker and must not be maintained as a competing record.
 - **Append-only**: never delete or truncate historical task rows, completed batches, or the archive section.
 - **Audit trail**: every status change gets a line in the Changelog section of the roadmap file.
-- **Table schema** (exact columns): `| Task Name | Priority (High/Med/Low) | Target Output | Status | Due Date |`
+- **Table schema** (exact columns): `| Epic | Task Name | Priority | Target Output | Status | Due Date |`
 - **Done tasks**: strikethrough the Task Name (`~~Task Name~~`).
 - **Overdue tasks**: append `[OVERDUE]` to the due date string; remove it once complete.
 - Reference the exact Epic/Task Name when communicating status, for traceability.
@@ -54,9 +56,9 @@ An idea mentioned in a meeting, email, or chat is never automatically approved s
 ## GEM Handover Workflow
 
 - `00_project-os/.lhl_ai_context.md` is the live sync file between Claude Code and GEM (Gemini, running in Google Workspace).
-- **Read-only for GEM.** Only John or Claude Code write to it.
-- GEM takes orders only — it applies status changes from this file to the Google Sheet, and may *suggest* (never implement) new roadmap entries based on summarized emails.
-- Claude Code updates this file at the end of any session that changes roadmap-relevant state.
+- **Read-only for GEM.** Only John, Claude, or Codex write canonical records.
+- GEM is a supporting Google Workspace agent. It may summarize Workspace material and propose tasks, but it may not create or change roadmap status, decisions, or other canonical project records.
+- Claude or Codex updates this file at the end of any session that changes roadmap-relevant state.
 
 ## Closing Discipline
 

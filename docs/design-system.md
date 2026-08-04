@@ -1,4 +1,6 @@
-# Design System - Lee Hill Labs
+# Historical Presentation Design System — Lee Hill Labs
+
+> Status: paused historical reference for `public/presentation/`. Do not apply these instructions to the ECA MVP or modify the presentation unless John explicitly reopens that work.
 
 ## Source Pattern
 
@@ -15,7 +17,7 @@ Replace the Wrenching 101 palette with the Lee Hill Labs swatches below.
 
 - `Original MTTL Grain Background`: use for the original Wrenching 101 / Mettle / MTTL fuller grain treatment.
 - `Presentation Grain Background`: use for the subtler Lee Hill Labs presentation treatment.
-- For either preset, parameters are locked. Change only node hex colors and the base fill color unless Randall explicitly asks for new motion, opacity, blur, density, or mesh behavior.
+- For either preset, parameters are locked. Change only node hex colors and the base fill color if John explicitly reopens presentation work and requests a palette update.
 
 ## Visual Principles
 
@@ -28,7 +30,7 @@ Replace the Wrenching 101 palette with the Lee Hill Labs swatches below.
 
 ## Palette
 
-Use these swatches as the source of truth. Values are matched from Randall's screenshot.
+Use these swatches only as the source of truth for the paused presentation.
 
 | Role | Hex | RGB | Use |
 | --- | --- | --- | --- |
@@ -58,7 +60,7 @@ Use Gotham for all deck typography.
 - Headlines: Gotham Black or the heaviest available Gotham weight.
 - Subheads, labels, markers: Gotham Medium.
 - Body copy: Gotham Light or Gotham Regular if a regular file is added later.
-- Avoid mixing in other display fonts unless Randall explicitly asks for a new identity direction.
+- Avoid mixing in other display fonts unless John explicitly approves a new presentation identity direction.
 
 ## Slide Rules
 

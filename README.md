@@ -1,78 +1,48 @@
-# Lee Hill Labs
+# Lee Hill Labs — LHL App
 
-Standalone Next.js presentation workspace for the Lee Hill Labs deck.
+Workspace for the LHL App, a community emergency-coordination product. The current priority is defining and building the Emergency Coordination App (ECA) MVP.
+
+## Current Status
+
+John Elliott is the sole founder, operator, and project decision-maker. The investor presentation remains preserved under `public/presentation/`, but it is paused and outside active scope unless John explicitly reopens it.
+
+`docs/00-master-roadmap.md` is the sole task tracker. Google Sheets is retired as a tracker; GEM may assist with Google Workspace summaries and task proposals but cannot alter canonical project records.
 
 ## Setup
 
 ```bash
-cd ~/Sites/lee-hill-labs
 npm install
 npm run dev
 ```
 
-Open `http://localhost:3000`.
+Open `http://localhost:3000` for the current public landing page.
 
-## Routes
-
-- `/` - project landing and local links
-- `/lee-hill-labs-index` - password gate
-- `/lee-hill-labs-slides` - static deck
-- `/presentation/slides.html` - direct static deck file
-
-## Stack
-
-- Next.js App Router
-- TypeScript strict
-- Static HTML/CSS/JS presentation under `public/presentation`
-- No app database or backend yet
-
-## Project Structure
+## Structure
 
 ```text
-app/                  # Next.js landing page and metadata
-docs/                 # Brief, current state, architecture, handoff notes
-public/presentation/  # Static presentation shell
-public/assets/        # Deck imagery, diagrams, exports
-public/fonts/         # Gotham font files used by the deck
+01_app/               # Production MVP application code (currently empty)
+app/                  # Current Next.js public landing page
+docs/                 # Canonical product, requirements, decisions, and roadmap
+00_project-os/        # Working rules and AI handover context
+public/presentation/  # Paused historical investor presentation; do not modify
+public/assets/        # Shared and historical static assets
 ```
 
-## Fonts
+## Read First
 
-Gotham font files are included for this presentation scaffold:
+1. `docs/00-current-state.md`
+2. `docs/02-product-brief.md`
+3. `docs/03-mvp-requirements.md`
+4. `docs/04-decision-log.md`
+5. `docs/00-master-roadmap.md`
+6. `00_project-os/AGENTS.md`
 
-```text
-public/fonts/
-  Gotham-Light.otf
-  Gotham-Medium.otf
-  Gotham-Bold.otf
-  Gotham-Black.otf
+## Commands
+
+```bash
+npm run dev
+npm run build
+npm run lint
 ```
 
-Use Gotham for all deck typography. Heavy/black weights are for headlines, medium is for subheads and markers, and light is for body copy. If a true Gotham regular file is added later, wire it as weight `400`.
-
-## AI Workflow
-
-Read in this order before any meaningful work:
-
-1. `CLAUDE.md` or `AGENTS.md`
-2. `docs/brief.md`
-3. `docs/current-state.md`
-4. `docs/architecture.md`
-5. `docs/design-system.md`
-6. `docs/functionality-decision-log.md`
-7. `docs/handoff.md`
-
-Use `devlog` when a presentation decision should be saved as a functional product rule for future user stories or dev planning.
-
-## Working Split
-
-- Claude: outline, slide content, visual direction, deck design
-- Codex: repo structure, technical architecture, implementation support, responsive polish, build fixes
-
-## Handoff Rhythm
-
-At the end of every session:
-
-1. Update `docs/current-state.md`
-2. Update `docs/handoff.md` with what changed and what is next
-3. Commit and push once the repo has a remote
+`npm run build` currently succeeds. `npm run lint` needs repair because the repository references, but does not install, `eslint-config-next`.

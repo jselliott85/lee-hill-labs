@@ -1,42 +1,41 @@
-# Lee Hill Labs - Project Brief
+# LHL App — Product Brief
 
-## Summary
+## Product Summary
 
-Lee Hill Labs is a standalone presentation project. It reuses the proven Wrenching 101 approach: a small Next.js repo, a static browser-based slide deck, a simple access gate, and shared documentation so Codex and Claude can pass work back and forth without losing context.
+Lee Hill Labs is building the Emergency Coordination App (ECA): a community emergency-coordination product for neighborhoods facing wildfires, floods, and other disasters. The product is intended to help people share timely, trusted information, coordinate household needs, check in on safety, and organize community response when it matters most.
 
-## Current Assignment
+ECA is a working name. A final product name and shorthand have not been approved.
 
-Codex owns the technical architecture and initial scaffold.
+## Ownership and Operating Context
 
-Claude will receive the presentation outline from Randall and own the deck content and design execution.
+John Elliott is the sole founder, operator, and project decision-maker for LHL. Randall Fransen is not an active contributor, has no project access, and may be consulted only in a limited advisory capacity at John's discretion.
 
-## Audience
+## Current Priority
 
-TBD. Randall will provide the outline and audience context before Claude expands the deck.
+MVP development of ECA is the project's highest priority. Investor-presentation work is paused indefinitely and is outside active scope unless John explicitly reopens it.
 
-## Presentation Goals
+## Product Direction
 
-- Provide a polished browser-based 16:9 deck.
-- Keep the project standalone from Lab26 and Wrenching 101.
-- Make content iteration fast for Claude.
-- Keep deployment simple through Vercel when ready.
+- Serve communities before, during, and after disruptive events.
+- Support household and group coordination without presenting unverified information as official emergency direction.
+- Make urgency, safety status, requests for help, and time-sensitive information legible under stressful conditions.
+- Respect privacy, particularly for sensitive household information and temporary responder access.
 
-## Known Inputs
+## Known Product Decisions
 
-- Project name: Lee Hill Labs
-- Project type: standalone presentation
-- Source pattern: Wrenching 101 presentation shell
-- Preserve from Wrenching 101: same index/password page pattern, animated blob/grain background, browser slide navigation, and 16:9 proportional scaling
-- Replace Wrenching 101 colors with the Lee Hill Labs swatch palette
-- Typography: Gotham for all text
-- Content outline: pending from Randall
-- Brand direction: pending from Randall and Claude
+The approved decision log currently establishes:
 
-## Open Questions
+- A four-phase resilience lifecycle: Peace Time, Call To Arms, War Time, and Rebuild.
+- A five-minute connection-staleness threshold for representing a user as offline to their group.
+- Time-bounded access to sensitive household details, with a one-day default and explicit expiry.
+- Separation between private tasks, community help requests, and answered requests.
 
-- Final production URL or Vercel project name
-- Whether the gate should stay enabled
-- Final access code
-- Whether custom fonts are required
-- Whether the deck needs share/OG artwork
-- Whether downloadable or printable materials are needed
+See `docs/04-decision-log.md` for the full, controlling record.
+
+## Open Product Questions
+
+- Who is the first MVP user and initial test community?
+- Which workflow should be the first end-to-end MVP slice?
+- What information sources, if any, can be represented as official or verified?
+- Which backend, authentication, notification, and map/data providers meet the approved product needs?
+- What is the final product name?

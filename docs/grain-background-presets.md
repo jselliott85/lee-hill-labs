@@ -1,6 +1,8 @@
 # Grain Background Presets
 
-These are locked background references for future presentation and MTTL/Mettle-adjacent work. When Randall asks for a grain background from Mettle, MTTL, Wrenching 101, Lee Hill Labs, or similar phrasing, use one of these two presets and change only the hex color values unless he explicitly asks to alter motion, opacity, density, blur, node count, or radii.
+> Status: paused historical presentation reference. These presets do not define the ECA MVP visual system.
+
+These are locked background references for future presentation and MTTL/Mettle-adjacent work. If John explicitly reopens presentation work and requests a grain background from Mettle, MTTL, Wrenching 101, Lee Hill Labs, or similar phrasing, use one of these two presets and change only the hex color values unless he explicitly asks to alter motion, opacity, density, blur, node count, or radii.
 
 ## Original MTTL Grain Background
 

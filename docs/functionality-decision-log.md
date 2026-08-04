@@ -2,11 +2,11 @@
 
 ## Purpose
 
-This log captures product behavior, logic, data needs, and user-story seeds discovered while shaping the Lee Hill Labs presentation. It is meant to transfer presentation decisions into the future ECA app development plan.
+This log captures product behavior, logic, data needs, and user-story seeds for ECA. Some early entries originated in presentation mockups; they remain useful product context, but presentation work is paused and does not create new scope.
 
 ## Capture Keyword
 
-Use `devlog` when a presentation discussion creates a functional product rule.
+Use `devlog` when an approved product discussion creates a functional product rule.
 
 When `devlog` appears, capture the decision here, organize it by feature area, and convert it into planning-ready notes:
 

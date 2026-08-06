@@ -14,8 +14,9 @@ Before meaningful work, read in this order:
 2. `docs/02-product-brief.md`
 3. `docs/03-mvp-requirements.md`
 4. `docs/04-decision-log.md`
-5. `docs/11-john-project-handoff.md` (background/glossary — read once, not every session)
-6. `00_project-os/.lhl_ai_context.md` (live session sync — see below)
+5. `docs/05-gate-framework.md`
+6. `docs/11-john-project-handoff.md` (background/glossary — read once, not every session)
+7. `00_project-os/.lhl_ai_context.md` (live session sync — see below)
 
 If any of these conflict, resolve using the **Source-of-Truth Order** below. Do not guess; state the conflict and ask.
 
@@ -51,7 +52,8 @@ An idea mentioned in a meeting, email, or chat is never automatically approved s
 - **Completion approval**: always ask John before marking a task Complete. Verification alone is not permission to change the task status.
 - **Completion handling**: never delete a completed row. Set its Status to `Complete`, replace its Due Date with `Historical: YYYY-MM-DD` using the actual completion date, and move the full row to the Archive section. Do not strikethrough completed task names; Archive placement is the visual completion indicator.
 - **Changelog scope**: a changelog entry is not required when the only roadmap action is marking an approved task Complete and archiving its row. Continue to log task additions, removals, scope changes, reprioritization, scheduling changes, superseded decisions, and other material roadmap changes.
-- **Table schema** (exact columns): `| Epic | Task Name | Priority | Target Output | Status | Due Date |`
+- **Active/Backlog table schema** (exact columns): `| Gate | Epic | Task Name | Priority | Target Output | Status | Start Date | Due Date |`. Gate values are `G1` through `G6`, `Post-G6`, or `Ops`.
+- **Archive table schema** remains `| Epic | Task Name | Priority | Target Output | Status | Due Date |`; do not backfill gate values onto historical rows.
 - **Overdue tasks**: append `[OVERDUE]` to the due date string; remove it once complete.
 - Reference the exact Epic/Task Name when communicating status, for traceability.
 

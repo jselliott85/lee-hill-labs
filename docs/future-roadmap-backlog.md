@@ -16,7 +16,7 @@ This is an idea/reference log, not a task tracker. Approved future work belongs 
 
 ## Home / Room Mapping
 
-- **Concept:** Mapping a household's physical layout ("room counting" or similar), distinct from the app's community hazard/route map.
+- **Concept:** Mapping a household's physical layout ("room counting" or similar). This is distinct from sourced incident context; the formerly proposed community hazard/route map is not an MVE-1 requirement.
 - **Potential behavior:** Not defined — flagged as a possible nice-to-have, not scoped.
 - **Roadmap status:** Excluded from MVE-1/MVP scope entirely. Possible post-MVP idea only. See `docs/04-decision-log.md`, 2026-08-06.
 
@@ -25,6 +25,13 @@ This is an idea/reference log, not a task tracker. Approved future work belongs 
 - **Concept:** A "did you complete this task?" notification prompting the claiming helper to update or close a request after some time has passed since claiming — distinct from auto-close, which is not approved for MVE-1.
 - **Potential behavior:** Does not auto-close anything; the requester retains the only close action. Timeout duration and whether it should vary by request urgency are undefined.
 - **Roadmap status:** Deferred post-MVE-1. See `docs/04-decision-log.md` and `docs/functionality-decision-log.md`, both 2026-08-06.
+
+## Urgent Request Push Notifications
+
+- **Concept:** Allow a member creating a community request to mark it `Urgent`, distinguishing a device-notifying request from requests delivered silently inside the app.
+- **Potential behavior:** The author selects urgency during request creation; an urgent request may generate a device notification while an ordinary request remains in-app only. Future design must define `Urgent`, explain it in plain language, prevent lifecycle labels from setting urgency automatically, and determine rate limits, correction, and misuse handling.
+- **Administrator boundary:** MVE-1 administrators only approve or deny membership and have no content-moderation or in-app direct-message role. Any future community-manager responsibility for addressing misuse is a separate role and operating decision; it may be handled outside the app unless future scope explicitly adds supporting tools.
+- **Roadmap status:** Deferred post-MVE-1. Not approved for MVE-1 scope. In MVE-1, all newly created requests and offers are delivered silently inside the app regardless of lifecycle phase.
 
 ## Administrator Member Removal and Community Moderation
 

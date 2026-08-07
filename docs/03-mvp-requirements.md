@@ -92,7 +92,46 @@ The household profile separates resident-provided source information from system
 
 Private household information remains masked until the resident deliberately shares it with the member helping fulfill a household request. The share confirmation begins with all applicable private fields selected; the resident may deselect fields that are unnecessary for the task, except the complete home address. The address is always included in a deliberate helper share.
 
-The grant is limited to the requester and the authorized helper, uses a one-day default, expires automatically, and re-masks the shared information. The product must briefly explain these protections at the point where residents provide and share private information. Expiry removes the helper's access; it does not delete the information stored in the resident's profile.
+The grant is limited to the requester and the authorized helper, uses a one-day default, expires automatically, and re-masks the shared information. The resident may revoke an active grant before its scheduled expiry; automatic expiry is the backstop rather than the resident's only privacy control. The product must briefly explain these protections at the point where residents provide and share private information. Expiry or early revocation removes the helper's access; it does not delete the information stored in the resident's profile. Gate 3 defines the interaction and confirmation, and Gate 4 defines secure enforcement.
+
+## Gate 1 MVE-1 Boundary Set
+
+- Every approved adult Boulder Heights member may create structured community requests and offers. Administrator status provides no publishing, alerting, or emergency-communication advantage.
+- No private preparedness-task or personal checklist concept remains in MVE-1. Structured preparedness checklists and readiness counters are excluded from MVP; possible administrator-uploaded static community resources remain post-MVP.
+- The community hazard/route map is not an MVE-1 requirement. LHL does not maintain evacuation routes, hazard perimeters, or community preparedness guidance. If Gate 2 confirms dependable external incident data, MVE-1 may surface it in a clearly sourced non-map presentation; otherwise that capability is omitted rather than replaced with manually maintained current-safety information.
+- Home/room floor-plan mapping remains excluded from MVP.
+
+## MVE-1 Device-Notification Boundary
+
+- Newly created community requests and offers remain visible inside the app and do not generate device notifications, regardless of lifecycle phase. MVE-1 has no author-selected urgency flag; a future urgent-request notification concept is recorded in `docs/future-roadmap-backlog.md`.
+- Device notifications are permitted for direct activity involving the participant: another member claims the participant's request; a new message arrives in a private request thread involving the participant; or a material request/access change involving the participant occurs, including request closure or private-information access ending.
+- Incident notifications match the participant's saved property address only, with no device-location fallback. When a notification-eligible source supplies an authoritative affected polygon, zone, or address-level designation, use that source-defined geography rather than inventing a fixed-radius interpretation. Whether a distance fallback is permitted, and its source/hazard-specific distance if so, belongs to Gate 2.
+- Sources are not equally eligible to generate notifications. Gate 2 must confirm that a notification-eligible source provides reliable, attributable, machine-readable records with sufficient geography, classification, timestamps, stable event/update identity, and correction/cancellation behavior. Primary authoritative sources are preferred. A secondary source or aggregator may qualify only if it preserves upstream attribution and independently meets approved reliability and access requirements; otherwise it may appear as additional in-app information only. LHL does not adjudicate conflicting agency claims or create its own interpretation.
+- Gate 2 must produce a founder-approved, expandable incident-notification eligibility matrix covering every candidate event type exposed by sources evaluated for MVE-1 and the Boulder Heights pilot. For each event/source combination it records push eligibility, silent in-app eligibility, recognized standard and hierarchy, push threshold, geographic matching, update behavior, separate acknowledgement eligibility, source mapping, decision status, and evidence/limitations. Unknown or unmapped combinations default to `Push Eligible: No`; a source does not define LHL policy merely because it offers a feed.
+- No app-defined quiet hours, bundling, or rate limits ship in MVE-1; device settings govern quiet behavior. MVE-1 includes one in-app control to disable all LHL notifications. These defaults and notification volume must be tested during the pilot.
+- If relevance, source authority, freshness, classification, or matrix eligibility cannot be established, no incident notification is sent.
+- Lock-screen notifications contain no personally identifiable information or sensitive request/household information. Request-related notices use generic language; exact copy belongs to Gate 3.
+- Drill notifications must be unmistakable as tests. `THIS IS A TEST ONLY` and `For app research purposes only, this is not an active emergency` are the Gate 3/Gate 6 baseline, subject to final UX and pilot-plan approval.
+- LHL is not designed to be the first incident-alert source. Incident notifications repeat clearly sourced information to open the collaboration context, must not imply that LHL originated or independently verified the alert, and must state that LHL does not replace official alerts.
+- Corrections, cancellations, expirations, and authoritative boundary changes update the in-app event record. Gates 2 and 3 determine which also warrant a follow-up notification. LHL repeats the source's status and never independently declares an area safe.
+- Incident acknowledgement belongs to the source-defined event, not each notification, and may use a higher eligibility threshold than notification delivery. Exact eligibility and reset behavior belong to Gate 3.
+- Exact event classifications, source mappings, duplicate suppression, update identity, correction/retraction behavior, and follow-up-notification rules are completed through the Gate 2 matrix before Gate 3 notification design. Gate 4 selects the delivery architecture; LHL never guarantees delivery.
+
+## Trust and Tone Principles
+
+These principles govern product language, information hierarchy, and interaction design. They do not prescribe final consumer copy, which Gate 3 must design and test.
+
+- **Coordinate; do not command.** LHL helps trusted people coordinate but never directs emergency behavior, tells a helper to enter an affected area, or implies authority over official instructions.
+- **Source; do not interpret.** Show the source, timestamp, coverage, and limitations of incident information without telling residents what to conclude or presenting LHL's interpretation as official guidance.
+- **Describe relevance carefully.** Associate sourced information with a saved home address without claiming certainty, verification, or geographic precision the source cannot support.
+- **Reserve urgency.** Interrupt only for genuinely time-sensitive incident or direct-coordination events approved under the MVE-1 notification boundary. Quieter activity remains available without demanding attention.
+- **Use calm, plain language.** Prefer short factual statements, explicit timestamps, and clear actions over dramatic, speculative, emotionally loaded, or engagement-oriented language.
+- **Distinguish every information state.** Official or clearly sourced information, resident-reported information, missing information, stale information, intentionally unshared information, and simulated content must never appear equivalent.
+- **Make privacy deliberate and legible.** Explain why information is requested, the future user benefit it enables, what is shared, with whom, for how long, and when access ends. Do not imply that masked information was deleted when access merely expired or was revoked.
+- **Put safety and official instructions first.** Never imply that app participation, helping a neighbor, completing a request, or supporting a pilot takes priority over personal safety or official direction.
+- **Avoid social pressure and engagement mechanics.** Do not use streaks, popularity signals, reactions, public rankings, shame, or language that pressures residents to report, respond, help, or remain active in the app.
+
+The founder-provided communication-saturation whitepaper is one perspective supporting discussion of reserved urgency, calm hierarchy, and reduced cognitive load. It is not proof of a universal or precisely measurable `Saturation Parameter`, and its claims must not be presented as settled scientific fact without stronger evidence. Its proposals for continuous coordinate tracking, mesh networking, automated cross-municipal synchronization, and sensor integration are not approved MVE-1 scope.
 
 ## Approved MVP Constraints
 
@@ -102,13 +141,12 @@ The grant is limited to the requester and the authorized helper, uses a one-day 
 - MVE-1 must validate the approved lifecycle flows: phase change, community request, offer post, Active Incident regression, and Recovery request.
 - Sensitive household information must use time-bounded access, expire automatically, and be re-masked after expiry.
 - A user whose last successful server handshake is more than five minutes old must be represented as offline to their group.
-- Private preparedness tasks must be distinct from group help requests and answered requests.
 - A community or Recovery request has exactly three states — Open, Claimed, Closed — with claiming distinct from closing; only the original requester closes a request, and post-claim coordination happens in an inline thread visible only to the requester and the claiming helper. No reminder/nudge mechanic in MVE-1.
 - LHL has no general group chat, open-ended direct messaging, neighborhood forum, social feed, or email-list replacement. In-app communication is attached to a concrete coordination object: a structured request or offer is visible to the trusted group, and private conversation is limited to the requester and helper within a claimed request's thread.
 - Approved group-member profiles include Call and Text actions that launch the device's native phone or messaging application using the member-provided phone number. A phone number and consent to these actions are mandatory for pilot participation. The profile shows the actions rather than printing the underlying number, although the native application may expose it when an action is used. LHL does not auto-send, capture, synchronize, or guarantee delivery of native calls or texts and makes no claim that carrier or satellite delivery is available. Email actions are excluded from MVE-1; exact consent copy is finalized in Gate 3 data/permission design.
 - Offer Post supports an optional Item/Tool vs. Skill/Labor category tag, usable in any phase; no phase-gated flow split.
-- Quiet community requests always appear in the request queue/list; no notification option (on, off, or opt-in) exists for them in MVE-1.
-- Home/room floor-plan mapping is excluded from MVP; the app's "Map" surface is the community hazard/route map only.
+- New community requests and new offers follow the device-notification boundary above.
+- Community hazard/route mapping is excluded from MVE-1, and home/room floor-plan mapping is excluded from MVP.
 - Hazard/status location matching is home-address-only in MVE-1; no continuous background location tracking.
 - MVE-1 intends to support three distinct, voluntary, time-stamped household signals visible to approved Boulder Heights members: (1) incident acknowledgement tied to a specific sourced update, expressed as an affirmative acknowledgement or `No acknowledgement recorded`—never `Aware`/`Unaware`; (2) self-reported household presence, distinguishing someone home, household away, not shared, and no recent update without geofencing; and (3) a self-reported incident check-in indicating that the household was not in, or has left, the area relevant to the incident, without presenting that statement as a verified declaration of safety. Missing, stale, and intentionally unshared information must remain distinct.
 - Incident acknowledgement is provisional MVE-1 scope: Gate 3 must attempt to fit and test it in the household-first wireframes without creating noise or false confidence. It may be removed at Gate 3 through an explicit superseding decision if it cannot meet that bar. Exact consumer wording, prompting behavior, visibility hierarchy, expiry/staleness treatment, and what constitutes a material update requiring renewed acknowledgement are Gate 3 decisions.
@@ -117,16 +155,28 @@ The grant is limited to the requester and the authorized helper, uses a one-day 
 - Pilot membership onboarding uses three distinct gates: a personal TestFlight or approved Android-testing invitation grants installation access; a preconfigured Boulder Heights community code allows the resident to submit a pending membership request; and John's approval grants trusted-group access. The code alone exposes no group information. MVE-1 includes participant code entry, pending/approved/denied states, and a minimal role-gated admin request list with approve/deny actions. In-app code generation, rotation, expiration, invitation analytics, and general community-code management are deferred.
 - MVE-1 supports exactly one trusted community group: Boulder Heights. A pilot participant cannot create, join, switch among, or receive activity from multiple groups.
 - The selected authentication/backend approach must provide a protected operator-level way to revoke previously approved access before pilot credentials are issued, even though MVE-1 has no participant-facing member-removal feature.
-- Map and hazard context must avoid implying official precision unless the source and confidence are clear.
-- The app must not require a backend, authentication, notification, or map/data provider until that choice is separately approved and recorded.
+- Sourced incident context must avoid implying official precision unless the source, coverage, and limitations are clear.
+- The app must not require a backend, authentication, notification, or external-data provider until that choice is separately approved and recorded.
 
-## MVP Definition Needed Before Implementation
+## Explicit MVE-1 Deferrals and Exclusions
 
-- In-scope phase(s) and explicit deferrals for the initial release
+- Administrator-uploaded preparedness/reference resources are post-MVP; MVE-1 contains no structured preparedness checklist, readiness counter, or private preparedness-task list.
+- Everyday Tasks / Local Marketplace, home/room mapping, claim reminder nudges, and member-selected urgent-request notifications are post-MVE-1 concepts.
+- Existing-member removal, content moderation, invitation/access-code management, community creation, multi-group membership, group switching, and cross-group routing are deferred beyond MVE-1.
+- Low-bandwidth or satellite-specific behavior is post-MVP.
+- Community hazard/route mapping is excluded from MVE-1. Gate 2 may establish whether dependable external incident information can be presented in a clearly sourced non-map form; if not, that capability is omitted.
+- General group chat, open-ended direct messaging, neighborhood forums, social feeds, and engagement-pressure mechanics are permanent product exclusions rather than deferred features.
+- Final consumer lifecycle wording, notification UX and acknowledgement behavior, roster presentation, privacy/consent interactions, and exact status/staleness treatment belong to Gate 3.
+- External-source/provider feasibility belongs to Gate 2; backend, authentication, notification-delivery, external-data, offline-storage, and build/delivery provider choices belong to Gate 4; drill execution details belong to Gate 6.
+
+The future concepts above are described in `docs/future-roadmap-backlog.md`. This inventory defines their MVE-1 status but does not approve them for later implementation.
+
+## Definition Needed Before Implementation
+
 - Minimum data model and privacy permissions
 - Success criteria, usability checks, and acceptance criteria
 - Approved technical architecture and service providers
-- Resolved FigJam comments plus approved user flows, low-fidelity screens, reusable component rules, and required interaction states
+- Approved user flows, low-fidelity screens, reusable component rules, and required interaction states
 
 ## Non-Goals for the Current Planning Stage
 

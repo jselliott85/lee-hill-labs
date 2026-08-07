@@ -91,7 +91,7 @@ Resolves the last 7 previously-open FigJam comments (plus 2 replies already effe
 - Offer Post (Flow D) keeps one mechanism with an optional Item/Tool vs. Skill/Labor category tag, usable in any phase; no phase-gated flow split. Expertise/referral requests remain out of scope.
 - A standing, browsable "Everyday Tasks / Local Marketplace" concept (households listing borrowable equipment) is deferred post-MVE-1 as the top-priority backlog item, not MVE-1 scope. Default plan ships it after pilot findings, not mid-pilot; reassess pulling it into the same cycle only if the G5 build runs 2-3+ weeks ahead of schedule, since the pilot's own start date is fixed by the holiday blackout regardless of build speed. Must be reconciled against the existing "no marketplace" Safety+QA invariant before implementation.
 - Admin-uploaded community resources (BMFD documents, etc.) are confirmed post-MVP, per the existing 2026-08-04 backlog entry — the app hosts community-sourced material, it does not generate advice.
-- Home/room floor-plan mapping is excluded from MVP entirely; the app's "Map" surface is the community hazard/route map only.
+- Home/room floor-plan mapping is excluded from MVP entirely. The then-proposed community hazard/route map was subsequently removed from MVE-1 by the 2026-08-07 Gate 1 boundary decision below.
 - The "Transition log" wire-inventory placeholder stays as-is; what admin "curates community narrative" means in practice, and admin responsibilities during an active incident, are deferred to Gate 3 product-feature debate rather than settled now.
 - Location sharing for hazard/status matching is confirmed home-address-only for MVE-1; a live "share my location" toggle for request-fulfillment ETA is a distinct, post-MVE-1 backlog idea.
 - A claim "did you complete this?" reminder nudge is deferred post-MVE-1; MVE-1 ships with fully manual, requester-only closing and no reminder mechanic.
@@ -197,6 +197,36 @@ Full detail for each item: `docs/functionality-decision-log.md`, entries dated 2
 - Homeowner/tenant status, custom biography or identity text, preparedness score, standing equipment inventory, and a general medical record are excluded from the MVE-1 household profile. Structured request/offer content and necessary entry instructions remain purpose-limited user input rather than open-ended profile content.
 - This resolves the phone requirement/visibility, household-label derivation, first-journey private fields, field-versus-bundle sharing, and exact-address helper-sharing questions. It does not approve a roster UI or select an address-validation provider.
 
+## 2026-08-07 — Gate 1 Remaining MVE-1 Boundary Set
+
+- A resident may revoke an active temporary private-information grant before its scheduled expiry. Automatic expiry remains the privacy backstop; Gate 3 defines the interaction and Gate 4 defines secure enforcement.
+- Every approved adult member may create structured community requests and offers. Administrator status provides no publishing, alerting, or emergency-communication advantage.
+- No private preparedness-task or personal-checklist concept remains in MVE-1. This removes the stale private-task constraint left after the structured checklist and readiness counter were removed from MVP.
+- The community hazard/route map is removed as an MVE-1 requirement. LHL does not maintain evacuation routes, hazard perimeters, or preparedness guidance. Dependable external incident data may be shown in a clearly sourced non-map presentation if Gate 2 confirms feasibility; otherwise the capability is omitted. Administrator-uploaded static resources remain a possible post-MVP concept and do not expand the MVE-1 administrator role.
+- Newly created community requests and offers are in-app only and never generate device notifications in MVE-1, regardless of lifecycle phase. Direct participant activity may notify: a claim on the participant's request, a new message in a private request thread involving the participant, and a material request/access change involving the participant, including request closure or private-information access ending.
+- Incident notification relevance is matched to the saved property address only, with no device-location fallback. Source-defined authoritative polygons, zones, or address-level designations take precedence over any distance interpretation. Gate 2 decides whether a distance fallback is permissible.
+- Sources are not equally notification-eligible. Gate 2 must confirm reliability, attribution, machine readability, geography, classification, timestamps, stable event/update identity, and correction/cancellation behavior. Primary authoritative sources are preferred; secondary sources or aggregators qualify only when they preserve upstream attribution and independently meet the approved requirements. LHL does not adjudicate conflicting agency claims or create its own interpretation.
+- Gate 2 must produce and John must approve an expandable incident-notification eligibility matrix for candidate MVE-1/Boulder Heights event types and sources. The matrix controls push eligibility, silent in-app eligibility, recognized hierarchy, threshold, geography, updates, acknowledgement eligibility, source mapping, decision status, and evidence/limitations. Unknown or unmapped combinations default to `Push Eligible: No`; sources are evaluated against LHL policy rather than defining it.
+- MVE-1 has no app-defined quiet hours, bundling, or rate limits; device settings govern quiet behavior. It includes one in-app control to disable all LHL notifications. If relevance, source authority, freshness, classification, or matrix eligibility cannot be established, no incident notification is sent.
+- Lock-screen notifications contain no PII or sensitive request/household information. Drill notifications must be unmistakably labeled as tests, using the approved `THIS IS A TEST ONLY` baseline. LHL is not intended to be the first incident-alert source; notifications repeat sourced information to open collaboration context and do not replace official alerts.
+- Corrections, cancellations, expirations, and authoritative boundary changes update the in-app event record. Gates 2 and 3 determine follow-up notification rules. Incident acknowledgement belongs to the event, not each notification, and may use a higher threshold; exact eligibility and reset behavior belong to Gate 3. Gate 4 selects delivery architecture, and LHL never guarantees delivery.
+- Full detailed rules are recorded in `docs/03-mvp-requirements.md`, "Gate 1 MVE-1 Boundary Set" and "MVE-1 Device-Notification Boundary," and `docs/functionality-decision-log.md`, "2026-08-07 - Gate 1 Remaining MVE-1 Boundaries and Device Notifications."
+
+## 2026-08-07 — Gate 1 Trust and Tone Principles
+
+- Approved nine governing principles for MVE-1 language, information hierarchy, and interaction design: coordinate rather than command; source rather than interpret; describe relevance carefully; reserve urgency; use calm, plain language; distinguish every information state; make privacy deliberate and legible; put safety and official instructions first; and avoid social pressure and engagement mechanics.
+- Privacy explanations must state why information is requested and the future user benefit it enables, as well as what is shared, with whom, for how long, and when access ends. Masking, expiry, and revocation must not be described as deletion.
+- The founder-provided communication-saturation whitepaper is an input for debate, not proof of a universal or precisely measurable scientific threshold. Its out-of-scope technical proposals do not enter MVE-1 through this decision.
+- These are durable product principles. Gate 3 remains responsible for final consumer wording, hierarchy, and usability testing.
+- Full controlling language is recorded in `docs/03-mvp-requirements.md`, "Trust and Tone Principles."
+
+## 2026-08-07 — Gate 1 Closure
+
+- John explicitly confirmed Gate 1 completion after reviewing the canonical reconciliation and confirming CC's final Resilience Lifecycle FigJam synchronization.
+- Every Gate 1 exit criterion in `docs/05-gate-framework.md` is met: primary user and first test community named; first end-to-end journey defined; MVE-1 boundaries and explicit deferrals recorded; Trust-and-Tone principles recorded; and all open comments on the approved Resilience Lifecycle FigJam board resolved with resulting decisions reflected in canonical repository documents.
+- Both Gate 1 roadmap target outputs are satisfied. `Define initial MVP scope and success criteria` and `Define trust and tone principles` are Complete and archived with the historical completion date 2026-08-07.
+- Gate 1 establishes working direction rather than final frozen scope. Success criteria, acceptance criteria, final user flows/screens, and scope freeze remain Gate 3 work. Gate 2 constraint work continues in parallel and must close before Gate 3 begins.
+
 ## Product Decisions
 
 The detailed functional product rules are maintained in `docs/functionality-decision-log.md`. The following entries are currently controlling:
@@ -219,3 +249,6 @@ The detailed functional product rules are maintained in `docs/functionality-deci
 - 2026-08-06 — Native Call and Text Actions in MVE-1
 - 2026-08-06 — Household Signals and Provisional Incident Acknowledgement
 - 2026-08-06 — MVE-1 Household Profile Source, Derived Display, and Helper-Sharing Scope
+- 2026-08-07 — Gate 1 Remaining MVE-1 Boundary Set
+- 2026-08-07 — Gate 1 Trust and Tone Principles
+- 2026-08-07 — Gate 1 Closure

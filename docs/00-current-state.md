@@ -34,15 +34,25 @@ The former investor presentation is retained in `public/presentation/` as a paus
 ## Active Documentation
 
 - `docs/04-decision-log.md` — approved operating and product decisions
-- `docs/functionality-decision-log.md` — detailed functional product rules, including the 2026-08-04 per-household automated hazard status decision
+- `docs/functionality-decision-log.md` — detailed functional product rules, including later entries that supersede the 2026-08-04 shared-phase model
 - `docs/02-product-brief.md` — product intent and ownership
 - `docs/03-mvp-requirements.md` — approved MVP requirements and unresolved scope
 - `docs/00-master-roadmap.md` — canonical execution plan
 - `docs/05-gate-framework.md` — approved six-gate sequencing and exit criteria
 
+## Gate 1 Validation Snapshot
+
+- **Primary user and first test community:** Met in `docs/03-mvp-requirements.md`.
+- **First end-to-end journey:** Met in `docs/03-mvp-requirements.md`.
+- **MVE-1 boundaries and explicit deferrals:** Met in `docs/03-mvp-requirements.md`, including the consolidated `Explicit MVE-1 Deferrals and Exclusions` inventory.
+- **Trust and tone:** Met in `docs/03-mvp-requirements.md` and recorded in `docs/04-decision-log.md`.
+- **Open Resilience Lifecycle FigJam comments:** Met; all 19 were resolved and the roadmap task was archived on 2026-08-06.
+- **Roadmap target outputs:** Both active Gate 1 rows have their stated artifacts recorded. The `Define initial MVP scope and success criteria` task name retains legacy wording, but its approved target output and the gate framework explicitly route success and acceptance criteria to Gate 3.
+- **Closure authority:** Met. John explicitly confirmed Gate 1 closure on 2026-08-07; both Gate 1 roadmap rows are Complete and archived.
+- **Additional consistency pass:** Complete. CC synchronized the Resilience Lifecycle FigJam board with the 2026-08-07 boundary and trust/tone decisions on 2026-08-07 (see `00_project-os/.lhl_ai_context.md` for the node-level record). Gate 1 is otherwise unblocked pending John's closure confirmation.
+
 ## Resume Here
 
-1. Complete the remaining Gate 1 direction work using the working [Gate 1 Closure Session — Decision Packet](https://docs.google.com/document/d/1aUKjE0y1wQtf3XIuifg57YCGALR9qY0qTeP7I8RzemA/edit): finalize the remaining MVE-1 boundaries and explicit deferrals, then approve trust/tone principles. The primary user, first test community, first end-to-end journey, and household-profile scope are approved. Roster presentation remains a Gate 3 design question, and address-validation provider selection remains Gate 4. The Drive packet is preparation only; canonical decisions remain in the repository. `Consolidate Resilience Lifecycle FigJam comments` and `Update FigJam for household-first context and minimal admin role` are both complete as of 2026-08-06.
-2. Complete Gate 2 feasibility, liability-position, and closed-pilot participation-language work before approving Gate 3 design.
-3. Complete Gate 3 product definition, including acceptance criteria, data/permissions, design tokens, and a provisional working name.
-4. Approve Gate 4 technical foundations and identities before scaffolding the Gate 5 implementation.
+1. Gate 1 closed on 2026-08-07. Continue Gate 2 feasibility, notification-matrix/source-mapping, liability-position, and closed-pilot participation-language work before approving Gate 3 design.
+2. Complete Gate 3 product definition, including acceptance criteria, data/permissions, design tokens, and a provisional working name.
+3. Approve Gate 4 technical foundations and identities before scaffolding the Gate 5 implementation.

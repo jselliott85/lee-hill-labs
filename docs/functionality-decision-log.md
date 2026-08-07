@@ -213,7 +213,7 @@ When `devlog` appears, capture the decision here, organize it by feature area, a
 
 ### 2026-08-06 - Home/Room Mapping Excluded from MVP (FigJam 3:58)
 
-- **Product rule**: Home/room floor-plan mapping ("room counting" or similar) is excluded from MVE-1/MVP scope entirely. The app's "Map" surface refers to the community hazard/route map, not a home floor plan (`devlog`).
+- **Product rule**: Home/room floor-plan mapping ("room counting" or similar) is excluded from MVE-1/MVP scope entirely. At the time of this decision, the proposed "Map" surface meant a community hazard/route map rather than a home floor plan; the 2026-08-07 Gate 1 boundary decision below subsequently removed that community map from MVE-1 (`devlog`).
 - **User story seed**: As the founder, this felt like a nice-to-have that adds complexity without validating the core coordination loop.
 - **Data / logic notes**: No home/room data model in MVE-1. Logged as a possible post-MVP idea in `docs/future-roadmap-backlog.md`.
 - **Open questions**: None blocking.
@@ -250,6 +250,29 @@ When `devlog` appears, capture the decision here, organize it by feature area, a
 - **Data / logic notes**: No notification-preference field for community requests in MVE-1. A future notification-opt-in feature remains possible but is not committed.
 - **Open questions**: None blocking MVE-1.
 - **Source**: FigJam node 3:67 comment (Randall).
+
+### 2026-08-07 - New Request and Offer Notification Exclusion
+
+- **Product rule**: In MVE-1, creating a new community request or offer does not generate a device notification for other members, regardless of lifecycle phase. New requests and offers remain discoverable inside the app. MVE-1 does not include an author-selected urgency flag or a notification option for newly created requests or offers (`devlog`).
+- **User story seed**: As a trusted-group member, I can review new requests and offers without every new post interrupting me or allowing another member to escalate their post into a group-wide alert.
+- **Data / logic notes**: This expands the earlier quiet-request exclusion into the complete MVE-1 creation boundary. Direct participant activity is separately notification-eligible under the later Gate 1 boundary: a claim on the participant's request, a new private-thread message involving the participant, and a material request/access change involving the participant, including request closure or private-information access ending. A future concept may allow a request author to mark a request urgent so it generates a device notification; that concept requires definitions, controls, misuse handling, and a decision about the future community-manager role before approval.
+- **Source**: Gate 1 closure session; founder decision after clarifying the device-notification boundary.
+
+### 2026-08-07 - Gate 1 Remaining MVE-1 Boundaries and Device Notifications
+
+- **Product rule — privacy control**: A resident may revoke an active temporary private-information grant before automatic expiry. Expiry remains the backstop; both expiry and early revocation re-mask access without deleting the resident's stored profile information.
+- **Product rule — authorship**: Every approved adult member may create structured requests and offers. Administrator status provides no publishing, alerting, or emergency-communication advantage.
+- **Product rule — preparedness tasks**: No private preparedness-task or personal-checklist concept remains in MVE-1. This supersedes the remaining MVE-1 private-task language from "2026-05-01 - Tasks vs Requests vs Answered Requests." Structured checklists/readiness counters remain excluded from MVP; possible administrator-uploaded static resources remain post-MVP.
+- **Product rule — mapping**: The community hazard/route map is not an MVE-1 requirement. LHL does not maintain evacuation routes, hazard perimeters, or preparedness guidance. If Gate 2 confirms dependable external incident data, MVE-1 may show it in a clearly sourced non-map presentation; otherwise the capability is omitted. Home/room floor-plan mapping remains excluded from MVP.
+- **Product rule — collaboration notifications**: New requests and offers are in-app only. Device notifications may be generated for a claim on the participant's request, a new private-thread message involving the participant, and a material request/access change involving the participant, including request closure or private-information access ending. Lock-screen copy contains no PII or sensitive request/household information.
+- **Product rule — geographic relevance**: Incident notification matching uses the saved property address only and never device location. A notification-eligible source's authoritative polygon, zone, or address designation takes precedence. Gate 2 determines whether any distance fallback is acceptable.
+- **Product rule — source eligibility**: Sources are not equal. Gate 2 confirms whether a source provides reliable, attributable, machine-readable geography, classification, timestamps, stable event/update identity, and correction/cancellation behavior. Primary authoritative sources are preferred. Secondary sources and aggregators qualify only when they preserve upstream attribution and independently meet requirements; otherwise they are additional in-app information only. LHL neither adjudicates conflicting agency claims nor invents an interpretation.
+- **Product rule — eligibility matrix**: Gate 2 produces a founder-approved, expandable matrix for candidate MVE-1/Boulder Heights event types and sources. It records push and in-app eligibility, recognized standard/hierarchy, notification threshold, geographic matching, update behavior, separate acknowledgement eligibility, source mapping, decision status, and evidence/limitations. Unknown or unmapped combinations fail closed to `Push Eligible: No`; a source is mapped against LHL policy and does not define it.
+- **Product rule — delivery defaults**: MVE-1 has no app-defined quiet hours, bundling, or rate limits. Device settings govern quiet behavior, and one in-app setting disables all LHL notifications. If relevance, source authority, freshness, classification, or matrix eligibility is unresolved, no incident notification is sent.
+- **Product rule — simulations and role**: Drill notifications begin from the `THIS IS A TEST ONLY` baseline and state that they are for app research, not an active emergency. LHL is not intended to be the first incident-alert source; incident notifications repeat sourced information to open collaboration context and do not replace official alerts.
+- **Data / logic notes**: Corrections, cancellations, expirations, and authoritative boundary changes update the in-app event record. Gate 2 maps source/event classifications, stable identifiers, duplicates, corrections, retractions, and candidate follow-up rules. Gate 3 defines final wording, deep-link flow, notification hierarchy, settings presentation, and which source updates warrant a follow-up notification. Gate 4 selects the provider/delivery architecture; delivery is never guaranteed.
+- **Acknowledgement boundary**: Acknowledgement belongs to the source-defined event, not each notification, and may use a higher eligibility threshold than notification delivery. Exact eligibility and reset behavior belong to Gate 3.
+- **Source**: Gate 1 Closure Session — Decision Packet, founder comments and approvals; Gate 2 working artifact: `Gate 2 — Incident Notification Eligibility Matrix` in the Gate 2 Drive folder.
 
 ### 2026-08-04 - Preparedness Checklist Removed from MVE-1 Scope
 

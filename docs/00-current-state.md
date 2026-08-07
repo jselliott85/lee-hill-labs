@@ -22,6 +22,7 @@ The former investor presentation is retained in `public/presentation/` as a paus
 - Pilot risk posture: John is willing to proceed toward a closed, personal-invitation neighborhood pilot using an internal safeguards position and founder-approved participation/liability acknowledgment while counsel review continues. This does not authorize public release.
 - Asana: retired as a task tracker; exports are historical reference only.
 - GEM: read-only Google Workspace support; it may summarize and propose work but cannot change canonical project records.
+- Domain: `leehilllabs.com` is transferred to John's GoDaddy account and publicly live. The acquisition task completed on 2026-08-07; a separate low-priority Ops task tracks reconciliation of stale public copy, including the unsupported "escape route sharing" claim.
 
 ## Validation Snapshot
 
@@ -53,6 +54,7 @@ The former investor presentation is retained in `public/presentation/` as a paus
 
 ## Resume Here
 
-1. Gate 1 closed on 2026-08-07. Continue Gate 2 feasibility, notification-matrix/source-mapping, liability-position, and closed-pilot participation-language work before approving Gate 3 design.
+1. Gate 1 closed on 2026-08-07. On John's return, begin with the [Gate 2 Kickoff — Constraints and Research Packet](https://docs.google.com/document/d/1WxC3eztHIbslJbgwaxxmq-f2hefXhJtOdSLqM5IeiPo/edit) and the linked incident-notification eligibility matrix. The Gate 2 framework and roadmap are already reconciled to the broader event/source mandate approved at Gate 1; begin with event taxonomy and the first bounded source-research batch.
 2. Complete Gate 3 product definition, including acceptance criteria, data/permissions, design tokens, and a provisional working name.
 3. Approve Gate 4 technical foundations and identities before scaffolding the Gate 5 implementation.
+4. Every status review must also cover active Ops and non-gate milestones, plus approaching backlog-review triggers; gate focus does not replace operational tracking.

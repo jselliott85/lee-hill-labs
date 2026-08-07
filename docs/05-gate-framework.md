@@ -42,9 +42,10 @@ The roadmap remains the sole canonical task tracker. This file is the sequencing
 **Question it answers:** What does reality permit before we design around assumptions?
 
 **Exit criteria:**
-- Documented finding on whether an accessible, reliable evacuation-zone-level data feed exists for the pilot county, and what fallback applies if it does not. Resolves the open question recorded in `docs/functionality-decision-log.md`, 2026-08-04, "Per-Household Automated Hazard Status."
-- Documented finding on upstream primary sources (WildCAD or equivalent) and their API/data-sharing terms
+- Documented event taxonomy and finding on whether accessible, reliable, attributable external sources can support candidate Boulder Heights incident context. The finding covers recognized classifications, primary authorities, WildCAD or equivalent upstream sources, secondary/aggregator attribution, geographic matching, stable event/update identity, corrections/cancellations, access and data-sharing terms, and the fallback or omission required when evidence is insufficient.
+- A founder-approved incident-notification eligibility matrix maps candidate event/source combinations to push, silent in-app, acknowledgement, or neither. Unknown or unmapped combinations default to no push.
 - John-authored and John-approved written position on liability and safeguards for automated hazard and evacuation-status notification, including required disclaimers, native 911 routing behavior, and what the app must never imply. Recorded in `docs/04-decision-log.md`.
+- Founder-approved closed-pilot participation and liability acknowledgment covering voluntary participation, pilot limitations, emergency/911 behavior, risk acknowledgment, privacy/data handling, withdrawal, and contact language; clearly marked for counsel review and not approved for public release.
 
 **Explicitly not in Gate 2:** formal legal sign-off. See "External dependency rule."
 

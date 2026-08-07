@@ -20,6 +20,7 @@ MVP development of ECA is the project's highest priority. Investor-presentation 
 - Support household and group coordination without presenting unverified information as official emergency direction.
 - Make urgency, safety status, requests for help, and time-sensitive information legible under stressful conditions.
 - Respect privacy, particularly for sensitive household information and temporary responder access.
+- Keep communication attached to concrete coordination needs; LHL must not become a general group chat, neighborhood forum, email-list replacement, gossip channel, or Nextdoor-style social feed.
 
 ## Known Product Decisions
 

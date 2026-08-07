@@ -75,6 +75,30 @@ This is the source of truth for approved operating and product decisions. Add ne
 - The post-incorporation documents were sent to Cara O'Brien on 2026-07-14. John will reassess the legal-resource approach on 2026-08-31.
 - John and Claude are exploring a simplified request to Cara and whether compensation or equity would improve turnaround. No compensation, equity, or roadmap action is approved by this entry.
 
+## 2026-08-06 — MVE-1 Request Claim/Close Lifecycle
+
+- A community or Recovery request has exactly three states in MVE-1: Open, Claimed, Closed. Claiming is not closing.
+- Only the original requester can close a request, done manually once the task is actually complete. The claiming helper cannot self-close.
+- After a claim, coordination happens in an inline comment thread attached to that specific request, visible only to the requester and the claiming helper.
+- No GPS, geofencing, ETA, or automatic proximity-based state transitions in MVE-1, consistent with the 2026-08-04 decision against continuous background location tracking absent a separately approved feature.
+- This supersedes, for MVE-1 scope only, the richer state list sketched in the 2026-05-01 "Tasks vs Requests vs Answered Requests" functionality entry; that richer model remains a candidate for a later, separately approved iteration.
+- Full detail and source: `docs/functionality-decision-log.md`, "2026-08-06 - MVE-1 Request Claim/Close Lifecycle."
+
+## 2026-08-06 — Remaining Resilience Lifecycle FigJam Comment Resolutions
+
+Resolves the last 7 previously-open FigJam comments (plus 2 replies already effectively settled on 2026-08-04), closing out all 19 board comments in the canonical docs:
+
+- Offer Post (Flow D) keeps one mechanism with an optional Item/Tool vs. Skill/Labor category tag, usable in any phase; no phase-gated flow split. Expertise/referral requests remain out of scope.
+- A standing, browsable "Everyday Tasks / Local Marketplace" concept (households listing borrowable equipment) is deferred post-MVE-1 as the top-priority backlog item, not MVE-1 scope. Default plan ships it after pilot findings, not mid-pilot; reassess pulling it into the same cycle only if the G5 build runs 2-3+ weeks ahead of schedule, since the pilot's own start date is fixed by the holiday blackout regardless of build speed. Must be reconciled against the existing "no marketplace" Safety+QA invariant before implementation.
+- Admin-uploaded community resources (BMFD documents, etc.) are confirmed post-MVP, per the existing 2026-08-04 backlog entry — the app hosts community-sourced material, it does not generate advice.
+- Home/room floor-plan mapping is excluded from MVP entirely; the app's "Map" surface is the community hazard/route map only.
+- The "Transition log" wire-inventory placeholder stays as-is; what admin "curates community narrative" means in practice, and admin responsibilities during an active incident, are deferred to Gate 3 product-feature debate rather than settled now.
+- Location sharing for hazard/status matching is confirmed home-address-only for MVE-1; a live "share my location" toggle for request-fulfillment ETA is a distinct, post-MVE-1 backlog idea.
+- A claim "did you complete this?" reminder nudge is deferred post-MVE-1; MVE-1 ships with fully manual, requester-only closing and no reminder mechanic.
+- Quiet community requests always appear in the request queue/list; MVE-1 ships with no notification option (on, off, or opt-in) for them at all.
+
+Full detail for each item: `docs/functionality-decision-log.md`, entries dated 2026-08-06.
+
 ## 2026-08-06 — Six-Gate Schedule Baseline
 
 - John approved the schedule baseline recorded in `docs/05-gate-framework.md` and `docs/00-master-roadmap.md`.
@@ -85,6 +109,94 @@ This is the source of truth for approved operating and product decisions. Add ne
 - The pilot plan must define success and course-change thresholds before execution. The go/no-go decision must state which observed results support continuation, revision, another pilot, or stopping.
 - These dates are milestone targets, not a public launch date.
 
+## 2026-08-06 — MVE-1 Primary User
+
+- The primary user is an adult resident—homeowner, tenant, or another household member—in a community exposed to recurring natural, environmental, or human-caused hazards.
+- LHL's primary role is trusted-community coordination before, during, and after disruptive events. It may surface available hazard information associated with the user's saved home address when the source and limitations are clear, but it does not interpret the news, tell users what they should conclude, replace emergency authorities, or treat every community update as urgent.
+- The experience must work for residents with varying technical comfort, minimize unnecessary cognitive and interaction burden, and clearly separate immediate-action information from quieter coordination.
+- The complete approved narrative, core user perspective, job to be done, and product boundary are recorded in `docs/03-mvp-requirements.md`, "Primary User."
+
+## 2026-08-06 — MVE-1 First Test Community and Simulation Rule
+
+- Boulder Heights is the working name for the first test community. It is one closed, invitation-only group of adult residents connected through John's existing trusted relationships; property ownership is not required, and membership rather than a precise geographic boundary defines the group.
+- The six-week live pilot means real participants use MVE-1 over time across all four lifecycle phases. It does not depend on an actual emergency occurring. Smaller controlled exercises may run concurrently using clearly identified test profiles and conditions that cannot be mistaken for real people, needs, or reports.
+- The pilot intends to include one planned, time-bounded simulated-event drill. All simulated content must be unmistakably labeled `TEST`, `DRILL`, or `SIMULATION`; exact procedures, measures, thresholds, and stop conditions belong in the approved Gate 6 pilot test plan.
+- A real emergency, official warning, or materially unsafe condition suspends any drill, observation, and data collection. Participant safety and official instructions take absolute priority; participants are never expected to use or evaluate LHL during a real event, and any use is voluntary.
+- The complete cohort definition and testing safeguards are recorded in `docs/03-mvp-requirements.md`, "First Test Community."
+
+## 2026-08-06 — Household-First Context and Minimal Administrator Role
+
+- MVE-1 opens household-first. Available sourced incident information associated with a saved home address is presented separately from broader incident context, household-reported status, and activity within the trusted community.
+- A trusted community may span multiple hazard or evacuation zones. MVE-1 does not declare one universal community hazard status or place the whole community into a shared lifecycle phase.
+- The MVE-1 administrator role is limited to membership administration: reviewing and approving or denying requests to join the trusted group. Administrators do not set or confirm lifecycle phases, curate an incident narrative, add or validate hazard sources, interpret official information, maintain a transition log, or direct member behavior during an emergency.
+- This supersedes the shared, admin-curated community narrative layer in the 2026-08-04 "Per-Household Automated Hazard Status" decision and the 2026-08-06 decision to retain the transition log for Gate 3 debate. The transition log and its underlying admin-controlled phase-transition responsibility are removed from MVE-1 now.
+- The four lifecycle concepts remain in scope, but the exact household-facing representation of those concepts is still to be settled as part of the first journey and Gate 3 product definition.
+- Open question: whether a membership administrator may remove an existing member after admission. No message/content moderation or broader incident-management authority is approved by this entry.
+- Claude must reconcile the approved Resilience Lifecycle FigJam board to this decision under the roadmap task `Update FigJam for household-first context and minimal admin role`.
+
+## 2026-08-06 — Boulder Heights Pilot Administrator and Member-Removal Deferral
+
+- John will serve as the initial administrator for the invitation-only Boulder Heights pilot. This is appropriate for the small founder-led cohort because the administrator has no emergency-management or incident-operation duties.
+- MVE-1 includes approve/deny join-request actions but no participant-facing ability to remove an existing member and no content/message moderation. Existing-member removal is deferred to the future backlog.
+- Because trusted-group access may expose sensitive household information, the approved pilot operations plan must define a manual operator-level way to revoke access if a participant was admitted in error, withdraws, or presents a safety/privacy concern. This safeguard is operational and does not add an in-app removal feature to MVE-1.
+- This resolves the existing-member-removal question left open in `Household-First Context and Minimal Administrator Role`.
+
+## 2026-08-06 — First End-to-End MVE-1 Journey and Internal Lifecycle Language
+
+- The approved first journey begins with a resident joining a private trusted group, establishing a household profile with a saved home address, and storing sensitive assistance information that remains private unless deliberately shared for a limited period.
+- Sourced incident information associated with the saved address opens into household context and remains separate from broader incident information and trusted-community activity. LHL does not interpret what the resident should conclude or assign a universal phase/status to the community.
+- A resident away from home creates a practical assistance request; another trusted member claims it; the two coordinate in the private request thread; the requester may grant specific sensitive instructions for a defined period with a one-day default; the helper acts only when independently safe and consistent with official instructions; and the original requester closes the fulfilled request.
+- Household status is self-reported, not inferred from device movement. Recovery-oriented requests and offers continue coordination after immediate conditions pass.
+- `Ready`, `Alert`, `Active Incident`, and `Recovery` remain internal working language for product organization and test coverage. Consumer-facing lifecycle terminology and presentation are explicitly TBD for Gate 3 design and must follow the approved trust-and-tone principles.
+- The full approved journey is recorded in `docs/03-mvp-requirements.md`, "First End-to-End MVE-1 Journey."
+
+## 2026-08-06 — Boulder Heights Access-Code Onboarding and Approval
+
+- Pilot onboarding has three separate gates: John personally sends the TestFlight or approved Android-testing invitation; the participant installs the app, creates a profile, and enters a preconfigured Boulder Heights community access code; entering the code submits a pending membership request but grants no group access; and John's approve action grants trusted-group access.
+- MVE-1 includes participant code entry, pending/approved/denied membership states, and a minimal role-gated admin surface in the resident app showing enough applicant identity for John to approve or deny the request.
+- MVE-1 does not include an admin code-generation or management interface. Code creation, rotation, expiration, multiple-code support, and invitation analytics are deferred. The code is not an authentication credential and cannot expose group information by itself; exact rate-limiting and security mechanics belong to Gate 4.
+- Before pilot credentials are issued, the selected backend/authentication approach must provide a protected operator-level method to revoke previously approved access. This is an operational safeguard, not a participant-facing remove-member feature.
+
+## 2026-08-06 — Single Trusted Group in MVE-1
+
+- MVE-1 supports exactly one trusted community group: Boulder Heights.
+- A pilot participant cannot create another group, join multiple groups, switch group context, or receive requests, offers, statuses, or notifications from more than one group.
+- Multi-group membership and group creation are deferred beyond MVE-1 because they add navigation, notification-routing, privacy, and permission complexity without contributing to validation of the first journey.
+
+## 2026-08-06 — No General Chat or Neighborhood Forum
+
+- LHL will not include a general group chat, open-ended direct messaging, neighborhood discussion forum, email-list replacement, gossip channel, or Nextdoor-style social feed. This is a permanent product boundary, not a deferred feature.
+- In-app communication must remain attached to concrete coordination: structured requests and offers may be visible to the trusted group, and private conversation is limited to the requester and helper inside the thread for a claimed request.
+- Reactions, general discussion threads, status posts without a coordination purpose, and other engagement mechanics must not be introduced indirectly through later design work without an explicit superseding founder decision.
+- This resolves earlier ambiguity about whether `Group chat` is a full chat surface, a filtered coordination thread, or a link into chat: there is no general chat surface in the approved product direction.
+
+## 2026-08-06 — Native Call and Text Actions in MVE-1
+
+- Approved trusted-group member profiles include Call and Text actions using the member-provided phone number. These actions launch the device's native phone or messaging application and do not create an LHL direct-message or chat surface.
+- LHL does not auto-send communications, capture or synchronize native call/text content, or guarantee delivery. Text may be useful when voice service is unavailable, including as carrier/device capabilities evolve, but MVE-1 makes no promise of carrier, degraded-network, or satellite delivery.
+- The actions are available only within the approved trusted-group context. The later 2026-08-06 household-profile decision resolves phone requirement and visibility: phone/consent are mandatory for the pilot, and profiles show action buttons rather than printing the number. Gate 3 retains only the exact consent presentation.
+- Email profile actions are excluded from MVE-1 because they do not contribute to the first journey.
+
+## 2026-08-06 — Household Signals and Provisional Incident Acknowledgement
+
+- MVE-1 intends to support three separate, voluntary, time-stamped signals visible to approved Boulder Heights members: incident acknowledgement, self-reported household presence, and a self-reported incident check-in.
+- Incident acknowledgement is tied to a specific sourced incident update and requires deliberate user action. Absence is `No acknowledgement recorded`, never `Unaware`; opening the app or receiving a notification does not count, and acknowledgement does not imply comprehension, agreement, safety, or compliance.
+- Household presence is self-reported as someone home, household away, not shared, or no recent update. LHL does not infer it from device location or geofencing.
+- Incident check-in lets a resident report that the household was not in, or has left, the area relevant to the incident. It is displayed as time-stamped and self-reported, not as a verified declaration that the household is safe. A need for assistance remains a structured request rather than another status value.
+- Missing, stale, and intentionally unshared information must be visually distinct. Exact consumer wording, prompts, visibility, expiry/staleness, and material-update behavior belong to Gate 3.
+- Incident acknowledgement is provisional MVE-1 scope. Gate 3 must attempt to fit and test it without adding noise or false confidence; removing it requires an explicit superseding decision rather than silent omission.
+
+## 2026-08-06 — MVE-1 Household Profile Source, Derived Display, and Helper-Sharing Scope
+
+- MVE-1 distinguishes resident-provided source information from system-derived display values. Residents do not author separate custom display names or household labels.
+- Mandatory resident-provided identity/contact fields are first name, last name, phone number, and consent to approved-group Call/Text actions. Preferred first name is optional. The community-visible display name is generated as preferred first name—or first name if blank—plus the last-name initial.
+- The member profile shows Call and Text actions rather than printing the underlying phone number. Using the native device application may expose the phone number; onboarding and consent language must state this without implying that LHL controls external delivery or content.
+- A complete saved home address and entry instructions are mandatory private household fields. Door or gate codes, when applicable, are part of entry instructions. Optional private fields include assistance-relevant household members, pets/animals, physical-access notes, utility-shutoff information, and mobility or other practical assistance needs.
+- The system derives a household label from the saved address as street number plus street name, omitting the road/street type. Address validation/provider selection is a Gate 4 implementation decision. Exact roster layout, sorting, grouping, and placement of the derived label remain Gate 3 presentation decisions.
+- Private household information is masked until deliberately shared with the member helping fulfill a request. The confirmation starts with all applicable private fields selected; the resident may deselect unnecessary fields except the complete address, which is always included in a deliberate helper share. Access is requester/helper-only, uses a one-day default, expires automatically, and re-masks rather than deletes the stored profile information.
+- Homeowner/tenant status, custom biography or identity text, preparedness score, standing equipment inventory, and a general medical record are excluded from the MVE-1 household profile. Structured request/offer content and necessary entry instructions remain purpose-limited user input rather than open-ended profile content.
+- This resolves the phone requirement/visibility, household-label derivation, first-journey private fields, field-versus-bundle sharing, and exact-address helper-sharing questions. It does not approve a roster UI or select an address-validation provider.
+
 ## Product Decisions
 
 The detailed functional product rules are maintained in `docs/functionality-decision-log.md`. The following entries are currently controlling:
@@ -94,3 +206,16 @@ The detailed functional product rules are maintained in `docs/functionality-deci
 - 2026-07-23 — Stale Data Connection Logic & Peer Presence
 - 2026-08-04 — Per-Household Automated Hazard Status Replaces Single Shared Phase Trigger
 - 2026-08-04 — Preparedness Checklist Removed from MVE-1 Scope
+- 2026-08-06 — MVE-1 Request Claim/Close Lifecycle
+- 2026-08-06 — Remaining Resilience Lifecycle FigJam Comment Resolutions
+- 2026-08-06 — MVE-1 Primary User
+- 2026-08-06 — MVE-1 First Test Community and Simulation Rule
+- 2026-08-06 — Household-First Context and Minimal Administrator Role
+- 2026-08-06 — Boulder Heights Pilot Administrator and Member-Removal Deferral
+- 2026-08-06 — First End-to-End MVE-1 Journey and Internal Lifecycle Language
+- 2026-08-06 — Boulder Heights Access-Code Onboarding and Approval
+- 2026-08-06 — Single Trusted Group in MVE-1
+- 2026-08-06 — No General Chat or Neighborhood Forum
+- 2026-08-06 — Native Call and Text Actions in MVE-1
+- 2026-08-06 — Household Signals and Provisional Incident Acknowledgement
+- 2026-08-06 — MVE-1 Household Profile Source, Derived Display, and Helper-Sharing Scope

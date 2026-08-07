@@ -42,8 +42,7 @@ The former investor presentation is retained in `public/presentation/` as a paus
 
 ## Resume Here
 
-1. Complete Gate 1 direction work: define the primary user, first test community, first journey, MVE-1 boundaries, explicit deferrals, and trust/tone principles.
-2. Reconcile open Resilience Lifecycle FigJam comments — in progress, 5 of 19 resolved as of 2026-08-04 (2 more ready for John to resolve in Figma: nodes 3:137, 3:64 — checklist removal is fully closed out in docs and on the board). Remaining comments, grouped by theme: claim/close request-lifecycle correction (3:132, plus two related open questions on when/how a request closes), location-tracking/privacy (3:255), added design-process scope (3:282), and standalone open product questions (3:70, 3:34, 3:58, 3:195, 3:67). Full detail in `00_project-os/.lhl_ai_context.md`.
-3. Complete Gate 2 feasibility, liability-position, and closed-pilot participation-language work before approving Gate 3 design.
-4. Complete Gate 3 product definition, including acceptance criteria, data/permissions, design tokens, and a provisional working name.
-5. Approve Gate 4 technical foundations and identities before scaffolding the Gate 5 implementation.
+1. Complete the remaining Gate 1 direction work using the working [Gate 1 Closure Session — Decision Packet](https://docs.google.com/document/d/1aUKjE0y1wQtf3XIuifg57YCGALR9qY0qTeP7I8RzemA/edit): finalize the remaining MVE-1 boundaries and explicit deferrals, then approve trust/tone principles. The primary user, first test community, first end-to-end journey, and household-profile scope are approved. Roster presentation remains a Gate 3 design question, and address-validation provider selection remains Gate 4. The Drive packet is preparation only; canonical decisions remain in the repository. `Consolidate Resilience Lifecycle FigJam comments` and `Update FigJam for household-first context and minimal admin role` are both complete as of 2026-08-06.
+2. Complete Gate 2 feasibility, liability-position, and closed-pilot participation-language work before approving Gate 3 design.
+3. Complete Gate 3 product definition, including acceptance criteria, data/permissions, design tokens, and a provisional working name.
+4. Approve Gate 4 technical foundations and identities before scaffolding the Gate 5 implementation.

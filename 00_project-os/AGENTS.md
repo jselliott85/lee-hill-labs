@@ -15,8 +15,9 @@ Before meaningful work, read in this order:
 3. `docs/03-mvp-requirements.md`
 4. `docs/04-decision-log.md`
 5. `docs/05-gate-framework.md`
-6. `docs/11-john-project-handoff.md` (background/glossary — read once, not every session)
-7. `00_project-os/.lhl_ai_context.md` (live session sync — see below)
+6. `docs/00-master-roadmap.md`
+7. `docs/11-john-project-handoff.md` (background/glossary — read once, not every session)
+8. `00_project-os/.lhl_ai_context.md` (live session sync — see below)
 
 If any of these conflict, resolve using the **Source-of-Truth Order** below. Do not guess; state the conflict and ask.
 
@@ -24,12 +25,16 @@ If any of these conflict, resolve using the **Source-of-Truth Order** below. Do 
 
 1. Approved decision log — `docs/04-decision-log.md`
 2. Approved product brief / MVP requirements — `docs/02-product-brief.md`, `docs/03-mvp-requirements.md`
-3. Approved design, engineering, and QA rules
-4. Current-state record — `docs/00-current-state.md`
-5. Google Drive working documents
-6. Figma comments
-7. Historical Asana exports
-8. Chat messages, meeting notes, brainstorming
+3. Approved gate framework — `docs/05-gate-framework.md`
+4. Canonical roadmap — `docs/00-master-roadmap.md`
+5. Approved design, engineering, and QA rules
+6. Current-state record — `docs/00-current-state.md`
+7. Google Drive working documents
+8. Figma comments
+9. Historical Asana exports
+10. Chat messages, meeting notes, brainstorming
+
+Apply this order together with each canonical file's domain: the decision log controls approval and scope; the product brief and MVP requirements control approved product intent and requirements; the gate framework controls project sequence and gate exit criteria; and the master roadmap controls task presence, status, priority, and approved task dates. The current-state record summarizes these sources but does not supersede them.
 
 An idea mentioned in a meeting, email, or chat is never automatically approved scope.
 

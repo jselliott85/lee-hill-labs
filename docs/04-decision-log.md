@@ -227,6 +227,18 @@ Full detail for each item: `docs/functionality-decision-log.md`, entries dated 2
 - Both Gate 1 roadmap target outputs are satisfied. `Define initial MVP scope and success criteria` and `Define trust and tone principles` are Complete and archived with the historical completion date 2026-08-07.
 - Gate 1 establishes working direction rather than final frozen scope. Success criteria, acceptance criteria, final user flows/screens, and scope freeze remain Gate 3 work. Gate 2 constraint work continues in parallel and must close before Gate 3 begins.
 
+## 2026-08-17 — Gate 2 Provisional Incident-Notification Working Rules
+
+- These are founder-approved provisional Gate 2 rules for populating and testing the incident-notification eligibility matrix. They remain subject to source research, event-specific stress testing, and later founder approval of the completed matrix.
+- Incident pushes are never community-wide. Eligibility is evaluated separately for each resident using that resident's saved property address, with no device-location fallback. A resident may qualify while another member of the same trusted group does not.
+- Formal warning-level products are the working push baseline. Watches, advisories, and statements are in-app by default unless a specific event/source matrix row establishes a reason for push. A newly reported fire is evaluated as an incident and is not forced into the weather-warning hierarchy.
+- Every newly reported fire from a verified, trusted, notification-eligible source is a push candidate when it matches the resident's approved geographic-relevance rule, regardless of small initial acreage. An unverified resident report alone does not generate an incident push in MVE-1.
+- Source-issued polygons, zones, and address designations remain the preferred match. When an eligible fire source supplies only an approximate incident point, Gate 2 must establish an incident-specific radius or polygon rule before that point can qualify an address; approximate location is not blanket notification permission.
+- Watch Duty is classified as a trusted secondary aggregator rather than a primary authority. It may qualify for push only if it preserves upstream attribution and independently satisfies reliability, access/licensing, freshness, geography, stable identity, and update/correction requirements. Fire coverage remains a critical Gate 2 feasibility problem rather than an accepted omission.
+- A source-limited material closure update goes to every saved address that matched the incident at any point, including addresses added by a later boundary expansion and addresses no longer included after a later contraction, regardless of whether the resident opened or acknowledged an earlier update. LHL repeats the source's status and does not call it an independent all-clear.
+- MVE-1 retains the three previously approved voluntary household signals: acknowledgement of a specific sourced incident update, self-reported household presence, and a self-reported incident check-in that the household is outside or has left the incident-relevant area. It does not add a generic `I'm okay` or verified `Safe` status.
+- Structured resident incident reporting and a user-visible historical incident log are explicitly deferred to Post-G6 discovery. Neither changes MVE-1 scope.
+
 ## Product Decisions
 
 The detailed functional product rules are maintained in `docs/functionality-decision-log.md`. The following entries are currently controlling:
@@ -252,3 +264,4 @@ The detailed functional product rules are maintained in `docs/functionality-deci
 - 2026-08-07 — Gate 1 Remaining MVE-1 Boundary Set
 - 2026-08-07 — Gate 1 Trust and Tone Principles
 - 2026-08-07 — Gate 1 Closure
+- 2026-08-17 — Gate 2 Provisional Incident-Notification Working Rules

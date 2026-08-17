@@ -11,7 +11,7 @@ The roadmap remains the sole canonical task tracker. This file is the sequencing
 ## Operating principles
 
 - A gate closes only when its exit criteria are met and John has explicitly approved closure. This does not change the existing rule that John is the approval gate before any task is marked Complete.
-- Gates are sequential for *closure*, not for *work*. Work on a later gate may begin early; the gate cannot close early.
+- Gates are sequential for *closure*, not for *work*. Work on a later gate may begin before the prior gate closes. A gate cannot close before its dependencies and exit criteria are satisfied or before John explicitly approves closure; it may close before its target calendar date once those conditions are met.
 - G1 and G2 explicitly run in parallel beginning 2026-08-06. G2 does not depend on G1 closing, but G2 must close before G3 begins.
 - No gate closes on an external party's action. See "External dependency rule" below.
 - A gate that closes on a decision must have that decision recorded in `docs/04-decision-log.md`. A gate that closes on an artifact must name the file.
@@ -111,7 +111,7 @@ Gate 5 is delivered as three dated build slices. The acceptance boundary for eac
 - Findings documented
 - Go/no-go decision recorded in `docs/04-decision-log.md`, evaluated against thresholds declared before the pilot that identify which results require continuation, revision, another pilot, or stopping
 
-**Note on pilot design:** the pilot test plan is not itself a gate and does not block anything, but it must exist before Gate 5 closes or Gate 6 has nothing to run against. Draft it any time from Gate 3 onward. The closed neighborhood pilot runs for six weeks so it can measure household adoption and pre-incident information entry rather than installation alone.
+**Note on pilot design:** the pilot test plan is not itself a separate gate and does not block work before its roadmap start date. It is nevertheless a required dependency for Gate 5 closure and must exist before Gate 5 closes or Gate 6 has nothing to run against. Draft it any time from Gate 3 onward. The closed neighborhood pilot runs for six weeks so it can measure household adoption and pre-incident information entry rather than installation alone.
 
 **Note on seasonality:** the pilot must not depend on a live wildfire occurring. Boulder County's notable fires cluster across January, July, October, and December rather than a single summer season, and Front Range fire weather is effectively year-round. Red Flag Warning days, winter road and power events, and the simulation sandbox provide repeatable Alert and Active Incident triggers on demand. Ready phase is testable every day and carries the highest adoption risk.
 
@@ -177,9 +177,9 @@ LHL is a solo operation. Several roadmap items depend on parties who are not emp
 
 ---
 
-## Roadmap restructuring instructions for Codex
+## Historical roadmap restructuring record — completed 2026-08-06
 
-These instructions took effect after John's 2026-08-06 approval and the corresponding decision-log entry.
+The following instructions were implemented after John's 2026-08-06 approval and are retained as historical rationale for the current roadmap structure. They are not an active migration checklist. Current task status and approved dates come from `docs/00-master-roadmap.md`.
 
 ### 1. Add a `Gate` column
 
@@ -250,10 +250,10 @@ John approved this baseline on 2026-08-06:
 | G5 slice 1 | 2026-10-26 | 2026-11-13 |
 | G5 slice 2 | 2026-11-16 | 2026-12-04 |
 | G5 slice 3 | 2026-12-07 | 2026-12-18 |
-| Pilot test plan | Not separately scheduled | 2026-11-20 |
+| Pilot test plan | 2026-09-01 | 2026-11-20 |
 | Holiday blackout | 2026-12-21 | 2027-01-02 |
 | G6 pilot execution | 2027-01-05 | 2027-02-13 |
-| G6 go/no-go | Not separately scheduled | 2027-02-20 |
+| G6 go/no-go | 2027-02-15 | 2027-02-20 |
 
 Ordering constraints that must hold in any re-baseline:
 

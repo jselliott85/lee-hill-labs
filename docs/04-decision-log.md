@@ -279,7 +279,8 @@ Full detail for each item: `docs/functionality-decision-log.md`, entries dated 2
 - Genasys's current Contact Us page routes inquiries through web forms. The applicable path is the Partner Network interest form reached from the official Partner Network page.
 - The Partner Network's `Community Resiliency and Safety` category expressly describes sharing agency-activated emergency communications with for-profit and nonprofit partners that redistribute the information to the public in real time. This supports a vendor-level scalable agreement as a live possibility, not an approved outcome.
 - John submitted the full nine-question inquiry through the partner-interest form on 2026-08-18 with Area of interest `Genasys Protect (SaaS)`, Product interest `Genasys Protect – Zone-based, multi-channel communication`, and Partner interest `Becoming a partner`.
-- No submission confirmation or reference number surfaced. The bounced email in John's Sent folder remains the canonical record of message content, not evidence of delivery.
+- The form displayed a `Partner Interest` thank-you confirmation stating, `Thank you. A member of our team will be in touch with you soon.` No reference number was provided. The bounced email in John's Sent folder remains the canonical record of message content, not evidence of delivery; the confirmation screenshot is evidence of form submission.
+- Follow up on 2026-08-25 if no substantive response is received.
 - `Send Genasys evacuation-data partnership inquiry` remains In Progress awaiting response. No source, agreement, permission, or scalability outcome is approved.
 
 ## 2026-08-17 — Gate 2 Provisional Incident-Notification Working Rules

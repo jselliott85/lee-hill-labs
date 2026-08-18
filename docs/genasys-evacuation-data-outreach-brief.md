@@ -4,7 +4,7 @@
 
 This brief preserves the content and routing record for two separate founder inquiries. The Genasys inquiry tests whether the vendor offers a commercially supported, repeatable multi-jurisdiction integration. The Boulder inquiry tests local authority, contract rights, and the operational data path. Neither inquiry implies that LHL has selected or integrated Genasys.
 
-John sent the Boulder ODM/BCSO email on August 18, 2026. The original Genasys email to `info@genasys.com` bounced as Address not found; `support@genasys.com` was not independently verified. John then submitted the full nine-question inquiry through Genasys's official Partner Network interest form on August 18. No submission confirmation or reference number surfaced. The bounced email remains the canonical record of the message content, not evidence of delivery. The Genasys send task remains In Progress awaiting response.
+John sent the Boulder ODM/BCSO email on August 18, 2026. The original Genasys email to `info@genasys.com` bounced as Address not found; `support@genasys.com` was not independently verified. John then submitted the full nine-question inquiry through Genasys's official Partner Network interest form on August 18. The form displayed a `Partner Interest` thank-you confirmation stating that a team member would be in touch; no reference number was provided. The bounced email remains the canonical record of the message content, not evidence of delivery. The confirmation screenshot is evidence of form submission. The Genasys task remains In Progress awaiting a substantive response, with no-response follow-up due August 25, 2026.
 
 ## Inquiry 1 — Genasys vendor/platform
 
@@ -14,7 +14,8 @@ John sent the Boulder ODM/BCSO email on August 18, 2026. The original Genasys em
 - **Official partner page:** https://genasys.com/partners/
 - **Official submission form:** https://genasys.com/modal/partner-interest-form/
 - **Submitted selections:** Area of interest `Genasys Protect (SaaS)`; Product interest `Genasys Protect – Zone-based, multi-channel communication`; Partner interest `Becoming a partner`.
-- **Submission record:** Full nine-question inquiry pasted into the free-text field on 2026-08-18. No confirmation/reference number was shown.
+- **Submission record:** Full nine-question inquiry pasted into the free-text field on 2026-08-18. The form displayed a `Partner Interest` thank-you confirmation: `Thank you. A member of our team will be in touch with you soon.` No reference number was shown.
+- **No-response follow-up:** 2026-08-25.
 - **Content record:** The bounced Gmail Sent message preserves the actual submitted text; it is not delivery evidence.
 
 ### Purpose

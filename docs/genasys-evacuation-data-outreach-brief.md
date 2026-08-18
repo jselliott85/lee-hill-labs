@@ -1,0 +1,75 @@
+# Genasys Evacuation-Data Access and Scalability Outreach — Drafting Brief
+
+## Status and purpose
+
+This brief preserves the content and routing record for two separate founder inquiries. The Genasys inquiry tests whether the vendor offers a commercially supported, repeatable multi-jurisdiction integration. The Boulder inquiry tests local authority, contract rights, and the operational data path. Neither inquiry implies that LHL has selected or integrated Genasys.
+
+John sent the Boulder ODM/BCSO email on August 18, 2026. The original Genasys email to `info@genasys.com` bounced as Address not found; `support@genasys.com` was not independently verified. John then submitted the full nine-question inquiry through Genasys's official Partner Network interest form on August 18. No submission confirmation or reference number surfaced. The bounced email remains the canonical record of the message content, not evidence of delivery. The Genasys send task remains In Progress awaiting response.
+
+## Inquiry 1 — Genasys vendor/platform
+
+### Corrected submission route
+
+- **Invalid original route:** `info@genasys.com` bounced; do not reuse. `support@genasys.com` is unverified and must not be assumed valid.
+- **Official partner page:** https://genasys.com/partners/
+- **Official submission form:** https://genasys.com/modal/partner-interest-form/
+- **Submitted selections:** Area of interest `Genasys Protect (SaaS)`; Product interest `Genasys Protect – Zone-based, multi-channel communication`; Partner interest `Becoming a partner`.
+- **Submission record:** Full nine-question inquiry pasted into the free-text field on 2026-08-18. No confirmation/reference number was shown.
+- **Content record:** The bounced Gmail Sent message preserves the actual submitted text; it is not delivery evidence.
+
+### Purpose
+
+Ask whether Lee Hill Labs can enter one supported commercial API or partner arrangement for authoritative evacuation-zone geometry and live status across jurisdictions participating in Genasys Protect, rather than negotiating a separate technical integration for every county or city.
+
+### Required questions
+
+1. Does Genasys offer a supported API, webhook, feed, or partner program for third-party applications to receive agency-activated evacuation-zone geometry, zone status, alert polygons, instructions, and lifecycle updates?
+2. May a commercial application store, cache, display, and redistribute selected data to its users with clear Genasys and issuing-authority attribution?
+3. Can one agreement cover all participating jurisdictions whose data is publicly available, or must each jurisdiction separately opt in or authorize access?
+4. If local opt-in is required, is there a standardized Genasys-managed approval process rather than independent outreach and contracting with every jurisdiction?
+5. How can an integrator determine current jurisdictional coverage and whether a jurisdiction's data is authorized for third-party use?
+6. What identifiers and timestamps represent the zone, issuing authority, alert or event, status change, correction, cancellation, repopulation, and final closure?
+7. Are changes delivered through push/webhooks or polling, and what rate limits, latency expectations, service levels, retention rules, and historical access apply?
+8. What attribution, disclaimers, source links, user-interface requirements, fees, security review, and partner terms apply?
+9. Does Genasys's existing integration with organizations such as Tablet Command demonstrate the applicable partnership path for this use case?
+
+## Inquiry 2 — Boulder ODM/BCSO local authority
+
+### Message fields
+
+- **To:** Boulder County emergency-notification assistance — `AlertHelp@bouldercounty.gov`
+- **CC:** Boulder County Sheriff's Office general inbox — `bcso@bouldercounty.gov`
+- **Suggested subject:** Inquiry about approved access to Boulder County Genasys evacuation-zone data
+- **Fallback route:** Boulder ODM contact form: https://boulderodm.gov/about-odm/contact-us/
+
+### Contact qualification
+
+The current Boulder ODM FAQ identifies `AlertHelp@bouldercounty.gov` for emergency-notification assistance outside the cities of Boulder and Longmont and names Boulder County Sheriff's Office Communications personnel. ODM's general contact page publishes a form and phone number, not a general email address. The BCSO inbox is included for routing, not as proof that it owns the relevant data rights.
+
+### Purpose
+
+Ask who controls and may authorize Boulder's Genasys Protect evacuation-zone geometry and live status, whether the county's agreement permits third-party access, and whether authorization must come from Boulder, Genasys, or both.
+
+### Required questions
+
+1. Does Boulder ODM, BCSO Communications, another local office, or Genasys control third-party access to Boulder's evacuation-zone geometry and live status?
+2. Does Boulder's Genasys agreement permit an approved third-party application to receive, store, display, and redistribute selected zone/status fields with attribution?
+3. Is there a supported machine-readable API, webhook, GIS service, CAP feed, or other feed for Boulder's live Genasys zone changes?
+4. Would local authorization be sufficient, or must LHL also obtain a separate Genasys partner or API agreement?
+5. Which field or state is authoritative for evacuation warning, evacuation order, shelter in place, repopulation or lifting, correction, cancellation, and final closure?
+6. What stable identifiers, timestamps, update semantics, attribution, polling limits, retention rules, and source links apply?
+7. If the receiving office is not the correct authority, can it route the inquiry to the person responsible for Genasys administration, emergency notifications, GIS/data licensing, or the vendor contract?
+
+## Shared sender and product context
+
+The messages come from John Elliott, founder of Lee Hill Labs. LHL is evaluating external incident and protective-action sources for a closed, invitation-only Boulder Heights pilot of a community emergency-coordination application. The product is intended to complement official information and help trusted neighbors coordinate; it does not replace emergency authorities, official alerts, evacuation instructions, or 911.
+
+## Drafting constraints
+
+- Keep each email concise and independently answerable.
+- Ask for written guidance or referral to the correct technical, partnership, contract, or policy contact.
+- Do not ask recipients to endorse LHL.
+- Do not imply that integration already exists or that either source is approved.
+- Do not describe Boulder-only permission as nationally scalable.
+- Do not include participant information, saved addresses, credentials, or confidential product details.
+- Do not send any follow-up or revised message without John's approval.

@@ -263,6 +263,25 @@ Full detail for each item: `docs/functionality-decision-log.md`, entries dated 2
 - Gate 3 uses the approved drafting baseline: a programmatic incident-type label, source attribution, distance rounded to the nearest whole mile, the published radius rule, an explicit statement that point proximity is not an affected-area boundary or evacuation notice, and an in-app source link. Final UX/UI layout and exact copy remain Gate 3 work.
 - Exact initial-notification and current-context freshness durations remain open pending WildWeb lifecycle evidence and the bounded WFIGS latency sample. This rule does not make any source notification-eligible.
 
+## 2026-08-18 — Genasys/ODM Parallel Outreach and Scalability Boundary
+
+- Evaluate Genasys Protect through two parallel inquiries rather than treating Boulder permission and platform scalability as the same question.
+- The vendor-level inquiry asks Genasys whether LHL can obtain one supported commercial API or partner agreement for authoritative evacuation-zone geometry and live status across participating jurisdictions; what attribution, storage, polling or webhook, lifecycle, and redistribution terms apply; and whether each jurisdiction must separately opt in or approve access.
+- The local inquiry asks Boulder ODM and/or Boulder County Sheriff's Office who controls Boulder's Genasys zone and status data, whether the local contract permits third-party access or redistribution, which supported feed exists, and whether Boulder approval is sufficient or must be paired with Genasys authorization.
+- A Boulder-only grant may be used as a local MVE-1 enhancement if it independently passes the source-eligibility requirements. It is not evidence of a nationally scalable source. Genasys is treated as a scalable source candidate only if the vendor-level technical and permission model can be reused across participating jurisdictions without repeated one-off negotiations at every locality.
+- Even a reusable Genasys agreement covers only jurisdictions participating in the platform. Nationally oriented authoritative sources remain necessary as the base layer, with Genasys evaluated as a potentially repeatable—but non-universal—protective-action enhancement.
+- Genasys's public consumer terms do not currently authorize LHL's intended commercial automated use. Until written permission, API terms, local authority, attribution, freshness, stable identity, correction, and lifecycle behavior are confirmed, Genasys and Boulder evacuation-zone data remain notification-ineligible.
+- John sent the Boulder ODM/BCSO inquiry and attempted the Genasys inquiry on 2026-08-18. The Genasys email later bounced and was rerouted through the official Partner Network form, as corrected in the entry below. The former combined outreach task is therefore superseded; the separate Genasys task remains In Progress. No permission, scalability conclusion, or source approval is inferred from either outreach action.
+
+## 2026-08-18 — Genasys Outreach Rerouted After Bounced Email
+
+- Correct the earlier delivery record: the message to `info@genasys.com` bounced as Address not found, and the `support@genasys.com` CC address was not independently verified. Neither address is treated as valid Genasys routing.
+- Genasys's current Contact Us page routes inquiries through web forms. The applicable path is the Partner Network interest form reached from the official Partner Network page.
+- The Partner Network's `Community Resiliency and Safety` category expressly describes sharing agency-activated emergency communications with for-profit and nonprofit partners that redistribute the information to the public in real time. This supports a vendor-level scalable agreement as a live possibility, not an approved outcome.
+- John submitted the full nine-question inquiry through the partner-interest form on 2026-08-18 with Area of interest `Genasys Protect (SaaS)`, Product interest `Genasys Protect – Zone-based, multi-channel communication`, and Partner interest `Becoming a partner`.
+- No submission confirmation or reference number surfaced. The bounced email in John's Sent folder remains the canonical record of message content, not evidence of delivery.
+- `Send Genasys evacuation-data partnership inquiry` remains In Progress awaiting response. No source, agreement, permission, or scalability outcome is approved.
+
 ## 2026-08-17 — Gate 2 Provisional Incident-Notification Working Rules
 
 - These are founder-approved provisional Gate 2 rules for populating and testing the incident-notification eligibility matrix. They remain subject to source research, event-specific stress testing, and later founder approval of the completed matrix.

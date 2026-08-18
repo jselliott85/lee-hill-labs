@@ -2,6 +2,24 @@
 
 This is an idea/reference log, not a task tracker. Approved future work belongs in `docs/00-master-roadmap.md`.
 
+## Source/Class-Specific Point-Only Fire Radius
+
+- **Concept:** Replace MVE-1's universal point-only fire radius with pre-approved treatment that varies by source and documented record class, allowing different radii—or no point-based notification—when point meaning, accuracy, or source behavior differs.
+- **Potential behavior:** Maintain a bounded, evidence-backed rule table keyed only to approved source fields and documented source behavior. The system must not let an operator invent an incident radius during an event. Qualifying source-authoritative geometry still takes precedence whenever available.
+- **Product value:** This is a potential product-differentiation or “secret sauce” capability because it can preserve fast point-based coordination while reducing the false equivalence, over-notification, and missed relevance created by one universal circle.
+- **Roadmap status:** Deferred beyond MVE-1. John considers this approach superior to the universal radius, but the closed pilot is expected to use too few sources to justify its additional evidence, configuration, testing, and maintenance. Reassess after pilot evidence is available; no implementation date is approved.
+
+## Resident-Confirmed Home Point
+
+- **Concept:** Start with the geocoded saved home address, show the derived location on a map or satellite view, and let the resident move and explicitly confirm the pin at the intended home structure or household reference point.
+- **Point meaning and trust state:** Treat raw automated geocode output, operator-verified output, and a resident-confirmed point as distinct provenance and confidence states. Resident confirmation establishes that the resident selected the intended household reference point; it does not establish a parcel boundary, legal property location, current device position, or safety status.
+- **Onboarding behavior:** Make confirmation or adjustment a normal onboarding step when the home address is first saved, and repeat it when the address changes. Do not bury it as a one-time hidden setting. Preserve a later correction path without silently changing prior incident history.
+- **Potential behavior:** Keep the normalized postal address distinct from the resident-confirmed coordinate; record the geocoding source, provider quality signal, confirmation actor and state, confirmation time, and change history; re-evaluate incident matches when the confirmed point changes; and provide clear privacy, correction, and deletion behavior without using continuous device location or parcel boundaries.
+- **Unconfirmed-point policy:** Future discovery must decide what happens when a resident does not confirm or adjust the automated point. Candidate treatments include failing closed, requesting operator review, or allowing a clearly labeled lower-confidence point under separately approved safeguards. A wider radius is not an automatic fallback because it changes notification geography and may increase false positives; any such rule requires explicit safety and pilot-evidence approval.
+- **Systematic-error learning:** Consider privacy-preserving aggregate analysis of resident correction direction and distance to detect streets, private lanes, or subdivisions that a provider systematically mis-geocodes. Define minimum cohort thresholds, retention, access, and deletion rules so this quality signal does not become a store of individually traceable location-change histories.
+- **Product value:** Reduces dependence on automated geocoding accuracy for private lanes, irregular parcels, rural address interpolation, and structures set back from the road while giving the household direct control over the point used for proximity matching.
+- **Roadmap status:** Deferred beyond MVE-1 and scheduled only for a Post-G6 discovery review. MVE-1 instead uses one Google-derived home point that John or the pilot operator visually verifies for every participant before point-based incident notifications are enabled. The exact Google service and storage terms remain a Gate 4 decision.
+
 ## Admin-Uploaded Preparedness Resources
 
 - **Concept:** Instead of the app building or maintaining a structured preparedness-checklist feature, let community admins upload reference documents (official checklists, evacuation guides, local resource lists) to a shared file space within the app.

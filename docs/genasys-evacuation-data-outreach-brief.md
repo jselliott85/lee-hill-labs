@@ -6,6 +6,8 @@ This brief preserves the content and routing record for two separate founder inq
 
 John sent the Boulder ODM/BCSO email on August 18, 2026. The original Genasys email to `info@genasys.com` bounced as Address not found; `support@genasys.com` was not independently verified. John then submitted the full nine-question inquiry through Genasys's official Partner Network interest form on August 18. The form displayed a `Partner Interest` thank-you confirmation stating that a team member would be in touch; no reference number was provided. The bounced email remains the canonical record of the message content, not evidence of delivery. The confirmation screenshot is evidence of form submission. The Genasys task remains In Progress awaiting a substantive response, with no-response follow-up due August 25, 2026.
 
+Steve (Boulder County Sheriff's Communications) replied to Inquiry 2 on August 18. John sent a shorter, more targeted follow-up on August 19 and is awaiting Steve's response as of this writing. See "Boulder ODM response — Steve, 2026-08-18" below for the summary and follow-up questions; the full email thread is the canonical record.
+
 ## Inquiry 1 — Genasys vendor/platform
 
 ### Corrected submission route
@@ -60,6 +62,24 @@ Ask who controls and may authorize Boulder's Genasys Protect evacuation-zone geo
 5. Which field or state is authoritative for evacuation warning, evacuation order, shelter in place, repopulation or lifting, correction, cancellation, and final closure?
 6. What stable identifiers, timestamps, update semantics, attribution, polling limits, retention rules, and source links apply?
 7. If the receiving office is not the correct authority, can it route the inquiry to the person responsible for Genasys administration, emergency notifications, GIS/data licensing, or the vendor contract?
+
+## Boulder ODM response — Steve, 2026-08-18
+
+Steve's reply is a substantive but partial answer that materially changes the Boulder source model. Full email is the canonical record; this is a summary.
+
+- **Biggest finding:** Boulder County does not use Genasys. It uses Everbridge, and Boulder does not make its internal Everbridge capabilities (API/webhook access) publicly available. Genasys is not the Boulder integration path.
+- Static all-hazard and flood polygons are county-managed, published on Boulder County's open GIS site, and replaced when the standard polygons change.
+- First responders can create situational custom alert shapes during an incident, so the static GIS files do not represent every live alert boundary.
+- Emergency alerts appear in real time on ODM's public Incident Map.
+- Alert authority flows from the incident commander or designee, through the responsible 911 center; that chain also originates updates and cancellations.
+- Third-party automated access would require authorization from an unspecified county "policy group" — Steve did not identify the group, the approval process, or whether it could cover automated use.
+- The Genasys-contract question is fully answered — none exists. GIS/data ownership, machine-readable access, and authoritative fields/lifecycle are partially answered. The authorization-path question is partially answered — a policy group decides, but which one is unknown. One question remains unanswered pending clarification. (Cody's assessment used the original outreach email's own question order, not necessarily the numbering in "Required questions" above; treat the full email thread as canonical if exact question-by-question mapping matters.)
+- **Strategic caution:** publication to the public Incident Map confirms a public presentation surface, not permission to poll/scrape it, redistribution rights, stable identity, or lifecycle completeness. Treat as `TBD`, not as access.
+- The Genasys vendor inquiry remains open as separate market research but is no longer relevant to Boulder County's current implementation.
+
+### Follow-up sent 2026-08-19 (awaiting response)
+
+Shorter, grounded in Steve's own terminology (Everbridge, ODM Incident Map). Asks: (1) whether the public Incident Map is backed by a county GIS service or other machine-readable endpoint third parties may poll, or whether the website is the only supported access method; (2) whether a custom incident alert shape appears on the public map, and if so whether it replaces, supplements, or stays separate from the standard downloadable polygons; (3) whether a displayed alert carries a persistent identifier stable across updates, corrections, cancellations, and closure; (4) which displayed date/time a third party should treat as authoritative; (5) county requirements for attribution, automated refresh frequency, storage, retention, or redistribution of information from the public map/GIS site; (6) which policy group would decide on authorizing this limited automated use, and whether Steve can route the request or provide a contact. Offered to share a simple example of the proposed resident-facing display if useful.
 
 ## Shared sender and product context
 

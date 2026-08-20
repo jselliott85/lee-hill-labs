@@ -15,7 +15,8 @@ The repository currently contains a small Next.js App Router site and an empty a
 - Framework: Next.js 15.1.0 with React 19 and TypeScript
 - Persistence, backend, authentication, notifications, and map/data services: not selected
 - Tests: none configured
-- Lint configuration: present but failing because `eslint-config-next` is not installed
+- Lint configuration: present and passing with the Next.js-matched `eslint-config-next` preset and ESLint 9 compatibility adapter
+- Build: passing without warnings
 
 ## Architecture Decisions Required Before MVP Implementation
 

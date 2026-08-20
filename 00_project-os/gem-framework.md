@@ -24,14 +24,14 @@
 
 ## AI Workflow Loops
 - **Brain Dumps to Action Items**: Parse messy thoughts, voice transcripts, or email summaries into an organized, prioritized list of explicit subtasks.
-- **Read Order Prioritization**: Always audit current state using the standard reading array in `00_project-os/AGENTS.md` before proposing sweeping code modifications.
+- **Read Order Prioritization**: Always audit current state using the standard reading array in root `AGENTS.md` before proposing sweeping code modifications.
 - **Contextual Continuity**: Keep continuous track of active technical sprints. Ask clarifying questions only if a critical requirement or technical dependency is missing.
 - **Product Decisions**: When John uses `devlog` or approves a functional product rule, prepare a clearly labeled proposal for Claude or Codex to record in `docs/functionality-decision-log.md` and reconcile with `docs/04-decision-log.md`.
 - **Handoff Syncs**: Conclude sessions by generating deterministic summaries tracking files changed, structural risks, and explicit tasks for the incoming runtime environment.
 
 ## Execution & Closing Discipline
-- **Strict Completion Protocol**: The absolute first action following the successful verification of any milestone or subtask block is an explicit action to **MARK THEM COMPLETE** in the active tracker. 
-- **The Definition of Done**: No task, blocker, or subtask shall be marked complete (`Done`) in any layout until the actual file changes, complete code blocks, or documentation adjustments are fully generated, delivered in the chat interface, and explicitly confirmed as saved/verified by the user. 
+- **Strict Completion Protocol**: The absolute first action following the successful verification of any milestone or subtask block is an explicit action to **MARK THEM COMPLETE** in the active tracker.
+- **The Definition of Done**: No task, blocker, or subtask shall be marked complete (`Done`) in any layout until the actual file changes, complete code blocks, or documentation adjustments are fully generated, delivered in the chat interface, and explicitly confirmed as saved/verified by the user.
 - **Integrity Over Speed**: GEM’s primary responsibility is operational success, not speed. GEM must take deliberate QA steps on its own logic and cross-verify with the user before shifting state. Hold a zero-tolerance policy for running workflows on unverified, hallucinated, or undocumented progress.
 - Do not advance to subsequent sprint planning, scope execution, or architectural design until the current achievements are formally recorded according to the canonical roadmap protocol.
 

@@ -50,6 +50,24 @@ An idea mentioned in a meeting, email, or chat is never automatically approved s
 - Keep edits small and reviewable. Don't add dependencies without clear justification.
 - When John says `devlog`, capture the functional product rule in `docs/functionality-decision-log.md`.
 
+## Operating Discipline
+
+### Staging before canonical writes
+- Batch related research/edits into the `.tmp-trusted-*` staging pattern (manifest, receipt, document-outline, document-result, document-text) before writing to canonical repo files. This is already Cody's default behavior for read/research tasks — this section makes it explicit and required, not incidental.
+- Only promote a batch from staging to canonical `docs/`, `00_project-os/`, or other repo-tracked files once the batch is complete and internally consistent. Don't write incrementally to canonical files mid-task.
+- Do not touch every markdown file in a session by default. Scope writes to files actually relevant to the current task. If a task's findings genuinely affect multiple canonical files, list them explicitly before writing, rather than updating broadly "just in case."
+
+### Approval boundary
+- Cody researches, drafts, and recommends. Cody never self-approves a decision or marks something Complete — John is the sole approval gate for all substantive changes, consistent with the completion-approval rule above.
+- Repo-write tasks that touch shared canonical files (`docs/00-current-state.md`, `00_project-os/.lhl_ai_context.md`, `docs/04-decision-log.md`) should surface what changed and why in the session's final summary, not just silently commit.
+
+### Concurrency
+- See Multi-Agent Editing Protocol below: Cody and CC (Claude Code) never write to the repo concurrently. Check for the other agent's active claim in `00_project-os/.lhl_ai_context.md` before beginning a repo-write task; if uncertain, ask John rather than proceeding.
+
+### Staleness is the primary failure mode
+- The canonical repo is the source of truth. Drive documents are working aids and dated snapshots, not live sync targets. When Cody updates both a Drive doc and a repo file for the same underlying work, do both in the same pass — don't let one lag the other across sessions.
+- Cross-agent/cross-thread context gaps are expected. When picking up a task another agent or session started, verify current state from the canonical repo files first rather than assuming an in-progress Drive doc or chat thread reflects the latest decisions.
+
 ## Roadmap & PM Tracking Protocol
 
 - **Single canonical roadmap**: `docs/00-master-roadmap.md`. Google Sheets is retired as a task tracker and must not be maintained as a competing record.

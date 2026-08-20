@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://leehilllabs.com"),
   title: "Lee Hill Labs",
   description: "The coordination layer communities need.",
   icons: {

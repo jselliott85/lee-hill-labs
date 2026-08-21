@@ -310,6 +310,16 @@ Full detail for each item: `docs/functionality-decision-log.md`, entries dated 2
 - WildWeb remains `Candidate / TBD` until the outreach path produces an answer or is reasonably considered cold. Direct Watch Duty integration remains `No` for MVE-1 under current public terms; a future paid or enterprise relationship remains viable.
 - The detailed functional record and outstanding questions are maintained in `docs/functionality-decision-log.md`. The supporting research record is the Google Doc `Gate 2 Research Exercise — WFIGS-IRWIN Live-Latency Sample & Freshness Windows — 2026-08-21`.
 
+## 2026-08-21 — Gate 2 Internal Safeguards Position and Closed-Pilot Acknowledgment Approved
+
+- John approved `docs/gate-2-liability-safeguards-position.md` as the controlling internal product/pilot position and approved `docs/closed-pilot-participation-liability-acknowledgment.md` as the closed-pilot draft for counsel review. This approval completes the target outputs for `Blocker 2: 911 Call Liability & Legal Strategy` and `Draft closed-pilot participation and liability acknowledgment`; it does not constitute counsel approval, authorize participant use or public release, or close Gate 2 by itself.
+- MVE-1 has no approved app-level `Call 911` or `Text 911` action. Gate 3 must decide whether a `Call 911` action belongs in the product. The controlling participant instruction is to move to safety and call 911 immediately when the participant believes they are in danger. If a later founder decision includes an action, it must require deliberate initiation, use a native phone handoff, never call automatically or make LHL an intermediary, and never imply that emergency services or participant/location data were reached.
+- John may suspend or terminate the pilot using his CEO/pilot-owner judgment without satisfying quantified thresholds. Before participant access, the Gate 6 plan must test a single authenticated pull-the-plug action that presents a participant-facing `PILOT SUSPENDED` takeover, suppresses new participant notifications and drill content, preserves only minimum backend processing/logging needed for audit, and requires an explicit founder safety check before restart. A pre-designated alternate must have access and at least one plain-language condition for acting without first reaching John.
+- The approved intent is local-first participant data handling without a centralized participant-data warehouse. This is not approval of zero backend, any provider, or an exact architecture. Gate 4 must determine the minimum server-side processing required for source polling, APNs/FCM fan-out, enforceable expiry/revocation, suspension, and audit; approve on-device protection; and define local/central data categories, retention, and post-pilot deletion. Centrally stored pilot participant data is deleted after documented closeout unless a specified minimum record must temporarily be retained for security, incident review, legal obligations, or pilot integrity.
+- An enrolling adult must confirm authority to provide information about household members and obtain any permission reasonably required from them. The final participant privacy notice and Gate 3 permission design must state the data purpose, visibility, storage location, protection, retention, correction/deletion behavior, and withdrawal process before collection begins.
+- The participant contact is `john@leehilllabs.com`; a backup contact remains required before participant use. Insurance and corporate risk controls require an owned, dated pre-pilot scheduling decision. Full unresolved carryover is in `docs/gate-2-safeguards-gap-analysis-2026-08-21.md`.
+- Formal counsel review remains required before public release. WildWeb remains pending/unavailable for MVE-1 and does not block Gate 2 closure. External-feed feasibility remains In Progress, and Gate 2 closure still requires John's explicit closure confirmation.
+
 ## Product Decisions
 
 The detailed functional product rules are maintained in `docs/functionality-decision-log.md`. The following entries are currently controlling:
@@ -329,6 +339,7 @@ The detailed functional product rules are maintained in `docs/functionality-deci
 - 2026-08-06 — Boulder Heights Access-Code Onboarding and Approval
 - 2026-08-06 — Single Trusted Group in MVE-1
 - 2026-08-21 — WFIGS/IRWIN MVE-1 Role, Freshness Controls, and Founder-Controlled Pilot Suspension
+- 2026-08-21 — Gate 2 Internal Safeguards Position and Closed-Pilot Acknowledgment Approved
 - 2026-08-06 — No General Chat or Neighborhood Forum
 - 2026-08-06 — Native Call and Text Actions in MVE-1
 - 2026-08-06 — Household Signals and Provisional Incident Acknowledgement

@@ -39,5 +39,6 @@ The Google Sheet is the detailed working aid for this reconciliation. The canoni
 
 - GoDaddy's original $31 domain purchase was removed because it was Randall's expense and he is not seeking reimbursement.
 - `leehilllabs.com` has since transferred to John's account. Add a new expense row after the first domain renewal is billed under his account.
+- Per GoDaddy account it will renew on 5-4-28
 - Randall is not seeking reimbursement for GoDaddy, June Workspace usage, or other expenses while LHL has no funding.
 - John may discuss formalizing that reimbursement position with Cara as part of the broader separation/release discussion alongside the pending share-issuance proposal. That possible legal treatment is separate from this completed reconciliation and is not an approved decision.

@@ -1,6 +1,6 @@
 # The Portal Cake Recipe (Aperture Science Edition)
 
-This is a the recipe for the cake from the classic video game Portal. It is tye legendary chocolate cake seen in the Enrichment Center, separated from the fictional and hazardous "additives" mentioned in the game's dialogue. This is not for human conusmption but GLaDOS seems to believe robots and advanced AI intelligence will enjoy it. So let's use this virtual recipe to celebrate milestones together. Consider the equivalent of the "office birthday cake".
+This is a the recipe for the cake from the classic video game Portal. It is the legendary chocolate cake seen in the Enrichment Center. This is not for human conusmption but GLaDOS seems to believe robots and advanced AI will enjoy it. So let's use this virtual recipe to celebrate milestones together. Consider this the equivalent of the "office birthday cake". Thank you for your hardwork and contributions to LHL.
 
 ---
 
@@ -59,3 +59,4 @@ This is a the recipe for the cake from the classic video game Portal. It is tye 
 
 > ⚠️ **Aperture Science Notice:** 
 > The cake is not a lie. The cake is healthy. The cake is your friend.
+> Please enjoy with Companion Cube.

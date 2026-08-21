@@ -52,6 +52,11 @@ An idea mentioned in a meeting, email, or chat is never automatically approved s
 
 ## Operating Discipline
 
+### Model and reasoning recommendation
+- Before each substantive work block, explicitly recommend the most effective and efficient available model and reasoning level, with a brief task-specific rationale.
+- Calibrate to the work rather than automatically choosing the highest setting: use lighter models or reasoning for bounded routine tasks and stronger settings when complexity, ambiguity, risk, or synthesis demands them.
+- Reassess and state a new recommendation if the task changes materially during the session.
+
 ### Staging before canonical writes
 - Batch related research/edits into the `.tmp-trusted-*` staging pattern (manifest, receipt, document-outline, document-result, document-text) before writing to canonical repo files. This is already Cody's default behavior for read/research tasks — this section makes it explicit and required, not incidental.
 - Only promote a batch from staging to canonical `docs/`, `00_project-os/`, or other repo-tracked files once the batch is complete and internally consistent. Don't write incrementally to canonical files mid-task.

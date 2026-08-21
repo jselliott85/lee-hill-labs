@@ -121,7 +121,7 @@ Full detail for each item: `docs/functionality-decision-log.md`, entries dated 2
 - Boulder Heights is the working name for the first test community. It is one closed, invitation-only group of adult residents connected through John's existing trusted relationships; property ownership is not required, and membership rather than a precise geographic boundary defines the group.
 - The six-week live pilot means real participants use MVE-1 over time across all four lifecycle phases. It does not depend on an actual emergency occurring. Smaller controlled exercises may run concurrently using clearly identified test profiles and conditions that cannot be mistaken for real people, needs, or reports.
 - The pilot intends to include one planned, time-bounded simulated-event drill. All simulated content must be unmistakably labeled `TEST`, `DRILL`, or `SIMULATION`; exact procedures, measures, thresholds, and stop conditions belong in the approved Gate 6 pilot test plan.
-- A real emergency, official warning, or materially unsafe condition suspends any drill, observation, and data collection. Participant safety and official instructions take absolute priority; participants are never expected to use or evaluate LHL during a real event, and any use is voluntary.
+- A real emergency, official warning, or materially unsafe condition ends any active simulation drill and places participant safety and official instructions first. A real WFIGS/IRWIN-eligible incident does not by itself suspend the closed pilot; the later 2026-08-21 founder decision gives the LHL CEO/pilot owner sole suspension authority and requires a tested manual pull-the-plug procedure before participant access.
 - The complete cohort definition and testing safeguards are recorded in `docs/03-mvp-requirements.md`, "First Test Community."
 
 ## 2026-08-06 — Household-First Context and Minimal Administrator Role
@@ -136,7 +136,7 @@ Full detail for each item: `docs/functionality-decision-log.md`, entries dated 2
 
 ## 2026-08-06 — Boulder Heights Pilot Administrator and Member-Removal Deferral
 
-- John will serve as the initial administrator for the invitation-only Boulder Heights pilot. This is appropriate for the small founder-led cohort because the administrator has no emergency-management or incident-operation duties.
+- John will serve as the initial membership administrator for the invitation-only Boulder Heights pilot. That participant-facing product role has no emergency-management or incident-interpretation duties. The later 2026-08-21 decision separately gives John, in his capacity as LHL CEO and pilot owner/operator, authority to suspend the experiment through an operational kill procedure; it does not create a broader member-facing incident-management role.
 - MVE-1 includes approve/deny join-request actions but no participant-facing ability to remove an existing member and no content/message moderation. Existing-member removal is deferred to the future backlog.
 - Because trusted-group access may expose sensitive household information, the approved pilot operations plan must define a manual operator-level way to revoke access if a participant was admitted in error, withdraws, or presents a safety/privacy concern. This safeguard is operational and does not add an in-app removal feature to MVE-1.
 - This resolves the existing-member-removal question left open in `Household-First Context and Minimal Administrator Role`.
@@ -295,6 +295,21 @@ Full detail for each item: `docs/functionality-decision-log.md`, entries dated 2
 - MVE-1 retains the three previously approved voluntary household signals: acknowledgement of a specific sourced incident update, self-reported household presence, and a self-reported incident check-in that the household is outside or has left the incident-relevant area. It does not add a generic `I'm okay` or verified `Safe` status.
 - Structured resident incident reporting and a user-visible historical incident log are explicitly deferred to Post-G6 discovery. Neither changes MVE-1 scope.
 
+## 2026-08-21 — WFIGS/IRWIN MVE-1 Role, Freshness Controls, and Founder-Controlled Pilot Suspension
+
+- WFIGS/IRWIN is approved as the bounded MVE-1 wildfire incident backbone for incident identity, live or simulated incident workflows, and lifecycle context. WFIGS is LHL's public polling surface and IRWIN is its upstream incident source. A previously unseen wildfire record may generate a participant-facing proof-of-concept notification only when LHL first detects its stable `IRWINID` through a successful WFIGS query no later than 30 minutes after IRWIN `CreatedOnDateTime`, and it independently passes the approved source/record, validity, feed-health, identity, and geographic gates. LHL stores the first successful observation as `first_seen_at`.
+- `FireDiscoveryDateTime` remains the reported discovery/confirmation time for display, audit, and latency analysis; it does not start or disqualify the 30-minute notification clock. This corrected clock supersedes the earlier same-day wording that compared IRWIN creation with `FireDiscoveryDateTime`.
+- LHL polls WFIGS on a consistent five-minute interval without depending on its upstream refresh phase. WFIGS states that it refreshes from IRWIN every five minutes; the two unsynchronized five-minute cycles imply nominal first detection in less than about ten minutes plus processing after IRWIN creation, not a guaranteed service level. More aggressive WFIGS polling cannot eliminate latency before IRWIN creates the record.
+- The remaining operative controls are unchanged: after 15 minutes without a successful WFIGS query, WFIGS-dependent current context fails closed; after 60 minutes from the applicable source modification time, mutable incident fields retain their timestamp but are not presented as current or used to escalate a notification.
+- Lefthand Canyon reports `FireDiscoveryDateTime` near 2:33:59 p.m. MDT and IRWIN `CreatedOnDateTime` at 3:51:56.730 p.m. MDT. Under the corrected rule it satisfies the freshness gate if LHL first sees its previously unseen stable `IRWINID` by approximately 4:21:56.730 p.m. MDT and all other gates pass. Its roughly 78-minute discovery-to-creation interval remains material latency evidence but is not a reason to suppress the initial proof-of-concept notification.
+- Approval is limited to the closed MVE-1 proof of concept. It does not approve WFIGS/IRWIN as the eventual public-production warning architecture, resolve production licensing or redistribution terms, or remove the need for longer-duration latency and completeness validation.
+- A real WFIGS/IRWIN-eligible incident does not automatically suspend the pilot. John, as LHL CEO and the Boulder Heights pilot owner/administrator, has sole authority to suspend or terminate pilot operations. This supersedes the 2026-08-06 automatic-suspension language.
+- This operational authority does not broaden the MVE-1 membership-administrator feature, permit incident interpretation, or create authority to direct participant behavior.
+- The pilot may observe how a small incident that is not threatening life or property is detected and handled. If the incident grows or appears materially threatening, John may execute the manual `PULL THE PLUG` procedure. The detailed indicators, checklist, backup authority, notification-disabling steps, participant communications, audit trail, and restart rules must be defined and tested before participant access through the 911-liability and Gate 6 pilot-operations workstreams.
+- Participant terms must disclose the experimental proof-of-concept nature of the system, possible live-incident display, founder-controlled suspension, and non-reliance boundary. Official instructions and personal safety always take priority; LHL does not declare safety, direct emergency response, or imply emergency-authority status.
+- WildWeb remains `Candidate / TBD` until the outreach path produces an answer or is reasonably considered cold. Direct Watch Duty integration remains `No` for MVE-1 under current public terms; a future paid or enterprise relationship remains viable.
+- The detailed functional record and outstanding questions are maintained in `docs/functionality-decision-log.md`. The supporting research record is the Google Doc `Gate 2 Research Exercise — WFIGS-IRWIN Live-Latency Sample & Freshness Windows — 2026-08-21`.
+
 ## Product Decisions
 
 The detailed functional product rules are maintained in `docs/functionality-decision-log.md`. The following entries are currently controlling:
@@ -313,6 +328,7 @@ The detailed functional product rules are maintained in `docs/functionality-deci
 - 2026-08-06 — First End-to-End MVE-1 Journey and Internal Lifecycle Language
 - 2026-08-06 — Boulder Heights Access-Code Onboarding and Approval
 - 2026-08-06 — Single Trusted Group in MVE-1
+- 2026-08-21 — WFIGS/IRWIN MVE-1 Role, Freshness Controls, and Founder-Controlled Pilot Suspension
 - 2026-08-06 — No General Chat or Neighborhood Forum
 - 2026-08-06 — Native Call and Text Actions in MVE-1
 - 2026-08-06 — Household Signals and Provisional Incident Acknowledgement

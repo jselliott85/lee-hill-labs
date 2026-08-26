@@ -32,6 +32,15 @@ Given the shared-template constraint, John proposed splitting the post-incorpora
 
 **Also unresolved, pending Cara:** whether Larissa's spousal consent is still needed on Randall's later document set, given the original spousal-consent language was tied to the repurchase-option/community-property framing that no longer applies to a fully-vested, no-vesting purchase; and whether Randall's later issuance happens via Clerky (Switch Forms or another product) or is drafted directly by Cara outside Clerky.
 
+## Follow-up sent to Cara, 2026-08-25 — awaiting response
+
+John emailed Cara again on 2026-08-25 regarding both parts of the unresolved legal work:
+
+1. the proposed two-track post-incorporation resolution described above; and
+2. Randall's broader exit plan.
+
+John hopes to connect with Cara in person on 2026-08-26 or 2026-08-27. No meeting date or time is confirmed, and no response or approval from Cara is recorded yet. The two-track structure, Randall documentation, CIIAA/IP-assignment timing, spousal-consent question, exit terms, and final drafting all remain unresolved. This follow-up changes the communication status only; it is not an approved legal decision and does not authorize document execution or filing.
+
 ## Confirmed fix, current (pre-deferral) document set — RSPA vesting-clarity sentence
 
 Separate from the deferral proposal above, and applicable regardless of whether the deferral is approved (it applies cleanly to John's own RSPA either way): Cara's Q4 comment asked the RSPA state explicitly where the vested, non-repurchase-option shares "went," since the standard form only states the unvested number. Given the shared-template constraint, John's originally-approved founder-specific narrative paragraph (hardcoded numbers plus "sweat equity" rationale) could not be inserted for one founder without also generating into the other's document. Instead, a founder-agnostic sentence using only Clerky's existing tokens was added as a lead-in to the existing numbered Repurchase Option clause (not a new clause, to avoid disturbing internal cross-reference numbering):

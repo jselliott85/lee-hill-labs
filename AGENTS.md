@@ -52,10 +52,16 @@ An idea mentioned in a meeting, email, or chat is never automatically approved s
 
 ## Operating Discipline
 
-### Model and reasoning recommendation
-- Before each substantive work block, explicitly recommend the most effective and efficient available model and reasoning level, with a brief task-specific rationale.
-- Calibrate to the work rather than automatically choosing the highest setting: use lighter models or reasoning for bounded routine tasks and stronger settings when complexity, ambiguity, risk, or synthesis demands them.
-- Reassess and state a new recommendation if the task changes materially during the session.
+### Model and reasoning stability
+- Default to keeping the current model and reasoning level stable for the entire coherent work block. Before substantive work, assess whether the current configuration remains appropriate; if it does, say so briefly and proceed without pausing.
+- Recommend a change only when the expected benefit is material enough to justify interrupting John's workflow. A difference is material when at least one of these conditions applies:
+  - The current configuration creates a credible risk of a wrong, incomplete, or poorly verified result because the work is unusually complex, ambiguous, high-stakes, or cross-document.
+  - The task requires a capability the current model lacks or performs materially worse.
+  - The remaining work is large enough that a substantially faster or less costly configuration would save meaningful time or usage across multiple tasks, rather than provide a marginal advantage.
+  - The current configuration has already shown difficulty through repeated contradictions, missed requirements, tool failures, or significant rework.
+- Do not recommend switching for small routine subtasks, brief follow-ups, isolated edits, or estimated marginal gains. If the difference is uncertain, keep the current configuration.
+- Once selected, retain the model and reasoning level until the coherent work block ends or the task changes materially. Do not repeatedly switch up and down within one work block.
+- When a change is materially warranted, state the reason and expected benefit, then **pause and end the turn before beginning the work or calling task tools**. Wait for John to change the model or reasoning level and confirm before proceeding.
 
 ### Staging before canonical writes
 - Batch related research/edits into the `.tmp-trusted-*` staging pattern (manifest, receipt, document-outline, document-result, document-text) before writing to canonical repo files. This is already Cody's default behavior for read/research tasks — this section makes it explicit and required, not incidental.

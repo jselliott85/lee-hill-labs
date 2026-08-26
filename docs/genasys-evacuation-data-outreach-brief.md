@@ -4,9 +4,9 @@
 
 This brief preserves the content and routing record for two separate founder inquiries. The Genasys inquiry tests whether the vendor offers a commercially supported, repeatable multi-jurisdiction integration. The Boulder inquiry tests local authority, contract rights, and the operational data path. Neither inquiry implies that LHL has selected or integrated Genasys.
 
-John sent the Boulder ODM/BCSO email on August 18, 2026. The original Genasys email to `info@genasys.com` bounced as Address not found; `support@genasys.com` was not independently verified. John then submitted the full nine-question inquiry through Genasys's official Partner Network interest form on August 18. The form displayed a `Partner Interest` thank-you confirmation stating that a team member would be in touch; no reference number was provided. The bounced email remains the canonical record of the message content, not evidence of delivery. The confirmation screenshot is evidence of form submission. The Genasys task remains In Progress awaiting a substantive response, with no-response follow-up due August 25, 2026.
+John sent the Boulder ODM/BCSO email on August 18, 2026. The original Genasys email to `info@genasys.com` bounced as Address not found; `support@genasys.com` was not independently verified. John then submitted the full nine-question inquiry through Genasys's official Partner Network interest form on August 18. The form displayed a `Partner Interest` thank-you confirmation stating that a team member would be in touch; no reference number was provided. The bounced email remains the canonical record of the message content, not evidence of delivery. The confirmation screenshot is evidence of form submission. John confirmed that no Genasys response had arrived by the August 26 Gate 2 closure checkpoint. The Genasys outreach task is Complete without a permission or scalability finding; any later response may be evaluated prospectively without reopening Gate 2.
 
-Steve (Boulder County Sheriff's Communications) replied to Inquiry 2 on August 18. John sent a trimmed 4-question follow-up on August 19 at 9:09 a.m. (a longer 6-question draft was never sent — Gmail confirms the actual send timestamp and question set) and is awaiting Steve's response as of this writing. See "Boulder ODM response — Steve, 2026-08-18" below for the summary and follow-up questions; the full email thread is the canonical record.
+Steve Silbermann (Boulder County Sheriff's Communications Director) replied to Inquiry 2 on August 18. John sent a trimmed 4-question follow-up on August 19 at 9:09 a.m. (a longer 6-question draft was never sent — Gmail confirms the actual send timestamp and question set). Steve answered the follow-up inline; John supplied the response screenshot on August 26. The response confirms an ESRI public-map surface, Boulder's custom in-house Everbridge-to-Incident-Map publishing API, that Open GIS downloads are not intended for automation, and Steve as the conduit to the county policy group. It does not grant automated access or redistribution permission. See the two Steve-response sections below; the full email thread remains canonical.
 
 ## Inquiry 1 — Genasys vendor/platform
 
@@ -17,7 +17,7 @@ Steve (Boulder County Sheriff's Communications) replied to Inquiry 2 on August 1
 - **Official submission form:** https://genasys.com/modal/partner-interest-form/
 - **Submitted selections:** Area of interest `Genasys Protect (SaaS)`; Product interest `Genasys Protect – Zone-based, multi-channel communication`; Partner interest `Becoming a partner`.
 - **Submission record:** Full nine-question inquiry pasted into the free-text field on 2026-08-18. The form displayed a `Partner Interest` thank-you confirmation: `Thank you. A member of our team will be in touch with you soon.` No reference number was shown.
-- **No-response follow-up:** 2026-08-25.
+- **No-response checkpoint:** No reply received by 2026-08-26; Gate 2 closed without treating Genasys as an approved source.
 - **Content record:** The bounced Gmail Sent message preserves the actual submitted text; it is not delivery evidence.
 
 ### Purpose
@@ -72,12 +72,12 @@ Steve's reply is a substantive but partial answer that materially changes the Bo
 - First responders can create situational custom alert shapes during an incident, so the static GIS files do not represent every live alert boundary.
 - Emergency alerts appear in real time on ODM's public Incident Map.
 - Alert authority flows from the incident commander or designee, through the responsible 911 center; that chain also originates updates and cancellations.
-- Third-party automated access would require authorization from an unspecified county "policy group" — Steve did not identify the group, the approval process, or whether it could cover automated use.
-- The Genasys-contract question is fully answered — none exists. GIS/data ownership, machine-readable access, and authoritative fields/lifecycle are partially answered. The authorization-path question is partially answered — a policy group decides, but which one is unknown. One question remains unanswered pending clarification. (Cody's assessment used the original outreach email's own question order, not necessarily the numbering in "Required questions" above; treat the full email thread as canonical if exact question-by-question mapping matters.)
+- In this first response, Steve said third-party automated access would require authorization from a county "policy group," but he did not yet identify the group, the approval process, or whether it could cover automated use. His later follow-up identifies him as LHL's point of contact/conduit to that group; it does not itself grant authorization.
+- The Genasys-contract question is fully answered — none exists. GIS/data ownership, machine-readable access, and authoritative fields/lifecycle remain only partially answered. The authorization route is now clearer because Steve can carry a bounded proposal to the policy group, but the approval process and substantive data-use terms remain unresolved. (Cody's assessment used the original outreach email's own question order, not necessarily the numbering in "Required questions" above; treat the full email thread as canonical if exact question-by-question mapping matters.)
 - **Strategic caution:** publication to the public Incident Map confirms a public presentation surface, not permission to poll/scrape it, redistribution rights, stable identity, or lifecycle completeness. Treat as `TBD`, not as access.
-- The Genasys vendor inquiry remains open as separate market research but is no longer relevant to Boulder County's current implementation.
+- The Genasys vendor inquiry closed at the 2026-08-26 no-response checkpoint and is not relevant to Boulder County's current implementation. A later response may still inform a prospective vendor-level path.
 
-### Follow-up drafted and sent 2026-08-19, 9:09 a.m. (awaiting response)
+### Follow-up sent 2026-08-19, 9:09 a.m. (response received)
 
 Correction (2026-08-20): an earlier repo update mistakenly recorded this follow-up as sent 2026-08-20 — that was the date of the repo update itself, not the send date. Gmail confirms the actual send timestamp is 2026-08-19, 9:09 a.m. The 6-question draft below was never sent; John trimmed it to 4 questions for Steve's time before sending, explicitly dropping the resident-facing-display demo offer.
 
@@ -85,13 +85,31 @@ Correction (2026-08-20): an earlier repo update mistakenly recorded this follow-
 
 **Earlier 6-question draft, same day (not sent, kept for record):** whether the public Incident Map is backed by a county GIS service or other machine-readable endpoint third parties may poll, or whether the website is the only supported access method; whether a custom incident alert shape appears on the public map, and if so whether it replaces, supplements, or stays separate from the standard downloadable polygons; whether a displayed alert carries a persistent identifier stable across updates, corrections, cancellations, and closure; which displayed date/time a third party should treat as authoritative; county requirements for attribution, automated refresh frequency, storage, retention, or redistribution of information from the public map/GIS site; which policy group would decide on authorizing this limited automated use, and whether Steve can route the request or provide a contact. Offered to share a simple example of the proposed resident-facing display if useful — this offer was dropped from the version actually sent.
 
-### Live technical finding, 2026-08-20 (relevant to follow-up question 1 above, not yet raised with Steve)
+### Follow-up response — Steve, supplied 2026-08-26
+
+John supplied a screenshot of Steve's inline answers. Inbox search was unavailable to Cody in this session, so the screenshot—not an independently fetched Gmail message—is the evidence used for this reconciliation.
+
+1. **GIS/backend behind the public Incident Map:** `ESRI`
+2. **Whether custom alert shapes reach the public Incident Map:** `We have built a custom, in-house API that pushes from Everbridge to the incident map.`
+3. **Automated use, attribution, or redistribution of Incident Map/Open GIS information:** `The data provided on the open GIS site are downloadable files, not intended for automation.`
+4. **Policy-group contact:** `I would be your point of contact/conduit to our policy group.`
+
+Controlled interpretation:
+
+- The public Incident Map is ESRI-based.
+- Boulder has an internal publisher path from Everbridge to the public Incident Map. This supports that responder-created situational alert content can reach the public presentation surface; it does not establish that Boulder's in-house API is public, externally documented, or available to LHL.
+- The static Open GIS downloads are expressly not intended to function as an automated live feed. They therefore cannot be treated as the MVE-1 integration path.
+- Steve is no longer merely an unidentified-office lead; he is the current human route for bringing a bounded proposal to the county policy group.
+- No automated-access, storage, attribution, redistribution, polling, or commercial-use permission was granted. Stable message identity, freshness, correction/cancellation, closure, retention, and supported-endpoint behavior also remain unresolved.
+- Boulder ODM remains a conditional local protective-alert/public-information candidate with `Notification Eligibility: TBD`, not an approved notification source. The separate Genasys vendor inquiry closed without a response and remains unrelated to Boulder's current implementation.
+
+### Live technical finding, 2026-08-20 (context after Steve's follow-up response)
 
 While observing an active Boulder County incident on Watch Duty (the Peoples' Crossing Fire, `app.watchduty.org/i/115980`), John clicked an in-report source link labeled "ReachWell" and it redirected to `member.everbridge.net/453003085612231/notif/j6LLWUWC9` — confirmed as a genuine Everbridge recipient-notification page by its own app-store metadata. From there, two unauthenticated Everbridge REST endpoints on that host were identified: `/rest/notif/page?orgId=453003085612231&pageNo=&pageSize=` (paginated list of the org's sent notifications) and `/rest/notif/{notificationId}?orgId=453003085612231` (single-notification detail). The detail response for this fire's All Clear included a `drawPolygonSetting` field with real `GeoPolygon` coordinates for the custom alert shape — i.e., a concrete, technical answer to whether Boulder's alert system can expose machine-readable polygon geometry, which is exactly what the sent follow-up's question 1 (GIS/API backend) and the unsent draft's custom-shape question were asking about.
 
-This is a live capability finding, not a permission finding, and should not be treated as access: the endpoint being reachable without login does not make it an authorized interface, and the page-list call returned unrelated county notifications, including one naming and physically describing a vulnerable missing person — real third-party PII that was not retained or explored further. Everbridge's MSA Clause 6.3(h) (see `docs/00-current-state.md`) prohibits use of an "unapproved interface," and Steve was explicit that automated third-party access needs the county's unidentified "policy group" to authorize it. Full technical detail and the privacy caveat are logged in `docs/00-current-state.md` under the 2026-08-20 entries.
+This is a live capability finding, not a permission finding, and should not be treated as access: the endpoint being reachable without login does not make it an authorized interface, and the page-list call returned unrelated county notifications, including one naming and physically describing a vulnerable missing person — real third-party PII that was not retained or explored further. Everbridge's MSA Clause 6.3(h) (see `docs/00-current-state.md`) prohibits use of an "unapproved interface." Steve's later response identifies him as the conduit to the county policy group that would consider a bounded request; it does not authorize use of these endpoints. Full technical detail and the privacy caveat are logged in `docs/00-current-state.md` under the 2026-08-20 entries.
 
-**Possible use:** if a further Boulder ODM follow-up is drafted, it could now ask Steve directly and concretely — "is `member.everbridge.net`'s notification API (the one behind ReachWell/BPD's public alert links) the same GIS/API backend you were referring to, and could the policy group authorize read-only, attributed use of it?" — rather than asking abstractly whether one exists. No such follow-up has been drafted or sent; per the drafting constraints below, nothing goes out without John's approval.
+**Current implication after Steve's response:** the clean route is not to test or characterize the unauthenticated Everbridge endpoints further. Boulder has its own internal Everbridge-to-Incident-Map API, the Open GIS downloads are not intended for automation, and Steve is the policy-group conduit. If John chooses to pursue Boulder integration, the next communication should give Steve a bounded description of the requested read-only fields, purpose, refresh pattern, retention, attribution, and closed-pilot safeguards and ask him to route that proposal for authorization. No such follow-up has been drafted or sent; nothing goes out without John's approval.
 
 ## Shared sender and product context
 

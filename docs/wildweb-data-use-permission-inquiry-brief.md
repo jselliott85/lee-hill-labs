@@ -1,5 +1,9 @@
 # WildWeb Data-Use Permission Inquiry — Drafting Brief
 
+## Closure status — 2026-08-26
+
+John sent the approved inquiry on 2026-08-18 at 8:50 a.m. MDT and confirmed that no response had arrived by the 2026-08-26 Gate 2 closure checkpoint. The outreach task is Complete. WildWeb is unavailable for MVE-1 because written production-use authorization and the required lifecycle semantics remain unresolved. Any later response may be evaluated prospectively without reopening Gate 2.
+
 ## Message fields
 
 - **To:** Northern Colorado Interagency Dispatch Center — `concc@firenet.gov`

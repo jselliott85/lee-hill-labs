@@ -379,6 +379,16 @@ When `devlog` appears, capture the decision here, organize it by feature area, a
 - **Deferred questions**: Exact legal language; objective pull-the-plug indicators; backup decision-maker; participant suspension/restart messaging; longer-duration WFIGS latency, completeness, and lifecycle validation; production licensing, redistribution, attribution, and commercial-use terms; WildWeb's authorized-access outcome; possible future paid Watch Duty access; and the faster, redundant public-production warning architecture.
 - **Source**: Founder approval on 2026-08-21 after review of the bounded WFIGS/IRWIN live-latency research and follow-up discussion. This entry supersedes prior automatic-suspension language but does not mark `Research External Warning Feed Feasibility` Complete.
 
+### 2026-09-01 - MVE-1 911 Action Boundary and Contextual Safety Instructions
+
+- **Product rule**: MVE-1 has no app-level `Call 911` or `Text 911` action. LHL does not automatically call, act as an intermediary, or transmit participant, location, request, or incident information to emergency services (`devlog`).
+- **User story seed**: As a participant who may be in danger, I need unmistakable guidance to follow public authorities and contact 911 directly without mistaking an LHL incident, request, or neighbor-coordination flow for emergency reporting.
+- **Placement rule**: Show contextual safety instructions during onboarding or before incident notifications are enabled, on relevant incident-detail surfaces, in request creation where LHL could be mistaken for emergency reporting, and in an accessible Help/Safety location. Do not depend solely on an LHL-classified active incident, and do not repeat the instruction as a blanket app-wide banner that creates alert fatigue.
+- **Copy baselines**: Primary: `Follow instructions from public authorities. If you believe you are in danger, move to safety and call 911 when able. LHL does not contact emergency services.` Short incident: `Follow official instructions. If you are in danger, move to safety and call 911 when able.` Request creation: `Requests in LHL do not contact emergency services.`
+- **Data / logic notes**: No 911 action, phone-URL branch, emergency-service transmission, delivery confirmation, location handoff, or emergency-reporting state is required in MVE-1. Existing member-profile Call and Text actions remain separate native handoffs to another approved member's phone number and must remain visibly distinct from emergency guidance.
+- **Open questions**: Gate 3 wireframes and scenario testing finalize the exact wording, hierarchy, accessibility treatment, and placement on each required surface. These questions may refine presentation but do not reopen the approved no-action boundary.
+- **Source**: John's Gate 3 Google Doc comment, Codex review and challenge, and John's explicit approval of the recommendations on 2026-09-01.
+
 ## Export Format
 
 When exporting for dev planning, convert entries into this structure:

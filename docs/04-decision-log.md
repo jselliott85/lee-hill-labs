@@ -338,6 +338,24 @@ Full detail for each item: `docs/functionality-decision-log.md`, entries dated 2
 - The documented event/source taxonomy and source finding, founder-approved eligibility matrix, founder-approved liability/safeguards position, and founder-approved closed-pilot participation/liability acknowledgment satisfy all Gate 2 exit criteria. John explicitly closed Gate 2 on 2026-08-26. Gate 3 is now the current product gate.
 - Gate 2 closure does not approve a public-production warning architecture, public release, unresolved source reuse, any unauthorized interface, or formal legal sign-off. Production licensing, longer-duration source validation, Boulder authorization, NGFS authorization/semantics, final acknowledgement behavior, technical architecture, and pre-pilot operational safeguards remain assigned to their documented later gates or parallel tracks.
 
+## 2026-08-31 — Post-Incorporation Issuance Direction After Cara Response
+
+- Based on John's supplied summary of Cara O'Brien's response, the two-track post-incorporation structure is workable: complete John's issuance while leaving a reserve authorized but unissued, then complete Randall's direct company issuance and IP-transfer documents later as one purpose-built transaction. This resolves the prior question of whether Randall's IP transfer should move separately now; the current direction keeps it with his later issuance package.
+- John rejected the previously floated second non-voting stock class after Cara raised unresolved tax and ownership-control concerns that would require specialist tax review. Randall's later shares will use the same class of common stock as John's, with voting constrained through a separate agreement rather than through the stock class itself.
+- The exact vote-alignment instrument remains unapproved pending Cara's advice on a voting agreement versus an irrevocable proxy. No Randall Board Consent, Stock Purchase Agreement, Notice of Stock Issuance, IP-assignment/CIIAA-equivalent, voting instrument, cap-table update, execution, or filing is approved by this entry.
+- John asked Cara to schedule a separate discussion about a possible ongoing engagement and possible equity compensation. No engagement, equity award, percentage, vesting terms, grant type, Stock Plan, reserve, or timing is approved. A rough figure of approximately 5% discussed internally was not proposed to Cara and is not a commitment.
+- Because a later service-provider equity reserve could change the current issuance allocation, the final number of shares issued to John now remains open. Randall's intended 1,000,000-share allocation is not repurposed by this entry.
+- Clerky Stock Plan Adoption remains the wrong tool for Randall's one-time direct issuance. It may be considered for a future vesting service-provider pool only if John and Cara separately approve that structure.
+- Evidence boundary: this entry records John's decisions and his supplied 2026-08-31 Claude session summary; Cody did not inspect Cara's original response and provides no independent legal conclusion.
+
+## 2026-09-01 — MVE-1 911 Action Excluded; Contextual Safety Instructions Required
+
+- John approved the Gate 3 decision that MVE-1 includes no app-level `Call 911` or `Text 911` action. This resolves the explicit Gate 3 carryover from the 2026-08-21 safeguards decision.
+- LHL does not automatically call, act as an intermediary, or transmit participant, location, request, or incident information to emergency services. The approved group-member Call and Text actions remain separate native handoffs to another member's phone number and must remain visibly distinct from 911 or emergency reporting.
+- MVE-1 uses contextual safety instructions instead of a 911 control. Required locations are onboarding or the point before incident notifications are enabled, relevant incident-detail surfaces, request creation where LHL could be mistaken for emergency reporting, and an accessible Help/Safety location. The instruction is not limited to an LHL-classified active incident because personal danger can precede, outlast, or differ from LHL's incident state. It is not a repetitive app-wide banner.
+- The primary copy baseline is `Follow instructions from public authorities. If you believe you are in danger, move to safety and call 911 when able. LHL does not contact emergency services.` The shorter incident baseline is `Follow official instructions. If you are in danger, move to safety and call 911 when able.` Request creation states `Requests in LHL do not contact emergency services.`
+- Gate 3 wireframes and scenario testing finalize wording, visual hierarchy, accessibility, and exact placement. Those presentation decisions may refine the copy but do not reopen the approved no-action boundary. This decision does not constitute counsel approval or authorize participant use or public release.
+
 ## Product Decisions
 
 The detailed functional product rules are maintained in `docs/functionality-decision-log.md`. The following entries are currently controlling:
@@ -367,3 +385,4 @@ The detailed functional product rules are maintained in `docs/functionality-deci
 - 2026-08-07 — Gate 1 Closure
 - 2026-08-17 — Gate 2 Provisional Incident-Notification Working Rules
 - 2026-08-26 — Gate 2 Closure
+- 2026-09-01 — MVE-1 911 Action Excluded; Contextual Safety Instructions Required

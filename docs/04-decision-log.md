@@ -356,6 +356,36 @@ Full detail for each item: `docs/functionality-decision-log.md`, entries dated 2
 - The primary copy baseline is `Follow instructions from public authorities. If you believe you are in danger, move to safety and call 911 when able. LHL does not contact emergency services.` The shorter incident baseline is `Follow official instructions. If you are in danger, move to safety and call 911 when able.` Request creation states `Requests in LHL do not contact emergency services.`
 - Gate 3 wireframes and scenario testing finalize wording, visual hierarchy, accessibility, and exact placement. Those presentation decisions may refine the copy but do not reopen the approved no-action boundary. This decision does not constitute counsel approval or authorize participant use or public release.
 
+## 2026-09-01 — Gate 3 Experience-Map Role and Coordination Rules
+
+- John approved the five-lane Gate 3 experience-map framework for low-fidelity screen drafting: resident/household, LHL and sourced information, trusted member/helper, administrator, and the cross-cutting safety/privacy/permission/failure lane. A lane represents the role or system responsibility active at a moment, not necessarily a distinct person; one participant may appear in different human-role lanes at different points.
+- MVE-1 retains exactly three persistent request states: Open, Claimed, and Closed. A trusted member claims an Open request before private in-app coordination begins. The claim opens a request-specific thread visible only to the requester and claimant, and either participant may send the first message.
+- If the match is unsuitable, the claimant may release the claim or the requester may reopen the request. Either action returns the request to Open without creating a fourth persistent state. Only the original requester may close a completed request; the helper cannot close it.
+- MVE-1 may remind the original requester that a Claimed request remains open and ask them to close it or keep it open. LHL never closes the request automatically. Exact timing, whether timing varies by request context, and whether delivery is push or in-app remain Gate 3 testing decisions.
+- The reminder rule above supersedes the 2026-08-06 blanket deferral of claim reminder mechanics beyond MVE-1. It does not approve a universal seven-day threshold, a push-notification provider, or automatic closure.
+- Gate 3 screen inventory includes lightweight, skippable first-use guidance rather than one long tutorial. Invitation/onboarding explains LHL's role and limits, notification behavior, and the 911 boundary. First arrival at the household-first home identifies sourced information, household signals, and community activity. The guidance can be reopened from Help.
+- The sourced-information stage includes approved in-app-only advisories, watches, and other non-push conditions as well as push-eligible incident information, always under the controlling Gate 2 Event Matrix, source, geography, freshness, correction, and limitation rules.
+- Temporary private-information sharing is limited to the information needed for the specific task. Unrelated entry instructions and household details remain private. The existing purpose, recipient, expiry, and revocation controls remain required.
+- These approvals advance the experience-map and screen-inventory work but do not approve the acknowledgement alternative, final reminder timing/channel, final tutorial copy/layout, all low-fidelity screens, or Gate 3 closure.
+
+## 2026-09-01 — Minimal Incident Acknowledgement Approved as MVE-1 Baseline
+
+- John approved the experience-map option `B — Minimal “I saw this update”` as the MVE-1 acknowledgement direction to prototype and test. This resolves the open choice among no acknowledgement, the minimal action, and a fuller visible treatment.
+- This decision supersedes the 2026-08-06 provisional alternative-selection question: acknowledgement is now approved MVE-1 scope with option B as the baseline. It does not erase the requirement to test the interaction or the separate open eligibility and presentation details below.
+- The baseline is one optional, deliberate action tied to one exact sourced update. Absence is shown as `No acknowledgement recorded`. Receipt, notification delivery, opening the app, or viewing an update does not count.
+- Acknowledgement never proves awareness, comprehension, agreement, compliance, or safety. A material correction or source update must not silently inherit the earlier acknowledgement; freshness applies to the exact referenced source version.
+- John currently leans toward the fuller visible option C as a possible later evolution, but it is not approved as the MVE-1 baseline. It must first be compared with the minimal baseline and tested for added pressure, complexity, stale carry-forward, and false reassurance.
+- Still open in Gate 3: final consumer wording; prompt and placement; hierarchy and audience within the approved group; expiry/staleness; and the exact reset presentation after a material source change. Acknowledgement eligibility is resolved by the later 2026-09-01 push-derived eligibility decision. This decision does not approve all low-fidelity screens, complete the active roadmap task, or close Gate 3.
+
+## 2026-09-01 — Push-Derived Acknowledgement Eligibility and Evacuation-Source Critical Path
+
+- For MVE-1, acknowledgement eligibility follows push eligibility. An initial notice or material update is acknowledgement-eligible only when that exact sourced update independently warrants an LHL push under the founder-approved Event Matrix. This is source/update eligibility, not proof of device delivery; an eligible update remains eligible even if a particular device does not receive the push.
+- `Event Matrix!J2:J23` is approved to mirror the existing `Push Eligible` decisions: every push-eligible row is `Acknowledgement Eligible: Yes`, and every in-app-only row is `No`. Unknown or unmapped combinations continue to fail closed.
+- Boulder ODM's internal Everbridge-to-Incident-Map publishing path, pursued through Steve Silbermann as conduit to the county policy group, is the preferred prospective MVE-1 path for automated evacuation warnings and orders. This is a route to seek county-authorized, technically supported access, not a claim that access, permission, completeness, or a usable feed already exists.
+- Begin this work immediately and carry substantial lead time through Gate 4. A negative or delayed access outcome does not cancel the MVE-1 pilot, but it materially reduces pilot viability. The fallback is an explicit no-automated-evacuation-coverage pilot boundary, with only unmistakably simulated protective-action data used for approved testing; LHL must not substitute an unauthorized interface or imply real coverage.
+- Post-MVE-1, continue evaluating repeatable government, vendor, and national-backbone-plus-local-enhancement approaches. MVE-1 prototypes and pilot evidence may support the later partnership/use-case argument but do not themselves confer access or approval.
+- This decision does not approve a source provider, integration architecture, outbound proposal, technical endpoint, contract, or public-production warning capability. Those require their assigned authorization and later-gate decisions.
+
 ## Product Decisions
 
 The detailed functional product rules are maintained in `docs/functionality-decision-log.md`. The following entries are currently controlling:
@@ -376,6 +406,8 @@ The detailed functional product rules are maintained in `docs/functionality-deci
 - 2026-08-06 — Single Trusted Group in MVE-1
 - 2026-08-21 — WFIGS/IRWIN MVE-1 Role, Freshness Controls, and Founder-Controlled Pilot Suspension
 - 2026-08-21 — Gate 2 Internal Safeguards Position and Closed-Pilot Acknowledgment Approved
+- 2026-09-01 — Minimal Incident Acknowledgement Approved as MVE-1 Baseline
+- 2026-09-01 — Push-Derived Acknowledgement Eligibility and Evacuation-Source Critical Path
 - 2026-08-06 — No General Chat or Neighborhood Forum
 - 2026-08-06 — Native Call and Text Actions in MVE-1
 - 2026-08-06 — Household Signals and Provisional Incident Acknowledgement
@@ -386,3 +418,4 @@ The detailed functional product rules are maintained in `docs/functionality-deci
 - 2026-08-17 — Gate 2 Provisional Incident-Notification Working Rules
 - 2026-08-26 — Gate 2 Closure
 - 2026-09-01 — MVE-1 911 Action Excluded; Contextual Safety Instructions Required
+- 2026-09-01 — Gate 3 Experience-Map Role and Coordination Rules

@@ -8,6 +8,8 @@ John sent the Boulder ODM/BCSO email on August 18, 2026. The original Genasys em
 
 Steve Silbermann (Boulder County Sheriff's Communications Director) replied to Inquiry 2 on August 18. John sent a trimmed 4-question follow-up on August 19 at 9:09 a.m. (a longer 6-question draft was never sent — Gmail confirms the actual send timestamp and question set). Steve answered the follow-up inline; John supplied the response screenshot on August 26. The response confirms an ESRI public-map surface, Boulder's custom in-house Everbridge-to-Incident-Map publishing API, that Open GIS downloads are not intended for automation, and Steve as the conduit to the county policy group. It does not grant automated access or redistribution permission. See the two Steve-response sections below; the full email thread remains canonical.
 
+On September 1, John approved this as an early critical-path pursuit for MVE-1: seek county-authorized, technically supported access to the Boulder ODM publishing path through Steve, with substantial lead time and a Gate 4 decision checkpoint. This is a prospective route, not a confirmed feed. Failure to secure access does not cancel the pilot, but it materially reduces pilot viability and requires an explicit no-automated-evacuation-coverage fallback. Continue the post-MVE government/vendor source and partnership track, using prototype and pilot evidence as the use-case argument rather than as permission.
+
 ## Inquiry 1 — Genasys vendor/platform
 
 ### Corrected submission route

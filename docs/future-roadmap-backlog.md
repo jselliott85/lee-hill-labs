@@ -59,11 +59,11 @@ This is an idea/reference log, not a task tracker. Approved future work belongs 
 - **Discovery constraints:** Future work must address source retention and licensing terms, correction/retraction propagation, privacy and household-association history, deletion and retention policy, stale unresolved events, storage/offline behavior, and avoiding the appearance of an authoritative permanent incident archive.
 - **Roadmap status:** Post-G6 discovery only. MVE-1 may age inactive or stale information out of the prominent current view, but a user-visible historical log is not approved for MVE-1 or current MVP scope.
 
-## Claim Reminder Nudge
+## Claim Reminder Nudge — Superseded 2026-09-01
 
-- **Concept:** A "did you complete this task?" notification prompting the claiming helper to update or close a request after some time has passed since claiming — distinct from auto-close, which is not approved for MVE-1.
-- **Potential behavior:** Does not auto-close anything; the requester retains the only close action. Timeout duration and whether it should vary by request urgency are undefined.
-- **Roadmap status:** Deferred post-MVE-1. See `docs/04-decision-log.md` and `docs/functionality-decision-log.md`, both 2026-08-06.
+- **Historical concept:** A "did you complete this task?" notification after some time has passed since claiming, distinct from automatic closure.
+- **Superseding decision:** On 2026-09-01 John approved a bounded MVE-1 principle: LHL may remind the original requester that a Claimed request remains open and ask them to close it or keep it open; LHL never closes automatically. Exact timing and push versus in-app delivery remain Gate 3 testing decisions.
+- **Roadmap status:** The standalone Post-G6 scheduling task is Superseded and archived. The bounded reminder now belongs to active G3 task `Finish approved user flows and low-fidelity screens`. See the 2026-09-01 entries in `docs/04-decision-log.md` and `docs/functionality-decision-log.md`.
 
 ## Urgent Request Push Notifications
 

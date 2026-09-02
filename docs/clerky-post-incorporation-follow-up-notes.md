@@ -71,6 +71,17 @@ John separately asked Cara to schedule a conversation about a possible ongoing e
 
 Because an approved Cara/service-provider reserve could reduce the number issued to John in the current round, final issuance counts remain open pending that separate conversation.
 
+### Confirmed meeting checkpoint — 2026-09-03
+
+John reports that Cara will meet with him in person at 2:00 PM on 2026-09-03. The intended working topics are:
+
+- Cara's recommendation between a voting agreement and an irrevocable proxy for Randall's shares.
+- An initial discussion of whether an ongoing Cara engagement and possible equity compensation make sense and, if so, the rough structure.
+- Whether that discussion changes the current 9,000,000-share issuance / 1,000,000-share authorized-but-unissued working split or requires a larger reserve.
+- The expected document list for Randall's later stock-and-IP transaction, including the Board Consent, Stock Purchase Agreement, Notice of Stock Issuance, IP-assignment/CIIAA-equivalent, and vote-alignment instrument.
+
+This entry records only the confirmed meeting schedule and intended agenda. It does not record Cara's advice or approve an engagement, equity terms, a share count, a voting instrument, any Randall document, execution, or filing. John will provide post-meeting notes before any outcome is promoted to the current-state record or decision log.
+
 ### Authorized-but-unissued reserve note
 
 The supplied session summary treats authorized shares that have not been issued as outside current ownership calculations until issuance. It also flags that changing the authorized pool is simplest while John is the sole stockholder because a later Certificate of Amendment would require stockholder approval. These are planning notes for Cara to confirm in the final structure, not independent legal conclusions from Cody.

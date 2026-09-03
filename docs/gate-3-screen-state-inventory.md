@@ -1,6 +1,6 @@
 # Gate 3 — MVE-1 Screen/State Inventory v0.1
 
-Status: Draft for founder coverage review. Not approved low-fidelity design.
+Status: Slices A–B founder-approved for coverage on 2026-09-03. Slices C–D remain draft for founder coverage review. Not approved low-fidelity design.
 
 Working review surface: [Gate 3 — MVE-1 Screen/State Inventory Review](https://docs.google.com/document/d/1X7I4xDkJPkYO32b2459yp4Ttl4LsBxi_JjkMzZCVSgw/edit). Comments and draft discussion remain non-canonical until John explicitly approves a slice and Cody promotes the resulting decision here.
 
@@ -13,7 +13,7 @@ Working review surface: [Gate 3 — MVE-1 Screen/State Inventory Review](https:/
 
 ## Coverage summary
 
-- 31 in-app parent screen families.
+- 30 active in-app parent screen families; retired ID S06 remains documented for traceability.
 - 2 external pilot surfaces.
 - 11 approved experience-map stages covered.
 - Five role/responsibility lanes represented: resident/household, LHL+sourced information, trusted member/helper, administrator, and cross-cutting safety/privacy/permission/failure.
@@ -23,29 +23,28 @@ Working review surface: [Gate 3 — MVE-1 Screen/State Inventory Review](https:/
 
 | ID | Surface | Purpose | Required conditions |
 | --- | --- | --- | --- |
-| X01 | Personal beta invitation | John provides the TestFlight or approved Android-testing invitation that permits installation. | Invitation valid/invalid; platform handoff; LHL must not imply that installation grants Boulder Heights membership. |
+| X01 | Community-admin beta invitation | A community administrator sends the platform download/install invitation plus a separate `COMMUNITY JOIN CODE` that the invitee saves for later entry. | Invitation valid/invalid; platform handoff; download/install purpose explicit; the separate code and installation do not grant community membership. |
 | X02 | Native Call/Text handoff | A member-profile action opens the device phone or messaging application. | Native app available/unavailable; member-provided number; no auto-send, capture, synchronization, or delivery guarantee. |
 
 ## Parent-screen inventory
 
 | ID | Stage | Parent screen | Primary actor | Core purpose | Required state variants |
 | --- | --- | --- | --- | --- | --- |
-| S01 | 01 | Welcome, role, and limits | Resident | Explain what LHL does and does not do before account setup. | First visit; returning visit; skippable guidance; contextual 911/official-instructions baseline. |
-| S02 | 01 | Notification primer | Resident | Explain notification purpose and limits before requesting OS permission. | Not requested; allowed; denied; later disabled at OS level; link to LHL notification setting; no delivery guarantee. |
-| S03 | 01–02 | Account and resident profile | Resident | Create the adult participant account and required resident identity/contact fields. | Empty; incomplete; validation error; saved; failed save; account suspended; retry/recovery. |
-| S04 | 02 | Household profile | Resident | Capture approved household source fields and explain why each is requested. | Empty; partial; complete; edit; save failure; private-by-default assistance fields. |
-| S05 | 02 | Saved home address and pilot verification | Resident / operator-supported | Enter the address and show whether its derived point is eligible for address-based incident matching. | Address entry; resolving; resolved-awaiting-operator-verification; verified; unverifiable/wrong; notifications remain off; changed address requiring re-verification. |
-| S06 | 02 | Household-member authority and consent | Resident | Confirm authority/permission before information about other household members is stored. | No additional members; disclosure; confirmed; declined; validation/error; later edit or member removal. |
-| S07 | 03 | Boulder Heights code entry | Resident | Submit the preconfigured code as a request to join the one supported trusted group. | Empty; invalid; failed/rate-limited; submitted; code exposes no group information. |
-| S08 | 03 | Membership status | Resident | Show the result of the join request without exposing group content early. | Pending; approved; denied; retry/new-code path if permitted; access revoked/suspended; offline status read. |
-| S09 | 03 | Admin join-request queue | Administrator | Show pending Boulder Heights membership requests only. | Empty; loading; pending list; offline/error; no content-moderation or phase-setting controls. |
-| S10 | 03 | Admin join-request review | Administrator | Approve or deny one membership request. | Pending decision; confirmation; approved; denied; failed action/retry; stale/already-decided request. |
-| S11 | 04 | First household-home tour | Resident | Introduce sourced information, household signals, and community activity without a long blocking tutorial. | First arrival; step progression; skip; completed; replay from Help. |
-| S12 | 04–11 | Household-first home | Resident | Provide the stable household-first starting point across all internal lifecycle test contexts. | No current sourced condition; sourced condition present; household signals present/missing/stale; community activity empty/active; loading; offline; corrected-content indicator; suspended account. |
-| S13 | 05 | Sourced conditions list | Resident / helper where permitted | Present push-eligible incidents plus approved in-app advisories, watches, and non-push conditions associated with the verified saved address. | Empty; loading; offline; current; stale; source unavailable; corrected; expired/closed; simulated test data clearly separated. |
-| S14 | 05–06 | Sourced condition or incident detail | Resident / helper where permitted | Show source, event type, update time, geography/relevance, limitations, status, contextual safety guidance, and source link. | Current initial notice; material update; non-push informational condition; stale; correction/retraction; cancellation/closure; source unavailable; simulated test; acknowledgement eligible/ineligible. |
-| S15 | 06 | Minimal update acknowledgement | Resident | Offer the optional deliberate `I saw this update` action only for the exact eligible sourced update. | Eligible-unacknowledged; acknowledged with timestamp; no acknowledgement recorded; ineligible/no control; material update resets; stale/expired presentation; failed action/retry. |
-| S16 | 06 | Household signals | Resident | View and update voluntary household presence and incident check-in separately from acknowledgement. | Someone home; household away; not shared; no recent update/stale; not in/left incident-relevant area; missing; failed update; clearly self-reported—not verified safe. |
+| S01 | 01 | App launch, welcome, role, and limits | Resident | Open the app, explain what LHL does and does not do, and provide a calm path into account setup. | First visit; returning visit; skippable guidance; random rotation of 5–7 short launch messages including occasional safety or community-value messages; mandatory safety disclosures remain on their required contextual surfaces. |
+| S02 | 01 | Notification primer | Resident | Explain notification purpose and limits before requesting OS permission. | Not requested; explanation before the OS prompt; allowed; denied with continued app access; later disabled at OS level; clear path to OS and LHL notification settings; no delivery guarantee. |
+| S03 | 01–02 | Resident account and contact information | Resident | Create one independent adult User Profile with required first name, last name, phone number, and Call/Text consent plus optional preferred first name. | Empty; incomplete; validation error; saved; failed save; account suspended; retry/recovery; multiple independent profiles may use the same address without household linking. |
+| S04 | 02 | Home and assistance information | Resident | Capture saved home address, entry instructions, pets/animals, driveway or physical-access notes, utility-shutoff information, and mobility or other practical needs, with a brief explanation of future request value. | Empty; partial; complete; edit; save failure; private by default; address and entry instructions required; other approved fields optional; replaceable starter examples are never stored as resident data. |
+| S05 | 02 | Incident-notification setup and saved-home location | Resident | After S04 address entry, show the interpreted address and static neighborhood pin, explain its incident-matching use, and present LHL notification settings with the default shown as on. | Resolving; usable point shown; `Use this location` or `Edit address`; approximate-but-close point accepted; correction suggestion; ambiguous/invalid address; legitimate unvalidated address saved; no usable coordinate; notifications enabled/disabled; address change triggers a new map result; no operator/admin verification. |
+| S07 | 03 | Join a community | Resident | Enter the saved `COMMUNITY JOIN CODE` and request membership using generic community language; Boulder Heights is the only configured MVE-1 community. | Empty; invalid; valid code shows only the community name for confirmation; failed/rate-limited; submitted; pending approval; no member, request, activity, or other group content exposed before approval. |
+| S08 | 03 | Membership status | Resident | Show pending, approved, denied, revoked, or suspended membership without exposing group content early. | Pending; approved; denied; retry/new-code path if permitted; revoked/suspended; offline shows the last successfully known state and that a newer decision cannot be checked. |
+| S09 | 03 | Administrator join-request queue | Administrator | Show pending community membership requests to the authorized community administrator only. | Empty; loading; pending list; offline/error; community name in context; no moderation, incident-management, or community-phase controls. |
+| S10 | 03 | Administrator join-request review | Administrator | Approve or deny one membership request. | Pending decision; confirmation; approved; denied; failed action/retry; already-reviewed or changed request stated plainly before returning to the current queue. |
+| S11 | 04 | First saved-home tour | Resident | Provide a skippable orientation covering navigation, current sourced conditions, community membership, requests, the user profile, and tutorial replay. | First arrival; step progression; skip; completed; replay from Help; exact sequence, copy, and presentation finalized during low-fidelity design. |
+| S12 | 04–11 | Saved-home starting screen | Resident | Provide the stable starting screen for the resident's saved-home context across all internal lifecycle test contexts. | No current sourced condition; sourced condition present; home signals present/missing/stale; community activity empty/active; loading; offline; corrected-content indicator; suspended account; paths to sourced conditions, signals, requests/offers, membership, profile, and Help without a social feed. |
+| S13 | 05 | Sourced Events feed | Resident / helper where permitted | Present one current feed item per source-defined Event associated with the saved-home location. `Event` is the product umbrella for incidents, advisories, watches, warnings, orders, and other approved sourced types; the interface does not label push eligibility. | Empty; loading; offline; current; stale; source unavailable; corrected; expired/closed; prominent standalone evacuation warning/order when an approved source exists; simulated test data clearly separated. |
+| S14 | 05–06 | Event detail and update history | Resident / helper where permitted | Show the Event's current/latest state followed by its chronological sourced update sequence, with Event Type, source attribution, update times, geography/relevance, limitations, status, contextual safety guidance, and source links. | Initial notice; material update; attributed multi-source update when common identity is established; related-Event link without merger; non-push condition; stale; correction/retraction; cancellation/closure; source unavailable; simulated test; acknowledgement eligible/ineligible. |
+| S15 | 06 | Event-update acknowledgement and community status | Resident / approved community member | Offer the optional deliberate `I saw this update` action for one exact eligible Event update and provide scalable community-scoped acknowledgement visibility without placing an unlimited member list directly on Event detail. | Eligible-unacknowledged; acknowledged with timestamp; compact community-scoped summary; on-demand searchable/filterable `Acknowledged` and `No acknowledgement recorded` states; selected-community context; no cross-community exposure; no default compliance-style denominator; ineligible/no control; material update resets; stale/expired; failed action/retry; exact location and separate-screen need remain a wireframe hypothesis. |
+| S16 | 06 | Saved-home signals | Resident | View and update voluntary saved-home presence and Event check-in separately for the adult User Profile and separately from acknowledgement. | Someone home; household away; not shared; no recent update/stale; not in/left Event-relevant area; missing; failed update; clearly self-reported—not verified safe; same-address adult profiles may report different states. |
 | S17 | 04–11 | Trusted-group activity | Resident / helper | Browse approved requests and offers without creating a social feed or general chat. | Empty; loading; offline; Open/Claimed/Closed indicators; request/offer filters; recovery-context presentation; no quiet-item push implication. |
 | S18 | 07 | Create community request | Resident | Create a structured request and clearly state that requests do not contact emergency services. | Empty; validation; review; published Open; failed publish/retry; optional task-specific private-field selection; cancel draft. |
 | S19 | 07 | Create offer | Resident | Publish an offer with optional Item/Tool or Skill/Labor category. | Empty; validation; review; published; failed publish/retry; edit/cancel draft. |
@@ -61,6 +60,10 @@ Working review surface: [Gate 3 — MVE-1 Screen/State Inventory Review](https:/
 | S29 | Cross-stage | Help, safety, and guidance replay | Resident / helper / administrator | Provide accessible safety guidance, LHL limits, privacy explanations, and replay of progressive guidance. | General Help; Safety/911 guidance; notification explanation; privacy/sharing explanation; replay first-use guidance; offline availability requirement to test. |
 | S30 | Cross-stage | Notification settings | Resident | Disable all LHL notifications in-app and explain interaction with OS settings. | Enabled; disabled in LHL; OS-denied; permission changed externally; save failure; no app-defined quiet hours or rate controls. |
 | S31 | Cross-stage | Account/access integrity | Any participant | Explain account suspension, revoked access, authentication/access failure, and next available action honestly. | Suspended; membership revoked; signed out/session expired; failed action; retry/contact path; minimal audit-only suspended behavior. |
+
+## Retired inventory IDs
+
+- **S06 — Household-member authority and consent:** Retired from MVE-1 on 2026-09-03. MVE-1 does not collect a standing field for people in the household relevant to an assistance request. Each adult uses an independent User Profile, and profiles sharing an address are not linked into a household account.
 
 ## Cross-cutting state requirements
 
@@ -83,21 +86,20 @@ Every applicable parent must be evaluated against these states; they should not 
 
 These are design questions, not missing product approval unless explicitly stated.
 
-1. Minimal acknowledgement wording, prompt and placement, group audience/hierarchy, expiry/staleness treatment, and exact material-update reset presentation.
+1. Minimal acknowledgement wording, prompt, expiry/staleness treatment, and exact material-update reset presentation; test whether community-scoped status belongs on a separate S15 screen, an expandable Event-detail section, a filtered member view, or another location, including findability, 10-versus-200-member scale, selected-community context, and social-pressure risk.
 2. Requester reminder interval, whether it varies by context, and push versus in-app delivery.
 3. Final progressive-guidance copy, number of steps, and replay presentation.
 4. Release/reopen confirmation wording and participant-notification treatment.
 5. Exact consumer-facing language, if any, replacing internal Ready/Alert/Active Incident/Recovery labels.
-6. Exact household-member consent copy and later-edit behavior.
-7. Field-level temporary-sharing interaction and renewal presentation within the approved task-specific boundary.
-8. Which Help/Safety content must remain available offline.
+6. Field-level temporary-sharing interaction and renewal presentation within the approved task-specific boundary.
+7. Which Help/Safety content must remain available offline.
 
 ## Recommended founder review order
 
-Review coverage in four bounded slices rather than approving 31 parent families at once:
+Review coverage in four bounded slices rather than approving 30 active parent families at once:
 
-1. **Slice A — Entry, trust, and access:** X01 and S01–S12, including admin S09–S10.
-2. **Slice B — Sourced information and household signals:** S13–S16.
+1. **Slice A — Entry, trust, and access:** X01 and S01–S12, including retired S06 and administrator S09–S10. **Founder-approved for coverage on 2026-09-03.**
+2. **Slice B — Sourced Events and saved-home signals:** S13–S16. **Founder-approved for coverage on 2026-09-03, with S15's UX location explicitly provisional for wireframe testing.**
 3. **Slice C — Community coordination and temporary sharing:** S17–S26 plus X02/S28.
 4. **Slice D — Recovery and cross-cutting integrity:** S27 and S29–S31, followed by the cross-cutting state audit.
 

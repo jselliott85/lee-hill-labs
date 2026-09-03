@@ -59,7 +59,7 @@ The roadmap remains the sole canonical task tracker. This file is the sequencing
 
 **Exit criteria:**
 - Approved user flows and low-fidelity screens for MVE-1 across Ready, Alert, Active Incident, and Recovery
-- Approved minimum data model and permission schema, covering time-bounded access, per-household hazard status, and leadership succession
+- Approved minimum data model and permission schema, covering time-bounded access, independent per-adult profiles and saved-home signals, and leadership succession
 - Approved reusable cross-platform UI rules and design tokens (type scale, spacing, color roles, states, component rules)
 - Working product name selected and recorded as provisional
 - Written acceptance criteria for MVE-1: the minimum screen and state inventory that proves each of the five approved flows on both iOS and Android

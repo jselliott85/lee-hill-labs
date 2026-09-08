@@ -4,7 +4,73 @@
 
 John reported receiving a more substantive response from Cara O'Brien on the evening of August 17, 2026. The research below came from Claude's review of Clerky's public help center and template library. Claude could not inspect John's Clerky account, so these notes are a starting map only. They do not confirm which fields, forms, or Switch Forms options are available in John's document set and are not legal advice.
 
-**Current evidence boundary:** the 2026-08-31 update below is based on John's supplied Claude session summary of Cara's response. Cody did not inspect Cara's original message or legal drafting. This file records the reported process state and John's resulting decisions, not independent legal advice.
+**Current evidence boundary:** sources are John's supplied Claude session notes dated 2026-09-08, his subsequently pasted sent email to Cara, and read-only retrieval of the three linked drafts on September 8. The incoming Cara correspondence, Randall's actual acknowledgment email, and a final engagement agreement were not inspected. A live draft read is not proof of the exact version emailed. Reported founder directions are distinct from counsel-approved language, signed agreements, completed IP transfers, and issued shares. The older dated sections below are history where superseded.
+
+## Current meeting outcomes and follow-ups — 2026-09-08
+
+### September 3 meeting held; legal representation confirmed in principle
+
+- John reports that the September 3 in-person meeting with Cara took place. Cara is confirmed as LHL's legal representative through MVE-1; she will send a draft engagement agreement. This resolves the question of whom John intends to use, not the engagement's final written terms or compensation.
+- John's sent email expressly identifies alignment on engagement terms as the most time-sensitive legal item. No new response deadline or grant commitment is supplied.
+- Compensation remains genuinely open: equity, a hybrid of smaller equity and reduced/deferred fees, or a non-equity/deferred-fee arrangement. No specific percentage has been proposed to Cara. John now considers the previously internal approximately 5% too high; neither that number nor the recap's unverified benchmark ranges are an approved compensation baseline.
+- The sent email did share the researched 1–3% range as discussion context. That is not a specific offer or independently verified market benchmark; do not describe all percentages as uncommunicated.
+- John has asked what happens to compensation or any shares if the engagement ends before MVE-1 finishes, and what professional-conduct disclosures/consents or other procedures Cara must address before accepting client equity. Both answers remain pending.
+- The shared-master-template limitation was reportedly reconfirmed with Cara in person. Founder-specific documents will be assembled with her assistance outside/around that limitation; further attempts to obtain isolated per-founder structural edits inside the shared template are not the current path.
+- John's email explicitly states the intended solo-founder Clerky filing path, with Cara helping assemble separate Randall and post-incorporation grant documents. It does not say filing has occurred.
+
+### Share-count and voting direction
+
+- The single-common-class direction (Path B) is reaffirmed: Randall is to use the same class as John, with a voting agreement and/or irrevocable proxy intended to align his votes with John. Cara is choosing the strongest appropriate instrument or combination. No final mechanism or enforceability conclusion is recorded.
+- The 9,000,000-to-John / 1,000,000-for-Randall split is provisional, not final. If Cara receives a stock grant under the contemplated structure, it would use currently authorized-but-unissued company shares otherwise intended for John, reducing his contemplated issuance below 9M rather than taking shares from Randall's intended 1M. This is not a decision to transfer already-issued personal shares from John.
+- Exact initial issuance numbers depend on the engagement terms. No final cap table, reserve, grant, vesting, execution, or filing is approved by this recap.
+- Randall reportedly acknowledged the intended 1,000,000 as a fixed share count, not a fixed 10% ownership promise. John's September 8 reply to Randall's subsequent dilution question was sent: it did not promise identical dilution in every scenario and committed to informing Randall before/as a future share authorization occurs. John's subsequent addendum reports Randall's response and a document-scope misunderstanding to clarify at delivery, not now; see the open delivery reminder below.
+- Preserve the difference between share count and percentage. Keeping Randall's 1M allocation unchanged is not a blanket promise that his percentage remains unchanged, and neither issuance timing nor a future financing structure is finalized here. Have Cara reconcile the final capitalization and transaction wording; do not turn the recap's shorthand into a universal dilution rule.
+
+### September 8 follow-up to Cara — reported sent
+
+- John shared the existing Randall RSPA and Notice of Stock Issuance as reference material for his eventual purpose-built SPA; they are not newly approved final transaction documents.
+- John sent proposed Randall IP-transfer language and a Residual Knowledge addition to his own CIIAA through a linked Google Doc. Both drafts await Cara's review and incorporation into her drafting.
+- Cara is to draft the engagement agreement and select the voting instrument(s).
+- Once the engagement terms are settled, John will handle Board Consent, cap-table updates, and Cara's SPA/terms if applicable, with counsel's direction. This records follow-up ownership, not permission to sign, issue stock, or file now.
+- John explicitly asked whether Larissa's spousal consent actually provides the intended marital-property protection on Randall's paperwork. The intended protection is not an established legal effect; Cara's answer remains open.
+
+### IP and Residual Knowledge — drafting reference, not final clauses
+
+The subsequently supplied email resolved the missing-source gap. Cody read [DRAFT-LANGAUGE_POST_INC — proposed IP transfer and Residual Knowledge clauses](https://docs.google.com/document/d/1BrIo1rVYtdIqYrpKw3KQIjbA9OHxCwb8ERnpRgTHoQw/edit), last modified September 8 at 19:31:39 UTC. This is the exact-language reference for Cara's returning drafts; the bullets below are summaries, not substitute contract text. A read-time text snapshot is retained in `.tmp-trusted-legal-recap-20260908/ip-draft-source.txt`. The document remains proposed language, not finalized or counsel-approved.
+
+- **Randall's company work:** the proposed language broadly assigns all LHL-related work product he created to the company regardless of tools or methods used.
+- **Retained methodology and reciprocal independence:** the proposal replaces the older license-based exclusion with a mutual acknowledgment/disclaimer: the retired methodology/system was reportedly never completed or delivered as a functioning system to LHL; Randall retains his methodology; LHL's independently developed current and future workflows are its own, with no claim by Randall to them. The proposed direction grants/requires no license in either direction. This avoids continuing the former license transferability/sublicensing dispute, but the factual premises, scope, and legal effect still require Cara's review. It does not restore the retired system as project scope or establish that an assignment has already occurred.
+- **John's Market Intelligence Agent v1:** John's drafting direction is no specific Excluded IP entry (`None`). The actual tool and its outputs are intended to remain company-owned as a Company Invention, while a Residual Knowledge clause preserves only John's general skill, knowledge, and experience, without use of LHL Confidential Information or reproduction of the specific company asset. This is not a license to reuse company code or confidential materials, and counsel has not approved the draft.
+- **Exact-draft details to retain:** Randall's assignment covers work before and after incorporation and includes an agreement not to challenge company title. His retained-methodology provision is expressly subordinate to company ownership of company work product. John's clause permits general-knowledge use after termination or concurrently in unrelated ventures, subject also to not breaching any other CIIAA obligation. Its company-invention cross-reference is still `Section [X]`; Cara must resolve that reference in the actual CIIAA. Neither document is ready for signature merely because this language has been drafted.
+
+Other source references, read only to ground their identity and draft status: [Randall Notice of Stock Issuance — v3](https://docs.google.com/document/d/1x7o2LdKfk5SZmGwUiTKkT6iyMOIkyqdE/edit) and [Randall RSPA — v4](https://docs.google.com/document/d/1sgkI7BJMddRM8fz_1mLOyeRd99DwmzjI/edit). Both retain transaction-date placeholders; they are inputs to Cara's eventual SPA package, not proof of issuance or a full-contract review by Cody. The RSPA's spousal paragraph speaks of binding any community-property interest to the agreement; do not record it as already establishing the marital-property protection John asked Cara about.
+
+### Narrow statutory check — separate from the reported communication
+
+The recap cites DGCL §228(e). The official text requires prompt notice **after** action by less-than-unanimous stockholder consent to qualifying nonconsenting record-date stockholders who would have been entitled to meeting notice. It does not itself promise advance notice of every authorization or establish whose approval LHL will need. John's reported before/as communication commitment is separate. Cara must confirm application to the actual transaction and governing documents. Source checked 2026-09-08: [Delaware Code, §228(e)](https://delcode.delaware.gov/title8/c001/sc07/index.html#228).
+
+### Current blockers and next review packet
+
+1. **Cara:** engagement agreement draft; compensation structure/amount, including early-termination treatment.
+2. **Cara:** voting agreement, irrevocable proxy, or appropriate combination for Randall.
+3. **Cara:** review and incorporation of Randall's proposed IP language and John's Residual Knowledge clause.
+4. **Cara:** applicable client-equity professional-conduct procedure and Larissa's spousal-consent mechanics/effect.
+5. **John with Cara:** final issuance counts and document assembly after the relevant terms are settled; compare returning drafts with the linked source clauses, resolve `Section [X]`, and confirm cross-document consistency. The older founder-specific vesting-rationale question remains unresolved unless Cara separately addresses it.
+
+`Legal Review Prep` remains In Progress and overdue against its unchanged August 21 target. `Final Signatures` remains Not Started and downstream; business-bank application readiness remains dependent on the required finalized/filed documents. Drafting is now underway for the two IP provisions, but no complete attorney-approved Randall package, executed engagement, stock issuance, completed IP transfer, or filing is evidenced by this recap. No task is marked Complete.
+
+### September 8 addendum — open reminder for Randall document delivery
+
+- **Relationship context, no action:** John reports that Randall replied with a reference to *The Social Network*, in the same easy, informal register John uses with him. John had considered and removed that reference from his own email out of concern it might feel loaded. The supplied addendum reads Randall's response as a positive relationship signal; this is an interpretation of tone, not proof of agreement on document scope.
+- **Misunderstanding to address later:** Randall reportedly understood John's inability to promise dilution mechanics in writing now as meaning the documents would define those mechanics later. John's stated plan is for the SPA/Notice to specify the intended 1,000,000 shares without adding future dilution-scenario language; no mechanism is presently being defined. This describes the dilution topic only, not a direction to omit the other required stock/IP/voting terms from the attorney-approved package.
+- **Owner / trigger:** John, when sending Randall his actual SPA and Notice of Stock Issuance under `Final Signatures`. Do not send an interim correction now. Include the clarification below, or equivalent wording, alongside those documents so the absence of dilution language is not a new surprise.
+- **Status: Open — not sent.** Drafting or saving this reminder does not satisfy it. Retain the sent note/date or John's confirmation that it accompanied the documents; obtain John's confirmation before closing the reminder or marking the roadmap task Complete. All September 8 legal decision statuses remain unchanged.
+
+Placeholder supplied by John, preserved for later use:
+
+> Heads up — these don't include anything about future dilution scenarios. That's not an oversight, there's just no mechanism to define yet since nothing's happened that would trigger one. Everything I told you before still stands: no plan to authorize more shares right now, and you'll hear it from me before it happens if that changes.
+
+Before reuse, check the actual document contents and then-current share-authorization plans so the placeholder remains accurate. This is a delivery reminder, not authorization to send now or a new dilution protection.
 
 ## Thursday action checkpoint — August 20, 2026 — Complete
 
@@ -86,7 +152,7 @@ This entry records only the confirmed meeting schedule and intended agenda. It d
 
 The supplied session summary treats authorized shares that have not been issued as outside current ownership calculations until issuance. It also flags that changing the authorized pool is simplest while John is the sole stockholder because a later Certificate of Amendment would require stockholder approval. These are planning notes for Cara to confirm in the final structure, not independent legal conclusions from Cody.
 
-### Remaining open items
+### Remaining open items as of August 31 — superseded by September 8 checklist
 
 - Voting agreement versus irrevocable proxy for Randall's shares.
 - Whether Cara accepts an ongoing engagement and whether any equity compensation is appropriate.
@@ -124,7 +190,7 @@ Randall's situation is different: the work is already completed, he is departing
 
 ## Historical focused questions before the 2026-08-31 response
 
-The questions below explain the path to the current direction. The controlling open items are now listed in the 2026-08-31 section above.
+The questions below explain the path to the current direction. The controlling open items are now listed in the 2026-09-08 section above.
 
 - Does the existing RSPA fit if Randall's unvested shares are set to zero and the inapplicable continuous-service/repurchase language is removed or rewritten through Switch Forms?
 - If not, what specific straight stock-purchase form or custom drafting does Cara recommend?

@@ -414,6 +414,75 @@ Full detail for each item: `docs/functionality-decision-log.md`, entries dated 2
 - S15's location and separate-screen necessity are not locked. Wireframes must test a separate screen versus an expandable Event section, filtered member view, or other placement; findability; 10-versus-200-member scale; selected-community clarity; and surveillance/social-pressure risk. Avoid an unlimited inline member list and a default `x of total members` denominator. The visual pattern may change without reopening the underlying acknowledgement-visibility requirement.
 - S16 is `Saved-home signals`. Presence and Event check-in belong to the reporting adult profile, remain separate from acknowledgement and any verified-safety claim, and are not inherited by another profile using the same address.
 
+## 2026-09-08 — Gate 3 Slice C Claimable Offers and Pilot Concern Boundary
+
+- John approved a partial Slice C rule: both Requests and Offers are claimable in MVE-1. The contextual Request action is `I'll help`; the contextual Offer action is `I'll take you up on that`.
+- Both coordination types use the three persistent states Open, Claimed, and Closed. A successful claim opens an in-app thread visible only to the item's creator and claimant, and either participant may message first. This claimed-item thread is separate from X02/S28, where a member-profile action hands off to the device's native Call or Text app outside LHL.
+- The existing Request lifecycle remains unchanged: the claimant may release, the original requester may reopen, and only the original requester may close. Exact authority to release, reopen, and close an Offer remains an explicit Slice C decision; it is not inferred from the Request rule by this entry.
+- MVE-1 does not include in-app abuse reporting or chat-moderation tooling. During the closed pilot, Help/Safety provides a manual `Report a concern` path to John in his role as the administrator operating the test. That route does not automatically disclose private-thread content or create an in-app moderation workflow.
+- In-app abuse reporting and private-thread moderation are recorded as a distinct Post-MVE-1 roadmap-backlog need. Future design must separately decide reviewer authority, evidence access, privacy, retention, urgent-threat handling, participant safeguards, and the relationship to membership removal.
+- These approvals update the working product boundary but do not approve Slice C coverage as a whole, the still-open Offer lifecycle authority, final concern-route presentation, the remaining Slice C design details, low-fidelity layouts, the active roadmap task, or Gate 3 closure.
+
+## 2026-09-08 — MVE-1 Offer Lifecycle Authority
+
+- John approved creator-controlled Offer lifecycle authority. Only the originator who created an Offer may release or reopen a claimed Offer to Open or close it to Closed.
+- The Offer claimant may claim the Offer and participate in its private creator/claimant thread but may not release, reopen, or close the Offer.
+- This resolves the Offer-authority question left open by the earlier Slice C claimability decision. It does not change the Request lifecycle: the Request claimant may release, the original requester may reopen, and only the original requester may close.
+- Exact confirmation copy, failure/recovery treatment, and whether an Offer release or reopen separately notifies the claimant remain low-fidelity design questions. This decision does not approve Slice C coverage as a whole, the active roadmap task, or Gate 3 closure.
+
+## 2026-09-08 — Gate 3 Slice C Reminder, Transition, Renewal, and Message-State Rules
+
+- MVE-1 tests one in-app reminder after a Request has remained Claimed for seven days, asking the original requester to close it or keep it open. The reminder does not repeat, use a device push, vary by Request context, or auto-close the Request. This supersedes the remaining timing/channel question in the 2026-09-01 experience-map decision.
+- When a Request claimant releases or the original requester reopens the Request and the transition succeeds, LHL notifies the other participant. Exact notification copy and presentation remain low-fidelity design work.
+- Every renewal of a temporary private-information grant requires a new deliberate confirmation by the private-data owner. Access may never be silently extended. The approved one-day default, automatic expiry, early revocation, and re-masking rules remain unchanged.
+- Claimed-item threads must distinguish draft or unsent, offline, sending, sent, and failed states honestly and provide an understandable retry path. Gate 4 decides whether and how outbound messages queue; this entry does not approve offline delivery architecture or a provider.
+- These approvals do not decide Offer release/reopen/close authority, final native Call/Text consent or phone-verification treatment, final concern-route presentation, Slice C coverage as a whole, low-fidelity layouts, the active roadmap task, or Gate 3 closure.
+
+## 2026-09-08 — MVE-1 SMS Verification, Member-Contact Consent, and Internal Member ID
+
+- Every MVE-1 pilot participant must provide a phone number capable of receiving SMS and successfully complete a one-time SMS verification through Twilio Verify during onboarding. Twilio Verify is the approved MVE-1 verification-provider direction; Gate 4 finalizes configuration and implementation rather than reopening provider selection.
+- Successful verification establishes control and receipt for that attempt; it does not guarantee future SMS, call, carrier, network, or device delivery. LHL does not periodically or routinely re-verify an unchanged verified number. If a resident replaces the stored phone number, the replacement must be verified once before it becomes active.
+- The existing Call/Text consent remains mandatory for pilot participation. Its disclosure must state that approved group members may use LHL to initiate native calls or texts and that the native phone or messaging application may reveal the participant's number. Do not add a second optional checkbox asking the participant to self-attest that the number can receive texts.
+- MVE-1 does not require a paid phone-number line-type lookup. Successful SMS verification is the bounded pilot check; it does not identify every carrier or device limitation.
+- John approved a separate system-generated immutable internal `member_id` for every member record. It anchors internal product records and future CRM relationships. The verified phone number remains a changeable contact/authentication attribute; changing it never changes the `member_id` or rewrites prior record ownership.
+- Gate 4 defines `member_id` format, generation, storage, authentication implementation, Twilio configuration, code expiry, resend and rate limits, phone-change transaction, recovery path, and later CRM integration. Those implementation choices may not replace the approved durable-identifier rule with the phone number.
+- MVE-1 does not enforce one phone number per active profile. A Post-MVE-1 discovery item will decide whether one normalized number may be assigned to only one active profile and must define reassignment, account recovery, recycled-number disputes, and legitimate shared-number exceptions before enforcement.
+- Exact final disclosure copy remains low-fidelity design work. This decision updates S03 and the X02/S28 boundary but does not approve Slice C coverage, the active roadmap task, or Gate 3 closure.
+
+## 2026-09-08 — Gate 3 Slice D Coverage and S27 Retirement
+
+- John approved Slice D coverage after reviewing S27 and S29–S31 plus the ten cross-cutting integrity distinctions.
+- S27 is retired as a distinct parent screen. Recovery Requests and Offers reuse S17–S26 because MVE-1 does not expose a consumer-facing universal lifecycle phase or administrator phase control and the resident's coordination actions do not change.
+- Retirement of S27 does not remove Recovery from MVE-1. Low-fidelity wireframes and acceptance criteria must exercise Recovery as a required use/test context across trusted-group activity, creation, detail, claim, thread, sharing, release/reopen, and closure, with recovery-appropriate wording and current/stale/closed sourced context where applicable.
+- Active Slice D parents are S29 Help/Safety, S30 notification settings, and S31 account/access integrity. The ten cross-cutting distinctions remain required wherever user meaning or the next action changes.
+- Consumer-facing lifecycle language, offline Help/Safety availability, suspension/revoked-access next steps, and exact recovery-context wording carry into low-fidelity design without blocking Slice D coverage.
+- The active inventory decreases from 30 to 29 parent-screen families. Slice C, complete-inventory approval, low-fidelity layouts, final copy, the active roadmap task, and Gate 3 remain open.
+
+## 2026-09-08 — Gate 3 Slice C Coverage Approved
+
+- John confirmed that his prior Slice C responses and the resulting changes collectively approve Slice C coverage. S17–S26 plus X02/S28 are sufficient MVE-1 parents for claimable Requests and Offers, the creator/claimant thread, task-specific temporary sharing, lifecycle transitions and closure, member lookup, and native Call/Text. S29 separately covers the manual pilot `Report a concern` route.
+- The approved communication boundary has no pre-claim private messaging. Claiming either a Request or Offer is deliberate, and either the creator or claimant may send the first message only after the claim succeeds.
+- The approved sharing boundary is one recipient and one claimed Request or Offer, minimum necessary fields, one-day default access, visible purpose and duration, early revocation, deliberate confirmation for every renewal, and fail-closed behavior when consent or access is absent.
+- The detailed reminder, Request-transition notification, message-state, Offer-authority, SMS verification, member-contact consent, immutable `member_id`, Call/Text, and pilot-concern rules remain controlled by the earlier September 8 entries. The exact Help/Safety concern-route presentation and other recorded interaction/copy details carry into low-fidelity wireframing without blocking Slice C coverage.
+- All four review slices are now founder-approved for coverage. The separate complete-inventory roll-up, low-fidelity layouts, final copy, reusable cross-platform design rules, data/permission schema, active roadmap task, and Gate 3 closure remain open; this entry approves none of those later outputs.
+
+## 2026-09-08 — Complete MVE-1 Screen/State Inventory Approved for Handoff Drafting
+
+- John approved the complete-inventory roll-up as sufficient coverage for low-fidelity drafting: 29 active in-app parent-screen families, two external pilot surfaces, all 11 experience-map stages, five role/responsibility lanes, four internal lifecycle test contexts, and the ten cross-cutting integrity distinctions.
+- The approval authorizes Cody to prepare a separate CC low-fidelity-layout handoff. John must review and approve that handoff document before sharing or authorizing it for CC execution.
+- The handoff draft is [Gate 3 — CC Low-Fidelity Layout Handoff — Draft for Founder Review](https://docs.google.com/document/d/1owFvXyw2HOs4W0kJoTErh_JNx71kYb-ePqEyWE5rx-U/edit), stored in the shared Gate 3 Drive folder. It remains unapproved for execution.
+- This approval does not approve CC's resulting layouts, final copy, reusable cross-platform design rules, the data/permission schema, technical architecture, production implementation, the active roadmap task, or Gate 3 closure. The recorded wireframe experiments remain open and do not reopen approved coverage.
+
+## 2026-09-08 — Legal Representation and Stock/IP Drafting Direction After Cara Meeting
+
+- Evidence: John's supplied September 8 Claude recap, his pasted sent Cara email, and Cody's read-only retrieval of the linked IP/Residual Knowledge draft and existing stock-document references. Incoming Cara correspondence and Randall's actual acknowledgment were not inspected. This entry records founder direction, not legal effectiveness or counsel approval of drafts.
+- Cara is confirmed as John's selected LHL legal representative through MVE-1, with her engagement agreement draft pending. John identifies engagement terms as the most time-sensitive legal item. Compensation is not settled: equity, hybrid, and non-equity/deferred-fee structures remain possible. His email shared a researched 1–3% range as discussion context, not a specific offer or verified benchmark; the prior internal approximately 5% is not an offer or approved baseline. Early-termination terms and applicable client-equity professional-conduct procedures remain for Cara.
+- The August 31 single-common-class/two-track direction remains in place. John plans solo-founder Clerky filing with separate counsel-assisted Randall stock/IP documents. A voting agreement and/or irrevocable proxy is intended to align Randall's votes with John; Cara still selects the strongest combination. No filing is evidenced.
+- The 9M/1M split is provisional. Any contemplated Cara stock grant would use authorized-but-unissued company shares otherwise intended for John's issuance, not Randall's intended 1M; John's final issuance count remains open. No personal share transfer or finalized reserve/capitalization is approved.
+- Randall reportedly acknowledged an intended fixed 1,000,000-share allocation rather than a guaranteed 10% interest. John's latest reply declined to promise always-equal dilution and committed to informing Randall before/as future share authorization occurs. This does not establish completed issuance, fixed ownership percentage, or acknowledgment of the latest reply.
+- John selected a proposed broad assignment of Randall's LHL work with reciprocal methodology-independence disclaimers and no license in either direction, replacing the older license-based drafting approach. For John's own CIIAA, the direction is Excluded IP `None`, company ownership of Market Intelligence Agent v1 and its outputs, and retention only of general residual knowledge/skill subject to confidentiality, specific-asset and other CIIAA obligations. Both provisions were drafted and sent to Cara; the linked text was read and retains an unresolved `Section [X]`. Counsel review and final incorporation remain pending. No completed IP transfer is inferred.
+- Engagement terms, compensation/termination, voting mechanism, IP review, professional-conduct procedure, spousal-consent effect, final share counts, and the final document package remain open. No signing, filing, grant, task completion, or product-scope change is approved by this entry. See `docs/clerky-post-incorporation-follow-up-notes.md` for the owner checklist, source gaps, and separate statutory-notice qualification.
+
 ## Product Decisions
 
 The detailed functional product rules are maintained in `docs/functionality-decision-log.md`. The following entries are currently controlling:
@@ -449,3 +518,10 @@ The detailed functional product rules are maintained in `docs/functionality-deci
 - 2026-09-01 — Gate 3 Experience-Map Role and Coordination Rules
 - 2026-09-03 — Gate 3 Slice A Entry, Profile, Membership, and Saved-Home Coverage
 - 2026-09-03 — Gate 3 Slice B Event Hierarchy, Evacuation, and Acknowledgement Coverage
+- 2026-09-08 — Gate 3 Slice C Claimable Offers and Pilot Concern Boundary
+- 2026-09-08 — MVE-1 Offer Lifecycle Authority
+- 2026-09-08 — Gate 3 Slice C Reminder, Transition, Renewal, and Message-State Rules
+- 2026-09-08 — MVE-1 SMS Verification, Member-Contact Consent, and Internal Member ID
+- 2026-09-08 — Gate 3 Slice D Coverage and S27 Retirement
+- 2026-09-08 — Gate 3 Slice C Coverage Approved
+- 2026-09-08 — Complete MVE-1 Screen/State Inventory Approved for Handoff Drafting

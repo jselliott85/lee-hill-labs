@@ -453,6 +453,66 @@ When `devlog` appears, capture the decision here, organize it by feature area, a
 - **Approval boundary**: Slice B coverage is founder-approved. Slices C–D, final copy, low-fidelity layouts, complete-inventory approval, data/permission-schema approval, the roadmap task, and Gate 3 remain open.
 - **Source**: John's four Slice B Google Doc comments and explicit follow-up approvals on 2026-09-03, including the provisional S15 wireframe flag.
 
+### 2026-09-08 - Slice C Claimable Offers and Pilot Concern Route
+
+- **Product rule**: Both Requests and Offers are claimable in MVE-1 and use Open, Claimed, and Closed as their persistent coordination states. A Request presents `I'll help`; an Offer presents `I'll take you up on that` (`devlog`).
+- **Private coordination**: A successful claim creates an in-app thread visible only to the item's creator and claimant. Either participant may message first. This is distinct from member-profile Call/Text actions, which hand off to native device apps outside LHL (`devlog`).
+- **Request authority**: The existing Request rule remains: claimant release or original-requester reopen returns the Request to Open, and only the original requester closes it (`devlog`).
+- **Offer authority still open**: Claimability and the three-state Offer model are approved, but the exact actors allowed to release, reopen, and close an Offer remain an explicit Slice C decision. Do not silently inherit the Request authority model (`devlog`).
+- **Pilot concern route**: MVE-1 has no in-app abuse-reporting or chat-moderation workflow. Help/Safety provides a manual `Report a concern` path to John as the administrator operating the closed pilot. It does not automatically disclose private-thread content (`devlog`).
+- **Future boundary**: In-app abuse reporting and private-thread moderation are a distinct Post-MVE-1 backlog need requiring decisions on reviewer authority, minimum evidence access, retention, privacy, urgent threats, safeguards, and any relationship to member removal (`devlog`).
+- **Approval boundary**: Slice C remains open. Exact Offer release/reopen/close authority, concern-route presentation, and the other recorded Slice C design questions are not approved by this entry.
+- **Source**: John's three Slice C Google Doc responses and chat clarification on 2026-09-08.
+
+### 2026-09-08 - MVE-1 Offer Lifecycle Authority
+
+- **Product rule**: Only the Offer originator who created it may release or reopen a claimed Offer to Open or close it to Closed (`devlog`).
+- **Claimant boundary**: The claimant may claim the Offer and participate in its private creator/claimant thread but may not release, reopen, or close the Offer (`devlog`).
+- **Relationship to Request logic**: Request lifecycle authority remains unchanged: claimant release, original-requester reopen, and original-requester-only close. Both object types retain only Open, Claimed, and Closed as persistent states (`devlog`).
+- **Open design questions**: Exact confirmation copy, failed/stale-action recovery, and whether Offer release or reopen separately notifies the claimant remain low-fidelity design work.
+- **Source**: John's final Offer-lifecycle decision in chat on 2026-09-08.
+
+### 2026-09-08 - Slice C Reminder, Transition, Renewal, and Message States
+
+- **Reminder rule**: MVE-1 tests one in-app reminder after a Request has remained Claimed for seven days, asking the original requester to close it or keep it open. Do not repeat it, send it as push, vary the interval by context, or auto-close (`devlog`).
+- **Request-transition notification**: After a Request release or reopen succeeds, notify the other participant. Exact copy and visual treatment remain low-fidelity design details (`devlog`).
+- **Sharing renewal**: Every extension of a temporary private-information grant requires a fresh deliberate confirmation by the private-data owner. Never silently renew or extend access (`devlog`).
+- **Message integrity**: Distinguish draft or unsent, offline, sending, sent, and failed states honestly and provide an understandable retry path. Gate 4 decides whether and how outbound messages queue; no offline-delivery architecture or provider is approved here (`devlog`).
+- **Open questions**: Offer release/reopen/close authority; exact native Call/Text consent and phone-verification treatment; final concern-route presentation; and other remaining Slice C presentation details.
+- **Source**: John's approval of four C4 recommendations in chat on 2026-09-08.
+
+### 2026-09-08 - MVE-1 SMS Verification, Member-Contact Consent, and Internal Member ID
+
+- **Onboarding rule**: Require every pilot participant to provide an SMS-capable phone number and successfully complete a one-time SMS verification through Twilio Verify during onboarding (`devlog`).
+- **Verification meaning**: Successful verification proves control and SMS receipt for that attempt only. It does not guarantee future reachability, recipient-line capability, carrier/network service, native-device capability, or delivery (`devlog`).
+- **Re-verification rule**: Do not periodically or routinely re-verify an unchanged verified number. When a resident replaces the stored number, verify the replacement once before activating it (`devlog`).
+- **Consent rule**: Retain one explicit mandatory approved-member Call/Text consent. State that approved group members may initiate native calls or texts through LHL and that the native app may reveal the participant's number. Do not add a redundant optional checkbox asking whether the number can receive texts (`devlog`).
+- **MVE-1 boundary**: Do not require a paid line-type lookup. A successful SMS verification is sufficient for the bounded pilot check (`devlog`).
+- **Member identity rule**: Assign one system-generated immutable internal `member_id` when each member record is created. Use it to anchor internal product records and future CRM relationships. The verified phone number is a changeable contact/authentication attribute; replacing it never changes the `member_id`, creates a new identity, or rewrites prior record ownership (`devlog`).
+- **Gate 4 boundary**: Twilio Verify is the approved MVE-1 verification-provider direction. Gate 4 finalizes `member_id` format/generation/storage, provider configuration, authentication implementation, code expiry, resend, rate limits, phone-change, recovery, and later CRM integration. Those implementation decisions may not make the phone number the permanent record key.
+- **Post-MVE-1 boundary**: MVE-1 does not enforce one number per active profile. Future discovery must decide whether one normalized number may belong to only one active profile and define reassignment, recovery, recycled-number disputes, and legitimate shared-number exceptions before enforcement.
+- **Design boundary**: Exact final disclosure copy remains low-fidelity design work. Offer lifecycle authority and other remaining Slice C decisions stay open.
+- **Source**: John's approval of Cody's SMS-verification and member-contact-consent recommendations, followed by his no-periodic-reverification and Twilio direction, future phone-uniqueness question, and explicit `aligned` approval of the immutable internal member-ID recommendation in chat on 2026-09-08.
+
+### 2026-09-08 - Gate 3 Slice D Recovery Reuse and Integrity Coverage
+
+- **Screen-family rule**: S27 is retired as a distinct parent screen. Recovery Requests and Offers reuse S17–S26 because the participant actions are the same and MVE-1 does not expose or administer a universal lifecycle phase (`devlog`).
+- **Recovery coverage**: Retirement does not remove the Recovery journey. Treat Recovery as a required use/test context across trusted-group activity, request/offer creation, detail, claim, creator/claimant thread, sharing, release/reopen, and closure. Use recovery-appropriate wording and show current, stale, or closed sourced context where applicable (`devlog`).
+- **Phase boundary**: Do not add a consumer-facing universal Recovery status or give the community administrator phase-setting authority (`devlog`).
+- **Slice D parents**: S29 Help/Safety, S30 notification settings, and S31 account/access integrity are sufficient parent-screen coverage. Carry the ten cross-cutting integrity distinctions into every relevant wireframe where meaning or next action changes (`devlog`).
+- **Open design items**: Consumer-facing lifecycle language, offline Help/Safety availability, suspension/revoked-access next steps, and exact recovery-context wording remain low-fidelity design work; they do not block Slice D coverage.
+- **Approval boundary**: Slice D coverage is founder-approved. Slice C, complete-inventory approval, low-fidelity layouts, final copy, data/permission-schema approval, the roadmap task, and Gate 3 remain open.
+- **Source**: John's Slice D Google Doc comment and explicit confirmation in chat on 2026-09-08.
+
+### 2026-09-08 - Gate 3 Slice C Coverage Approval
+
+- **Coverage rule**: S17–S26 plus X02/S28 are sufficient MVE-1 parent-screen coverage for claimable Requests and Offers, post-claim private coordination, task-specific temporary sharing, lifecycle transitions and closure, member lookup, and native Call/Text. S29 separately provides the manual pilot concern route (`devlog`).
+- **Communication rule**: There is no pre-claim private messaging. A Request or Offer claim is deliberate, and either the creator or claimant may send the first message after a successful claim (`devlog`).
+- **Sharing rule**: Limit a temporary grant to one recipient and one claimed Request or Offer, minimum necessary fields, one-day default access, visible purpose and duration, early revocation, deliberate confirmation for each renewal, and fail-closed behavior when consent or access is absent (`devlog`).
+- **Carried-forward design items**: Exact concern-route presentation in Help/Safety, transition and reminder copy, message-recovery presentation, S15 placement, and other recorded interaction/copy details remain low-fidelity tests. They do not reopen the approved screen/state coverage.
+- **Approval boundary**: Slice C coverage is founder-approved, so all four inventory slices are approved. Complete-inventory roll-up approval, low-fidelity layouts, final copy, reusable design rules, data/permission-schema approval, the roadmap task, and Gate 3 remain open.
+- **Source**: John's explicit confirmation in chat on 2026-09-08 that Slice C is approved with the recorded changes.
+
 ## Export Format
 
 When exporting for dev planning, convert entries into this structure:

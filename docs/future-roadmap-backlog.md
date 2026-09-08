@@ -2,6 +2,14 @@
 
 This is an idea/reference log, not a task tracker. Approved future work belongs in `docs/00-master-roadmap.md`.
 
+## Phone Number Reassignment and Active-Profile Uniqueness
+
+- **Concept:** Decide whether one normalized phone number may be assigned to only one active LHL profile while preserving the approved separation between durable identity and phone contact.
+- **Approved identity foundation:** Every member record has a system-generated immutable internal `member_id` for product records and future CRM relationships. The verified phone number is a changeable contact/authentication attribute rather than the permanent record key.
+- **Potential behavior:** Before assigning a number already attached to another active profile, block automatic reuse and route the case through a bounded reassignment or recovery flow. Preserve account history under the immutable identifier rather than moving or merging records based only on the number.
+- **Discovery constraints:** Define normalization, reassignment authority, recovery evidence, notification to the prior account where safe, recycled-number disputes, legitimate shared-family or accessibility cases, administrator visibility, audit history, privacy, deletion, and what happens when the prior account is inactive or unreachable. Do not assume that successful SMS receipt proves ownership of the prior account or identity of the person holding the number.
+- **Roadmap status:** Post-MVE-1 discovery. MVE-1 permits no periodic re-verification of an unchanged number, verifies a replacement number once before activation, and does not enforce one-number-per-active-profile uniqueness.
+
 ## Source/Class-Specific Point-Only Fire Radius
 
 - **Concept:** Replace MVE-1's universal point-only fire radius with pre-approved treatment that varies by source and documented record class, allowing different radii—or no point-based notification—when point meaning, accuracy, or source behavior differs.
@@ -62,7 +70,7 @@ This is an idea/reference log, not a task tracker. Approved future work belongs 
 ## Claim Reminder Nudge — Superseded 2026-09-01
 
 - **Historical concept:** A "did you complete this task?" notification after some time has passed since claiming, distinct from automatic closure.
-- **Superseding decision:** On 2026-09-01 John approved a bounded MVE-1 principle: LHL may remind the original requester that a Claimed request remains open and ask them to close it or keep it open; LHL never closes automatically. Exact timing and push versus in-app delivery remain Gate 3 testing decisions.
+- **Superseding decisions:** On 2026-09-01 John approved a bounded MVE-1 principle: LHL may remind the original requester that a Claimed request remains open and ask them to close it or keep it open; LHL never closes automatically. On 2026-09-08 he approved testing one in-app reminder after seven Claimed days, with no repeat, device push, context-varying interval, or auto-close.
 - **Roadmap status:** The standalone Post-G6 scheduling task is Superseded and archived. The bounded reminder now belongs to active G3 task `Finish approved user flows and low-fidelity screens`. See the 2026-09-01 entries in `docs/04-decision-log.md` and `docs/functionality-decision-log.md`.
 
 ## Urgent Request Push Notifications
@@ -77,6 +85,13 @@ This is an idea/reference log, not a task tracker. Approved future work belongs 
 - **Concept:** Allow a trusted-group administrator to remove or suspend an existing member after admission, with any later content/message moderation designed as a separate capability.
 - **Potential behavior:** Revoke group membership and associated access, preserve an appropriate audit record, notify the affected member where safe, and define what happens to prior requests, offers, and private-thread access. Content reporting or moderation is not implied by member removal and requires its own scope decision.
 - **Roadmap status:** Deferred post-MVE-1. The Boulder Heights pilot uses John as the administrator with approve/deny join requests only; a manual operator-level access-revocation safeguard must exist before pilot access is issued. See `docs/04-decision-log.md`, 2026-08-06.
+
+## In-App Abuse Reporting and Private-Thread Moderation
+
+- **Concept:** Let a participant report abuse or a safety concern tied to a claimed Request/Offer private thread or a specific message, with a bounded review and response workflow.
+- **Potential behavior:** Capture the reporting participant, relevant item/thread or message reference, a reason category, and an optional note while minimizing copied private content. Provide an authorized reviewer queue, status tracking, audit history, proportionate actions, and clear separation from emergency reporting.
+- **Discovery constraints:** Decide who may review reports; what thread evidence becomes accessible and under what notice or consent; retention and deletion; encryption and audit access; false or retaliatory reports; urgent-threat escalation; appeal or review; block/mute behavior; and effects on the coordination item, private thread, and community membership. Reconcile this capability with `Administrator Member Removal and Community Moderation` without treating membership removal as automatic content moderation.
+- **Roadmap status:** Deferred Post-MVE-1. The closed pilot instead provides a manual Help/Safety `Report a concern` path to John as the administrator operating the test, with no automatic private-thread disclosure and no in-app moderation workflow. No future reviewer role, implementation, or moderation policy is approved yet.
 
 ## Community Invitation and Access-Code Management
 

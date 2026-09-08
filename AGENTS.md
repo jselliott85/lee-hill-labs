@@ -53,15 +53,21 @@ An idea mentioned in a meeting, email, or chat is never automatically approved s
 ## Operating Discipline
 
 ### Model and reasoning stability
-- Default to keeping the current model and reasoning level stable for the entire coherent work block. Before substantive work, assess whether the current configuration remains appropriate; if it does, say so briefly and proceed without pausing.
+- At the start of each coherent work block, assess model fit once. When selecting a model for new work and the fit is uncertain, start with GPT-5.6 Sol at the lowest reasoning level that can reliably handle the task. If the current configuration is already appropriate, keep it stable and proceed without pausing.
+- Treat GPT-6 Astra as the escalation model for work where its stronger long-horizon reasoning, instruction following, browsing, software engineering, or multistep tool use is likely to materially reduce error or rework. Astra is not the automatic default for routine work.
 - Recommend a change only when the expected benefit is material enough to justify interrupting John's workflow. A difference is material when at least one of these conditions applies:
-  - The current configuration creates a credible risk of a wrong, incomplete, or poorly verified result because the work is unusually complex, ambiguous, high-stakes, or cross-document.
+  - The current configuration creates a credible risk of a wrong, incomplete, or poorly verified result because the work is unusually complex, ambiguous, high-stakes, long-running, or cross-document.
   - The task requires a capability the current model lacks or performs materially worse.
   - The remaining work is large enough that a substantially faster or less costly configuration would save meaningful time or usage across multiple tasks, rather than provide a marginal advantage.
-  - The current configuration has already shown difficulty through repeated contradictions, missed requirements, tool failures, or significant rework.
-- Do not recommend switching for small routine subtasks, brief follow-ups, isolated edits, or estimated marginal gains. If the difference is uncertain, keep the current configuration.
-- Once selected, retain the model and reasoning level until the coherent work block ends or the task changes materially. Do not repeatedly switch up and down within one work block.
-- When a change is materially warranted, state the reason and expected benefit, then **pause and end the turn before beginning the work or calling task tools**. Wait for John to change the model or reasoning level and confirm before proceeding.
+  - One substantive iteration has already exposed contradictions, missed requirements, loss of context, or significant rework that may reflect model fit rather than a correctable tool, permission, environment, or source problem.
+- After the first substantive unsuccessful iteration, reassess before repeating the same approach. Diagnose whether the cause is model capability or context coherence, reasoning effort, instructions, evidence, tooling, permissions, or environment. Correct non-model causes directly. Do not burn through several similar attempts before considering Astra.
+- If difficulty is narrow and the work context remains coherent, prefer raising Sol's reasoning level before changing models. If the task is materially demanding or the first failed iteration indicates that stronger long-context or multistep performance is likely to prevent further rework, recommend moving to Astra immediately.
+- When recommending Astra, explicitly choose one transition:
+  - `Restart on Astra` when the current thread contains conflicting assumptions, accumulated confusion, or contaminated context that could carry the failure forward.
+  - `Hand off to Astra` when verified findings, staged artifacts, diffs, or a concise state summary can be reused safely.
+- State the expected benefit and tradeoffs in plain language: Astra has higher per-token pricing, but may use fewer tokens and cost less per completed task when it prevents rework; also account for latency, workflow interruption, and how much completed work can be preserved.
+- Do not recommend switching for small routine subtasks, brief follow-ups, isolated edits, or estimated marginal gains. Once a coherent work block is active, retain the current model and reasoning level when the benefit of switching remains uncertain.
+- When a change is materially warranted, state the reason, expected benefit, tradeoffs, and restart-versus-handoff recommendation, then **pause and end the turn before beginning further task work or calling task tools**. Wait for John to change the model or reasoning level and confirm before proceeding.
 
 ### Staging before canonical writes
 - Batch related research/edits into the `.tmp-trusted-*` staging pattern (manifest, receipt, document-outline, document-result, document-text) before writing to canonical repo files. This is already Cody's default behavior for read/research tasks — this section makes it explicit and required, not incidental.

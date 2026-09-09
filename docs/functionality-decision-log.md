@@ -526,3 +526,46 @@ Permissions:
 Open questions:
 Source:
 ```
+
+## 2026-09-09 — Community Push Eligibility and OS-Only MVE-1 Control
+
+- **Product rule:** New community Requests and Offers may generate device notifications for approved members of the relevant trusted community. Existing pushes for someone claiming your item, a message in your claimed-item thread, and material coordination/access changes involving you remain permitted. This supersedes the older no-push-for-new-items rule.
+- **Control rule:** No in-app master switch or category preferences in MVE-1. Recommend On, request OS permission, explain denial/later disabling and provide a path to OS settings without blocking the rest of the app. This supersedes the old LHL disable-all control and S05 preference.
+- **User-story seed:** As a pilot participant, I can learn about new community coordination needs and opportunities, control LHL notifications through my device settings, and explain which notifications are useful or excessive.
+- **Safeguards:** Existing access, generic lock-screen privacy, incident eligibility and pilot suppression rules remain. The seven-day Request reminder stays in-app only. Permission is not delivery assurance. No new telemetry, urgency flag, provider, quiet-hour or rate-control feature is authorized.
+- **Later work:** `Granular In-App Notification Settings` after MVE-1 pilot review; category definitions, defaults, evidence collection and implementation remain to be designed and approved.
+- **Source/approval:** John's explicit O1/D3 direction in the Cody/John review, 2026-09-09; controlling supersession in `docs/04-decision-log.md`. Workbook `OTHER APP NOTIFICATIONS` is a working mirror. No other A1 review question is resolved here.
+
+## 2026-09-09 — A1 Entry Order, Fixed Signup Safety, Deferred Rotation and Email Invitation
+
+- **Rule:** Signup proceeds S01 → S03 → S04 → S05 → S02, then existing community/membership and first-arrival guidance. S02 is OS permission only under the earlier same-day decision; denial does not block continued setup. Exact no-coordinate wording is not decided here.
+- **Safety:** Existing signup safety remains hardcoded/deterministic. No rotating messages ship in MVE-1; possible recurring app-load messaging moves to future discovery without reserving a loading screen. Other required safety contexts are unchanged.
+- **Invitation:** X01 is an email, readable on a phone, carrying installation instructions and a separate community join code without granting membership. Delivery automation/provider remain unspecified.
+- **User-story seed:** A new participant learns LHL's role, enters account/home information, reviews the home location and then makes an informed device-notification permission choice.
+- **Approval/source:** John's explicit items 4/5/6 confirmation in the A1 review; controlling same-day decision in `docs/04-decision-log.md`. Returning launch/sign-in behavior and broader no-coordinate consequences remain under review.
+
+## 2026-09-09 — Location Recovery Coverage and Two Entry Surfaces
+
+- **Product rule:** Not signed in → shared Create account / Sign in entry; signed in → saved starting screen within existing access constraints. New versus existing-account routes remain distinct underneath. No repeated signup for signed-in residents; login mechanism remains undecided.
+- **Location variants:** Usable result with accept/edit; no usable result; ambiguous/overly broad result; temporary lookup failure; map-preview failure; save failure. Preserve input, differentiate retry from address correction, and never show failed saves as completed. Approximate-but-close remains acceptable; a broad region match alone is not a home.
+- **Integrity:** An old lookup cannot overwrite the result for a newly edited address; record as acceptance behavior, not a separate screen.
+- **Low-fi assignment:** Main paths in the next authorized A1 correction; detailed variants in Pass 2/A. Reuse S05 rather than invent new parent IDs. No-coordinate consequences and auth/recovery mechanics remain open.
+- **Source:** John's explicit alignment and two-surface clarification in this conversation, 2026-09-09; controlling entry in `docs/04-decision-log.md`.
+
+## 2026-09-09 — One Adult Account with Future Multiple Homes and Communities
+
+- **Product direction:** One adult retains the same account and immutable `member_id` when future saved homes and separately approved community memberships are added. Home/context switching is not signing into a second account.
+- **MVE-1 boundary:** One adult account/profile, one saved home, Boulder Heights only; no multi-home UI or linked/shared household account.
+- **User-story seed:** As a resident with a primary and vacation home, I want to use one account while viewing and coordinating within the correct home/community context.
+- **Architecture carryover:** Keep account identity, home information and community membership conceptually distinct in Gate 3/Gate 4 work; preserve a future extension path without implementing deferred capabilities now.
+- **Later decisions:** Home/community relationships; scoped sharing, requests and signals; notification subscription versus viewed context; switching/migration and separate approvals. Phone uniqueness and login/recovery remain independent open questions.
+- **Source/approval:** John's explicit alignment in this conversation, 2026-09-09; controlling decision in `docs/04-decision-log.md`. Expanded existing `Multiple Trusted Groups and Group Creation` backlog item.
+
+## 2026-09-09 — SMS Sign-In, Unique Phone Assignment and No-Location Event Boundary
+
+- **Rules:** SMS text-code sign-in for MVE-1; username/password paused. Valid signed-in sessions route to the saved starting screen rather than another SMS challenge on ordinary app open. Initial contact and replacement-number verification remain.
+- **Unique phone:** Block a second account or conflicting phone replacement when the number is already assigned; show number-already-in-use with Sign in/use-another-number paths. Returning owner sign-in is not a duplicate-account failure. Prevent duplicate assignments across concurrent attempts. Immutable member_id remains independent of phone changes.
+- **Recovery boundary:** Exact normalization, ownership proof, check timing, session/recovery and abuse protections remain Gate 4. No automatic transfer based only on SMS possession, account merging, recycled-number resolution or shared-number exception is approved. Basic uniqueness supersedes the former MVE-1 deferral; future reassignment discovery remains.
+- **Event boundary:** No usable resident-accepted home location means neither Event/alert pushes nor personalized Events in the feed. Explicitly disclose both consequences before continuing and show location-needed/recovery at saved-home/Events surfaces. Community coordination and approved community pushes remain under normal access/permission rules.
+- **Low-fi:** Required S03 duplicate-number and S05/S02 no-location presentations in the next authorized correction; detailed errors Pass 2/A, downstream S12/S13 in assigned chunks. No redraw in this review pass.
+- **Source:** John's two current messages, 2026-09-09; controlling decision in docs/04-decision-log.md.

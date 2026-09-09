@@ -2,13 +2,27 @@
 
 This is an idea/reference log, not a task tracker. Approved future work belongs in `docs/00-master-roadmap.md`.
 
+## App-Load Messages — Future Discovery
+
+- **Concept:** Reconsider rotating short messages on recurring app load only if they offer resident value and an appropriate place exists in the loading/entry experience.
+- **MVE-1 boundary:** Paused/excluded from MVE-1. No rotating message set, carousel or reserved loading-screen space. This supersedes the earlier S01 5–7-message rotation requirement, not fixed signup safety.
+- **Discovery constraints:** Evaluate whether users have time to read, whether display adds avoidable delay or obstruction, and whether any entry/loading-screen placement is useful. Do not randomize required safety, delay incident access or infer a new returning-user screen. Placement, message set and implementation remain unapproved.
+- **Roadmap status:** Unscheduled Post-MVE-1 idea, recorded at John's direction on 2026-09-09. Reconsider rather than commit to building it; founder scheduling is required.
+
+## Granular In-App Notification Settings
+
+- **Concept:** After MVE-1, define useful in-app notification categories and controls using pilot feedback about usefulness, volume and reasons for disabling notifications.
+- **MVE-1 baseline:** OS-only control, with On recommended and actual permission required; no duplicate in-app master switch or category toggles. New community Requests/Offers and approved direct-participant activity may push. Official alerts remain separate; OS muting removes all LHL pushes, including eligible incidents.
+- **Discovery constraints:** Consider incident alerts, community Requests/Offers and claimed-item activity without treating these examples as approved categories. Define defaults, interaction with OS permission, clear recovery paths, and privacy-preserving evidence collection. Muting does not establish its cause; telemetry is not implicitly approved.
+- **Roadmap status:** Founder-directed Post-MVE-1 discovery, captured as `Granular In-App Notification Settings` in the canonical roadmap. Start/due dates and implementation are not approved. Source: 2026-09-09 O1/D3 decision.
+
 ## Phone Number Reassignment and Active-Profile Uniqueness
 
-- **Concept:** Decide whether one normalized phone number may be assigned to only one active LHL profile while preserving the approved separation between durable identity and phone contact.
+- **Concept:** Define safe phone-number reassignment, recovery and recycled-number handling while preserving durable account identity. Basic unique phone assignment is now approved for MVE-1 (2026-09-09); this task no longer decides whether to enforce it.
 - **Approved identity foundation:** Every member record has a system-generated immutable internal `member_id` for product records and future CRM relationships. The verified phone number is a changeable contact/authentication attribute rather than the permanent record key.
 - **Potential behavior:** Before assigning a number already attached to another active profile, block automatic reuse and route the case through a bounded reassignment or recovery flow. Preserve account history under the immutable identifier rather than moving or merging records based only on the number.
 - **Discovery constraints:** Define normalization, reassignment authority, recovery evidence, notification to the prior account where safe, recycled-number disputes, legitimate shared-family or accessibility cases, administrator visibility, audit history, privacy, deletion, and what happens when the prior account is inactive or unreachable. Do not assume that successful SMS receipt proves ownership of the prior account or identity of the person holding the number.
-- **Roadmap status:** Post-MVE-1 discovery. MVE-1 permits no periodic re-verification of an unchanged number, verifies a replacement number once before activation, and does not enforce one-number-per-active-profile uniqueness.
+- **Roadmap status:** Reassignment/recovery refinements remain Post-MVE-1 discovery. The later 2026-09-09 decision supersedes the former uniqueness deferral: MVE-1 blocks new-account completion or phone replacement when a number is already assigned to another account. Existing-owner SMS sign-in remains allowed. No automatic account transfer or shared-number exception is approved; Gate 4 must still define the minimum safe pilot recovery behavior.
 
 ## Source/Class-Specific Point-Only Fire Radius
 
@@ -26,7 +40,7 @@ This is an idea/reference log, not a task tracker. Approved future work belongs 
 - **Unconfirmed-point policy:** Future discovery must define whether the existing address-derived point remains active when a resident opens but does not complete movable-pin editing, and how unsaved changes, cancellation, and mapping failures behave. This flow must not introduce an operator or community-administrator verification queue. A wider radius is not an automatic fallback because it changes notification geography and may increase false positives; any such rule requires explicit safety and pilot-evidence approval.
 - **Systematic-error learning:** Consider privacy-preserving aggregate analysis of resident correction direction and distance to detect streets, private lanes, or subdivisions that a provider systematically mis-geocodes. Define minimum cohort thresholds, retention, access, and deletion rules so this quality signal does not become a store of individually traceable location-change histories.
 - **Product value:** Reduces dependence on automated geocoding accuracy for private lanes, irregular parcels, rural address interpolation, and structures set back from the road while giving the household direct control over the point used for proximity matching.
-- **Roadmap status:** Deferred beyond MVE-1 and scheduled only for a Post-G6 discovery review. MVE-1 instead shows the resident one static address-derived neighborhood pin and lets them use it or edit the address; an approximate-but-close point is acceptable under the approved 10-mile rule, no operator verification is required, and a saved address without a usable coordinate leaves only point-based incident notifications unavailable. The exact mapping/geocoding service and storage terms remain a Gate 4 decision.
+- **Roadmap status:** Deferred beyond MVE-1 and scheduled only for a Post-G6 discovery review. MVE-1 instead shows the resident one static address-derived neighborhood pin and lets them use it or edit the address; an approximate-but-close point is acceptable under the approved 10-mile rule, no operator verification is required, and a saved address without a usable home location leaves both Event/alert notifications and personalized sourced Events in the feed unavailable, while community coordination remains available. The exact mapping/geocoding service and storage terms remain a Gate 4 decision.
 
 ## Admin-Uploaded Preparedness Resources
 
@@ -75,10 +89,10 @@ This is an idea/reference log, not a task tracker. Approved future work belongs 
 
 ## Urgent Request Push Notifications
 
-- **Concept:** Allow a member creating a community request to mark it `Urgent`, distinguishing a device-notifying request from requests delivered silently inside the app.
-- **Potential behavior:** The author selects urgency during request creation; an urgent request may generate a device notification while an ordinary request remains in-app only. Future design must define `Urgent`, explain it in plain language, prevent lifecycle labels from setting urgency automatically, and determine rate limits, correction, and misuse handling.
+- **Concept:** Allow a member creating a community request to mark it `Urgent`, subject to a separately approved definition and treatment. Its original push-versus-silent premise was superseded on 2026-09-09: ordinary new Requests and Offers are already push-eligible in MVE-1.
+- **Potential behavior:** The author selects urgency during request creation. Future design must define whether this changes prioritization or presentation, explain `Urgent` in plain language, prevent lifecycle labels from setting urgency automatically, and determine rate limits, correction, and misuse handling. Do not restore the superseded ordinary-request no-push rule by inference.
 - **Administrator boundary:** MVE-1 administrators only approve or deny membership and have no content-moderation or in-app direct-message role. Any future community-manager responsibility for addressing misuse is a separate role and operating decision; it may be handled outside the app unless future scope explicitly adds supporting tools.
-- **Roadmap status:** Deferred post-MVE-1. Not approved for MVE-1 scope. In MVE-1, all newly created requests and offers are delivered silently inside the app regardless of lifecycle phase.
+- **Roadmap status:** The author-selected urgency feature remains deferred post-MVE-1 and is not approved for MVE-1 scope. Under the 2026-09-09 supersession, newly created Requests and Offers may generate device notifications regardless of lifecycle phase.
 
 ## Administrator Member Removal and Community Moderation
 
@@ -101,9 +115,12 @@ This is an idea/reference log, not a task tracker. Approved future work belongs 
 
 ## Multiple Trusted Groups and Group Creation
 
-- **Concept:** Allow a resident to create or join more than one trusted community and switch among group contexts.
-- **Potential behavior:** Group creation, multiple memberships, group switcher, group-scoped household visibility, notification routing, and clear separation of requests, offers, and status information across communities.
-- **Roadmap status:** Deferred post-MVE-1. MVE-1 supports Boulder Heights as the participant's only trusted group.
+- **Concept:** Support multiple saved homes and separately approved community memberships under one adult account, with future community creation and home/community-context switching. Example: one person's Boulder Heights home and Summit County vacation home do not require two accounts.
+- **Approved foundation (2026-09-09):** The adult's immutable `member_id` and account identity remain independent of addresses and changeable phone contact. Context switching does not sign into another identity. Gate 3/Gate 4 work must preserve an extension path without implementing the deferred capability now.
+- **Potential behavior:** Multiple saved-home records, community memberships, contextual switching, group creation, scoped home visibility and notification routing, and clear separation of Requests, Offers and home-status signals. Do not assume every home has exactly one community or that every community has exactly one associated home per person; define those relationships during discovery.
+- **Discovery constraints:** Keep home-specific private information and time-limited sharing separate; identify the relevant home/community on coordination objects; require each community's own admission; define subscriptions separately from the currently viewed context, so viewing one home does not implicitly mute another; address migration, edits/removal and permission changes. Exact defaults, hierarchy, schema and implementation remain unapproved.
+- **Authentication boundary:** One adult with multiple homes is distinct from different adults sharing a phone number. The separate later same-day decision selects SMS-code sign-in and unique phone assignment for MVE-1; this multi-home direction itself does not choose those rules or settle recovery.
+- **Roadmap status:** Deferred post-MVE-1. MVE-1 remains one adult account/profile, one saved home and Boulder Heights as the only trusted group. Existing roadmap task and G6 go/no-go scheduling review retained; future implementation is not scheduled or approved.
 
 ## Low-Bandwidth / Satellite Data Mode
 

@@ -53,6 +53,7 @@ An idea mentioned in a meeting, email, or chat is never automatically approved s
 ## Operating Discipline
 
 ### Model and reasoning stability
+- At each new substantial work-block boundary, reassess downward as well as upward. Recommend GPT-5.6 Sol or lower reasoning when the work's complexity has dropped and the expected efficiency gains are meaningful without compromising reliability or effectiveness. Preserve a verified handoff, explain the tradeoff, and wait for John's confirmation before changing model or reasoning level. Do not switch for tiny follow-ups or interrupt a coherent work block for marginal savings.
 - At the start of each coherent work block, assess model fit once. When selecting a model for new work and the fit is uncertain, start with GPT-5.6 Sol at the lowest reasoning level that can reliably handle the task. If the current configuration is already appropriate, keep it stable and proceed without pausing.
 - Treat GPT-6 Astra as the escalation model for work where its stronger long-horizon reasoning, instruction following, browsing, software engineering, or multistep tool use is likely to materially reduce error or rework. Astra is not the automatic default for routine work.
 - Recommend a change only when the expected benefit is material enough to justify interrupting John's workflow. A difference is material when at least one of these conditions applies:
@@ -109,6 +110,14 @@ An idea mentioned in a meeting, email, or chat is never automatically approved s
 - Stage explicit files only; never use `git add .`. Commit one coherent work block before switching agents whenever practical.
 - If another agent's uncommitted changes overlap a target file, stop and reconcile the diff before editing.
 
+### Pending repo additions capture
+
+- When John or Claude produces decisions, drafts, or findings outside the repository while Cody or CC holds an active writer claim on other work, capture them in the [Pending Repo Additions Drive folder](https://drive.google.com/drive/folders/1N9dgRVLfebwxhNw4z-c8rZu-nNUxvEFG). This is a temporary queue, never a competing canonical source; the repository wins on conflict.
+- Use one Markdown file per date named `YYYY-MM-DD — Pending Repo Additions.md`. If the Drive connector cannot edit that date's existing file, create `(2)`, `(3)`, and so on. The highest version number is authoritative for that date's current `Pending`/`Incorporated` state; preserve earlier versions as history.
+- Each entry records what changed or was proposed, its canonical destination, John's approval evidence or `Pending`, its source link, and its status. On promotion, retain the entry and mark it `Incorporated — [destination] — [date]`; do not delete it.
+- Use this only for the running-list case during an active claim. Standalone chat handoffs, already-canonical work, and normal source documents do not belong in the folder.
+- At the next available repo session, Cody or CC checks the highest version for each relevant date, promotes approved items using the normal source-of-truth and decision-log rules, and leaves unapproved items pending.
+
 ## GEM Handover Workflow
 
 - `00_project-os/.lhl_ai_context.md` is the live sync file between Claude Code and GEM (Gemini, running in Google Workspace).
@@ -124,5 +133,5 @@ At the end of a substantial session:
 2. List anything unresolved or blocked.
 3. Update `docs/00-current-state.md` if state or decisions changed.
 4. Update `00_project-os/.lhl_ai_context.md` with the current sprint line, technical state, and next entry point.
-5. Stage only task-related files. Commit and push when John requests it or the work block explicitly includes repository synchronization.
+5. Stage only task-related files. Evening/day closeout includes committing the approved session changes and pushing to `main`; do not report the evening closed until the push succeeds and local `main` is verified against the remote. If synchronization is blocked, report the blocker and leave closeout incomplete; never force-push or discard others' work to finish. For other work blocks, commit and push when John requests it or the block explicitly includes repository synchronization.
 6. Do not mark anything "Done" in the roadmap until the actual change is verified and confirmed by John — not just generated.

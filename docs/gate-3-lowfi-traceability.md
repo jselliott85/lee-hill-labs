@@ -1,13 +1,15 @@
 # Gate 3 — Low-Fidelity Traceability Index
 
-**Current checkpoint — A1 correction round 2, 2026-09-09:** John authorized the second A1 drawing round (not A2 or global Pass 2). The revised X01/S01–S05 set is self-verified and awaits John's first review of Round 2. 13 app viewports cover the same five parent families, plus an email sample and OS boundary panel. Original Round 1 frames/comments and dated exports remain history. Detailed errors stay Pass 2/A; S12/S13 location-needed states stay in assigned chunks. SMS sign-in, unique phone assignment, fixed signup safety, email invitation, reordered setup, OS-only control and both no-location Event losses follow the recorded approvals. No final copy/layout approval or task completion.
+**Current checkpoint — A1 approved low-fidelity; A2 founder review and S12 exploration complete, 2026-09-10:** John approved A1's current low-fidelity structure, then authorized and reviewed A2. Cody constructed and self-verified eight A2 app views across S07–S12. John approved the resulting membership-gate, membership-state, administrator-review, and S12 Home-shell product directions, but did not approve A2 low-fidelity. The separate S12 exploration is constructed and verified; a bounded A2 correction proposal is next. A1 final copy, detailed consequential states, the overall roadmap task and Gate 3 remain open. See the [A2 handback](gate-3-lowfi-a2-20260910.md) and [S12 exploration brief](gate-3-lowfi-s12-home-shell-exploration-20260910.md).
 
-Status: Round 2 drafted and self-verified; founder layout approval pending. Five of 29 app parent families and X01 have drawings; the other 24 and X02 remain pending. The OS panel is a boundary note, not a new parent. INV product coverage and IDs remain authoritative.
+Status: A1 low-fidelity is founder-approved; its 13 app viewports across five parent families, X01 email sample and OS boundary panel remain the approved structural baseline. A2 has eight self-verified app views across six additional parent families and completed founder review; its separate S12 exploration is verified, but bounded corrections remain and A2 is not approved low-fidelity. Eleven of 29 app parent families and X01 now have drawings; only the A1 five and X01 are founder-approved low-fidelity. The S12 exploration does not add a parent family. The other 18 parents and X02 remain pending. The OS panel is a boundary note, not a new parent. INV product coverage and IDs remain authoritative.
 
 ## Review surfaces and source key
 
 - **Board organization update (2026-09-09, John requested):** All 15 Round 2 panels are integrated into two expanded boxes. Sheet 01: X01 → S01 → S01-signin → S01-code → S03a → S03b → S03d → S03c. Sheet 02: S04a → S04b → S05 → S05b → S02 → S02b → S02-OS. This is left-to-right review order, not a single mandatory app route; sign-in, duplicate-number and no-location outcomes remain alternatives. Screen IDs, text, local geometry and the action/state ledger are unchanged. Former Sheet 03 is only a relocation note beside the walkthrough.
-- **Current:** [John's Round 2 review guide](https://www.figma.com/design/GzK3TcwA0mPzn90gG6fWGK?node-id=37-257), [walkthrough](https://www.figma.com/design/GzK3TcwA0mPzn90gG6fWGK?node-id=37-264), [sheet 01](https://www.figma.com/design/GzK3TcwA0mPzn90gG6fWGK?node-id=37-2), [sheet 02](https://www.figma.com/design/GzK3TcwA0mPzn90gG6fWGK?node-id=37-126), [former-sheet-03 relocation note](https://www.figma.com/design/GzK3TcwA0mPzn90gG6fWGK?node-id=38-2). [Round 2 handback](gate-3-lowfi-a1-correction-r2-20260909.md).
+- **Approved A1:** [Round 2 review guide](https://www.figma.com/design/GzK3TcwA0mPzn90gG6fWGK?node-id=37-257), [walkthrough](https://www.figma.com/design/GzK3TcwA0mPzn90gG6fWGK?node-id=37-264), [sheet 01](https://www.figma.com/design/GzK3TcwA0mPzn90gG6fWGK?node-id=37-2), [sheet 02 corrected in Round 3](https://www.figma.com/design/GzK3TcwA0mPzn90gG6fWGK?node-id=37-126), [former-sheet-03 relocation note](https://www.figma.com/design/GzK3TcwA0mPzn90gG6fWGK?node-id=38-2). See the [Round 3 handback](gate-3-lowfi-a1-correction-r3-20260910.md); the [Round 2 handback](gate-3-lowfi-a1-correction-r2-20260909.md) is review provenance.
+- **A2 founder-reviewed:** [read-first guide](https://www.figma.com/design/GzK3TcwA0mPzn90gG6fWGK?node-id=59-2), [walkthrough](https://www.figma.com/design/GzK3TcwA0mPzn90gG6fWGK?node-id=59-9), [sheet 01](https://www.figma.com/design/GzK3TcwA0mPzn90gG6fWGK?node-id=59-16), and [sheet 02](https://www.figma.com/design/GzK3TcwA0mPzn90gG6fWGK?node-id=59-20). Eight 390 × 844 app views cover S07–S12; the separate S12 exploration is verified, founder corrections remain pending, and detailed state expansion remains explicitly pending Pass 2/A.
+- **Separate S12 founder exploration:** [full sheet](https://www.figma.com/design/GzK3TcwA0mPzn90gG6fWGK?node-id=73-2), [normal Home](https://www.figma.com/design/GzK3TcwA0mPzn90gG6fWGK?node-id=73-5), [location-needed behavior](https://www.figma.com/design/GzK3TcwA0mPzn90gG6fWGK?node-id=73-6), and [approved structure/deferrals](https://www.figma.com/design/GzK3TcwA0mPzn90gG6fWGK?node-id=73-7). This verified reference is separate from the reviewed A2 frames, adds no parent ID, and does not itself approve A2 low-fidelity.
 - The three links and image references immediately below are **Round 1 historical snapshots**, not the current correction review entry point.
 
 - [Start-here / entry walkthrough board](https://www.figma.com/design/GzK3TcwA0mPzn90gG6fWGK?node-id=12-2).
@@ -20,21 +22,29 @@ Status: Round 2 drafted and self-verified; founder layout approval pending. Five
 
 | Frame key / parent | Actor | State or structural step | Figma node / deep link | Canonical source | Pass / verification / disposition |
 | --- | --- | --- | --- | --- | --- |
-| X01 (X01) | Administrator → invitee | You’re invited to try LHL | [37:8](https://www.figma.com/design/GzK3TcwA0mPzn90gG6fWGK?node-id=37-8) | INV X01; REQ; approved 2026-09-09 corrections | Round 2; persisted/image checked; founder review pending |
-| S01 (S01) | Resident | A place to coordinate | [37:30](https://www.figma.com/design/GzK3TcwA0mPzn90gG6fWGK?node-id=37-30) | INV S01; REQ; approved 2026-09-09 corrections | Round 2; persisted/image checked; founder review pending |
-| S03a (S03) | Resident | Let’s start with you | [37:75](https://www.figma.com/design/GzK3TcwA0mPzn90gG6fWGK?node-id=37-75) | INV S03; REQ; approved 2026-09-09 corrections | Round 2; persisted/image checked; founder review pending |
-| S03b (S03) | Resident | Check your text messages | [37:105](https://www.figma.com/design/GzK3TcwA0mPzn90gG6fWGK?node-id=37-105) | INV S03; REQ; approved 2026-09-09 corrections | Round 2; persisted/image checked; founder review pending |
-| S03c (S03) | Resident | How members can reach you | [37:132](https://www.figma.com/design/GzK3TcwA0mPzn90gG6fWGK?node-id=37-132) | INV S03; REQ; approved 2026-09-09 corrections | Round 2; persisted/image checked; founder review pending |
-| S04a (S04) | Resident | Add your home details | [37:155](https://www.figma.com/design/GzK3TcwA0mPzn90gG6fWGK?node-id=37-155) | INV S04; REQ; approved 2026-09-09 corrections | Round 2; persisted/image checked; founder review pending |
-| S04b (S04) | Resident | What might help? | [37:180](https://www.figma.com/design/GzK3TcwA0mPzn90gG6fWGK?node-id=37-180) | INV S04; REQ; approved 2026-09-09 corrections | Round 2; persisted/image checked; founder review pending |
-| S05 (S05) | Resident | Does this look close? | [37:211](https://www.figma.com/design/GzK3TcwA0mPzn90gG6fWGK?node-id=37-211) | INV S05; REQ; approved 2026-09-09 corrections | Round 2; persisted/image checked; founder review pending |
-| S05b (S05) | Resident | We couldn’t locate your home | [37:237](https://www.figma.com/design/GzK3TcwA0mPzn90gG6fWGK?node-id=37-237) | INV S05; REQ; approved 2026-09-09 corrections | Round 2; persisted/image checked; founder review pending |
-| S02 (S02) | Resident | About notifications | [37:54](https://www.figma.com/design/GzK3TcwA0mPzn90gG6fWGK?node-id=37-54) | INV S02; REQ; approved 2026-09-09 corrections | Round 2; persisted/image checked; founder review pending |
-| S01-signin (S01) | Resident | Sign in to LHL | [38:8](https://www.figma.com/design/GzK3TcwA0mPzn90gG6fWGK?node-id=38-8) | INV S01; REQ; approved 2026-09-09 corrections | Round 2; persisted/image checked; founder review pending |
-| S01-code (S01) | Resident | Enter your sign-in code | [38:38](https://www.figma.com/design/GzK3TcwA0mPzn90gG6fWGK?node-id=38-38) | INV S01; REQ; approved 2026-09-09 corrections | Round 2; persisted/image checked; founder review pending |
-| S03d (S03) | Resident | This number is already in use | [38:61](https://www.figma.com/design/GzK3TcwA0mPzn90gG6fWGK?node-id=38-61) | INV S03; REQ; approved 2026-09-09 corrections | Round 2; persisted/image checked; founder review pending |
-| S02b (S02) | Resident | Community notifications | [38:82](https://www.figma.com/design/GzK3TcwA0mPzn90gG6fWGK?node-id=38-82) | INV S02; REQ; approved 2026-09-09 corrections | Round 2; persisted/image checked; founder review pending |
-| S02-OS (S02) | Resident | Device permission handoff (not app UI) | [38:103](https://www.figma.com/design/GzK3TcwA0mPzn90gG6fWGK?node-id=38-103) | INV S02; REQ; approved 2026-09-09 corrections | Round 2; persisted/image checked; founder review pending |
+| X01 (X01) | Administrator → invitee | You’re invited to try LHL | [37:8](https://www.figma.com/design/GzK3TcwA0mPzn90gG6fWGK?node-id=37-8) | INV X01; REQ; approved 2026-09-09 corrections | Founder-approved A1 low-fidelity 2026-09-10; final copy open |
+| S01 (S01) | Resident | A place to coordinate | [37:30](https://www.figma.com/design/GzK3TcwA0mPzn90gG6fWGK?node-id=37-30) | INV S01; REQ; approved 2026-09-09 corrections | Founder-approved A1 low-fidelity 2026-09-10; final copy open |
+| S03a (S03) | Resident | Let’s start with you | [37:75](https://www.figma.com/design/GzK3TcwA0mPzn90gG6fWGK?node-id=37-75) | INV S03; REQ; approved 2026-09-09 corrections | Founder-approved A1 low-fidelity 2026-09-10; final copy open |
+| S03b (S03) | Resident | Check your text messages | [37:105](https://www.figma.com/design/GzK3TcwA0mPzn90gG6fWGK?node-id=37-105) | INV S03; REQ; approved 2026-09-09 corrections | Founder-approved A1 low-fidelity 2026-09-10; final copy open |
+| S03c (S03) | Resident | How members can reach you | [37:132](https://www.figma.com/design/GzK3TcwA0mPzn90gG6fWGK?node-id=37-132) | INV S03; REQ; approved 2026-09-09 corrections | Founder-approved A1 low-fidelity 2026-09-10; final copy open |
+| S04a (S04) | Resident | Add your home details | [37:155](https://www.figma.com/design/GzK3TcwA0mPzn90gG6fWGK?node-id=37-155) | INV S04; REQ; approved 2026-09-09 corrections | Founder-approved A1 low-fidelity 2026-09-10; Tier 3/final copy open |
+| S04b (S04) | Resident | What might help? | [37:180](https://www.figma.com/design/GzK3TcwA0mPzn90gG6fWGK?node-id=37-180) | INV S04; REQ; approved 2026-09-09 corrections | Founder-approved A1 low-fidelity 2026-09-10; Tier 3/final copy open |
+| S05 (S05) | Resident | Does this look close? | [37:211](https://www.figma.com/design/GzK3TcwA0mPzn90gG6fWGK?node-id=37-211) | INV S05; REQ; approved 2026-09-10 correction | Founder-approved A1 low-fidelity 2026-09-10; final copy open |
+| S05b (S05) | Resident | We couldn’t locate your home | [37:237](https://www.figma.com/design/GzK3TcwA0mPzn90gG6fWGK?node-id=37-237) | INV S05; REQ; approved 2026-09-09 corrections | Founder-approved A1 low-fidelity 2026-09-10; future copy work deferred |
+| S02 (S02) | Resident | About notifications | [37:54](https://www.figma.com/design/GzK3TcwA0mPzn90gG6fWGK?node-id=37-54) | INV S02; REQ; approved 2026-09-10 correction | Founder-approved A1 low-fidelity 2026-09-10; final copy open |
+| S01-signin (S01) | Resident | Sign in to LHL | [38:8](https://www.figma.com/design/GzK3TcwA0mPzn90gG6fWGK?node-id=38-8) | INV S01; REQ; approved 2026-09-09 corrections | Founder-approved A1 low-fidelity 2026-09-10; final copy open |
+| S01-code (S01) | Resident | Enter your sign-in code | [38:38](https://www.figma.com/design/GzK3TcwA0mPzn90gG6fWGK?node-id=38-38) | INV S01; REQ; approved 2026-09-09 corrections | Founder-approved A1 low-fidelity 2026-09-10; final copy open |
+| S03d (S03) | Resident | This number is already in use | [38:61](https://www.figma.com/design/GzK3TcwA0mPzn90gG6fWGK?node-id=38-61) | INV S03; REQ; approved 2026-09-09 corrections | Founder-approved A1 low-fidelity 2026-09-10; final copy open |
+| S02b (S02) | Resident | Community notifications | [38:82](https://www.figma.com/design/GzK3TcwA0mPzn90gG6fWGK?node-id=38-82) | INV S02; REQ; approved 2026-09-10 correction | Founder-approved A1 low-fidelity 2026-09-10; final copy open |
+| S02-OS (S02) | Resident | Device permission handoff (not app UI) | [38:103](https://www.figma.com/design/GzK3TcwA0mPzn90gG6fWGK?node-id=38-103) | INV S02; REQ; approved 2026-09-10 correction | Founder-approved A1 boundary reference 2026-09-10; final copy open |
+| S07a (S07) | Resident | Empty join-code entry | [60:4](https://www.figma.com/design/GzK3TcwA0mPzn90gG6fWGK?node-id=60-4) | INV S07; REQ Community Joining | Pass 1/A2; persisted and image checked; founder review complete; invalid/service-failure variants pending |
+| S07b (S07) | Resident | Valid-code community confirmation | [60:20](https://www.figma.com/design/GzK3TcwA0mPzn90gG6fWGK?node-id=60-20) | INV S07; approved access-code/single-community rules | Pass 1/A2; persisted and image checked; founder review complete; copy correction pending |
+| S08a (S08) | Resident | Pending membership | [60:38](https://www.figma.com/design/GzK3TcwA0mPzn90gG6fWGK?node-id=60-38) | INV S08; REQ Community Joining | Pass 1/A2; persisted and image checked; founder review complete; denial/notification states pending |
+| S09a (S09) | Administrator | Pending join-request queue | [60:54](https://www.figma.com/design/GzK3TcwA0mPzn90gG6fWGK?node-id=60-54) | INV S09; minimal administrator decisions | Pass 1/A2; persisted and image checked; founder review complete; scrolling/order correction pending |
+| S10a (S10) | Administrator | Pending request review | [61:4](https://www.figma.com/design/GzK3TcwA0mPzn90gG6fWGK?node-id=61-4) | INV S10; minimal administrator decisions | Pass 1/A2; persisted and image checked; founder review complete; address treatment pending |
+| S11a (S11) | Resident | First saved-home tour | [61:22](https://www.figma.com/design/GzK3TcwA0mPzn90gG6fWGK?node-id=61-22) | INV S11; REQ first-use guidance | Pass 1/A2; persisted and image checked; founder review complete; placeholder-copy correction pending |
+| S12a (S12) | Resident | Saved Home with usable location | [61:40](https://www.figma.com/design/GzK3TcwA0mPzn90gG6fWGK?node-id=61-40) | INV S12; saved-home-first decisions | Pass 1/A2; persisted and image checked; founder review complete; separate replacement exploration verified at 73:2 |
+| S12b (S12) | Resident | Saved Home, location needed | [61:61](https://www.figma.com/design/GzK3TcwA0mPzn90gG6fWGK?node-id=61-61) | INV S12; 2026-09-09/10 no-location decisions | Pass 1/A2; persisted and image checked; founder review complete; replacement behavior annotated and verified at 73:6 |
 
 ## Remaining inventory — explicit deferral
 
@@ -43,22 +53,16 @@ All rows below have no Figma node yet and are not verified or approved as layout
 | ID | Parent / boundary | Actor | Structural chunk | State disposition |
 | --- | --- | --- | --- | --- |
 | X02 | Native Call/Text handoff | Approved member / native device | Pass 1/C | No frame yet; full required states carried from INV X02, then relevant Pass 2 slice |
-| S07 | Join a community | Resident | Pass 1/A2 | No frame yet; full required states carried from INV S07, then relevant Pass 2 slice |
-| S08 | Membership status | Resident | Pass 1/A2 | No frame yet; full required states carried from INV S08, then relevant Pass 2 slice |
-| S09 | Administrator join-request queue | Administrator | Pass 1/A2 | No frame yet; full required states carried from INV S09, then relevant Pass 2 slice |
-| S10 | Administrator join-request review | Administrator | Pass 1/A2 | No frame yet; full required states carried from INV S10, then relevant Pass 2 slice |
-| S11 | First saved-home tour | Resident | Pass 1/A2 | No frame yet; full required states carried from INV S11, then relevant Pass 2 slice |
-| S12 | Saved-home starting screen | Resident | Pass 1/A2 | No frame yet; full required states carried from INV S12, then relevant Pass 2 slice |
 | S13 | Sourced Events feed | Resident / helper where permitted | Pass 1/B | No frame yet; full required states carried from INV S13, then relevant Pass 2 slice |
 | S14 | Event detail and update history | Resident / helper where permitted | Pass 1/B | No frame yet; full required states carried from INV S14, then relevant Pass 2 slice |
 | S15 | Event-update acknowledgement and community status | Resident / approved community member | Pass 1/B | No frame yet; full required states carried from INV S15, then relevant Pass 2 slice |
-| S16 | Saved-home signals | Resident | Pass 1/B | No frame yet; full required states carried from INV S16, then relevant Pass 2 slice |
+| S16 | Saved-home signals and Event check-in detail | Resident | Pass 1/B | No frame yet; reuse S12 inline Home Status and carry deeper signal/Event-check-in states from INV S16, then relevant Pass 2 slice |
 | S17 | Trusted-group activity | Resident / helper | Pass 1/C | No frame yet; full required states carried from INV S17, then relevant Pass 2 slice |
 | S18 | Create community request | Resident | Pass 1/C | No frame yet; full required states carried from INV S18, then relevant Pass 2 slice |
 | S19 | Create offer | Resident | Pass 1/C | No frame yet; full required states carried from INV S19, then relevant Pass 2 slice |
 | S20 | Open Request or Offer detail | Resident / helper | Pass 1/C | No frame yet; full required states carried from INV S20, then relevant Pass 2 slice |
 | S21 | Claim confirmation | Helper / offer taker | Pass 1/C | No frame yet; full required states carried from INV S21, then relevant Pass 2 slice |
-| S22 | Claimed Request or Offer and private thread | Creator / claimant | Pass 1/C | No frame yet; full required states carried from INV S22, then relevant Pass 2 slice |
+| S22 | Claimed coordination inbox and private thread | Creator / claimant | Pass 1/C | No frame yet; Messages is an always-present inbox limited to claimed-item threads; full required states carried from INV S22, then relevant Pass 2 slice |
 | S23 | Release or reopen claimed item | Claimant / creator | Pass 1/C | No frame yet; full required states carried from INV S23, then relevant Pass 2 slice |
 | S24 | Task-specific sharing setup | Private-data owner | Pass 1/C | No frame yet; full required states carried from INV S24, then relevant Pass 2 slice |
 | S25 | Active sharing and access management | Private-data owner / claimant | Pass 1/C | No frame yet; full required states carried from INV S25, then relevant Pass 2 slice |
@@ -69,6 +73,28 @@ All rows below have no Figma node yet and are not verified or approved as layout
 | S31 | Account/access integrity | Any participant | Pass 1/D | No frame yet; full required states carried from INV S31, then relevant Pass 2 slice |
 
 S06: no frame; retired because adults remain independent profiles and no standing household-member field is collected. S27: no frame; retired because Recovery reuses S17–S26. These are reasoned non-applicable frame decisions, not gaps.
+
+## A2 required-state ledger
+
+Threshold: **where the participant meaning or next action changes**. A2 establishes all six parent structures and consequential S07/S12 alternatives. Named pending states remain required Pass 2/A coverage; they are not implicitly approved or not-applicable.
+
+| State key | Canonical required condition | Treatment | Evidence / named pending work |
+| --- | --- | --- | --- |
+| S07.01 | Empty join-code entry | Frame | S07a shows the required code field, unavailable Continue state and no pre-approval community content. |
+| S07.02 | Valid code reveals only community name for confirmation | Frame | S07b shows Boulder Heights only, then Request to join / Use a different code. |
+| S07.03 | Invalid/bad code | Founder-approved correction pending | Add a distinct code-correction state under S07; do not collapse it into inability to check the code. |
+| S07.04 | Unable to check code; rate-limited; submitted/pending | Annotation + pending | Connection/service failure preserves input and offers retry; successful submission reaches S08a without exposing community or sourced-Event content. Detailed variants remain Pass 2/A. |
+| S08.01 | Pending membership | Frame | S08a shows last confirmed pending status, no group content and Check status. |
+| S08.02 | Approved; denied; retry/new code; revoked/suspended; offline last-known | Founder-approved direction + pending | Normal shell remains gated until approval. Approval may notify and routes to S11/S12. Denial may notify, names the community, routes to S07 for resubmission, and offers pre-addressed `Contact Community Administrator`; revoked/suspended/offline variants remain Pass 2/A. |
+| S09.01 | Authorized administrator pending queue | Frame | S09a shows one pending request and the role/admin-function boundary. |
+| S09.02 | Empty; loading; offline/error | Annotation + pending | Required queue variants remain Pass 2/A; no resident or broader admin access. |
+| S10.01 | Pending approve/deny decision | Frame | S10a shows sufficient applicant identity and only Approve membership / Deny request actions. |
+| S10.02 | Confirmation; success; failure/retry; already-reviewed/changed | Annotation + pending | Each returns to the current S09 queue with honest current status; Pass 2/A. |
+| S11.01 | First arrival; skippable topic progression | Frame | S11a represents topic 1 of 6, Next and Skip tour, and names Help replay. |
+| S11.02 | Completed; replay from Help | Annotation + pending | Completion reaches S12; Help/S29 replay and detailed progression remain Pass 2/A/D. |
+| S12.01 | Home with usable location | Founder-reviewed frame + verified replacement exploration | Approved starting IA is drawn at `73:5`: LHL header and short address, up-to-three Event preview, Community Summary, inline timestamped Home/Away status, and fixed Home/Community/Messages/Profile/Help footer without a social feed. Existing S12a is preserved as review provenance. |
+| S12.02 | Location needed | Founder-reviewed frame + verified replacement-behavior annotation | The `73:6` annotation replaces only the Event preview with both Event losses and Edit address; Community Summary, Home Status, short address, and fixed footer remain. Existing S12b is preserved as review provenance. |
+| S12.03 | Condition/signal/activity/loading/offline/corrected/suspended combinations | Annotation + pending | Required combinations remain Pass 2 in the applicable slice; S13 repeats location-needed recovery in Slice B. |
 
 ## A1 required-state ledger
 
@@ -86,11 +112,11 @@ Threshold: **where the participant meaning or next action changes**. The origina
 | S01.04 | Historical rotation requirement — superseded | Retired from MVE-1 | Founder paused rotating app-load messages; future-roadmap discovery only, no Pass 3 carousel obligation. |
 | S01.05 | mandatory safety disclosures remain on their required contextual surfaces. | Frame | Exact primary safety baseline in S01; deterministic S02 notification limits. Later incident/request/Help contexts assigned to B/C/D. |
 | S02.01 | Not requested | Frame | S02 shows permission not requested. |
-| S02.02 | explanation before OS prompt | Frame + boundary panel | S02/S02b explain permission first; S02-OS (38:103) shows allow/deny/return without designing native UI. |
+| S02.02 | explanation before OS prompt | Frame + boundary panel + verified | S02/S02b explain permission first; one LHL action opens S02-OS (38:103), which shows native allow/deny/Android-dismissal return without designing native UI. No app-level defer action remains. |
 | S02.03 | allowed | Boundary panel + pending | Allow → S07; no membership grant. With usable location, eligible Event pushes may work; without location, only approved community activity. Dedicated OS-status state remains Pass 2/A. |
 | S02.04 | denied with continued app access | Boundary panel + pending | Deny → S07, no device pushes, app access retained. With usable home location the Events feed remains available. Detailed denied state Pass 2/A. |
 | S02.05 | later disabled at OS level | Annotation + pending | Later OS disablement preserves app access; recovery via device settings and S30. Pass 2/A. |
-| S02.06 | OS-only notification control / settings recovery | Frame + annotation + pending | No in-app master/category control. S02/S02b explain OS settings. Previously decided permission must not promise a repeated native prompt; later settings recovery in S30 and Pass 2/A. |
+| S02.06 | OS-only notification control / settings recovery | Frame + annotation + pending | No in-app master/category control or app-level defer action. Native Allow/Deny continue; Android dismissal leaves permission not determined and also continues. Previously decided permission must not promise a repeated native prompt; later settings recovery in S30 and Pass 2/A. |
 | S02.07 | no delivery guarantee. | Frame | S02 clearly states possible delay/unavailability and no delivery guarantee. |
 | S03.01 | Empty | Pending | Empty identity/contact fields: Pass 2/A. S03a uses fictional filled values; S03b code is empty. |
 | S03.02 | incomplete | Pending | Required-field validation and retained incomplete values: Pass 2/A. |
@@ -114,7 +140,7 @@ Threshold: **where the participant meaning or next action changes**. The origina
 | S04.03 | complete | Annotation + pending | Completing mandatory fields and successful save permits S04b; the rendered placeholder is not a value. Filled required-field alternative and all-optional-filled presentation remain Pass 2/A. |
 | S04.04 | edit | Frame + annotation | Back and S05 Edit address route to required home information; saved-profile edit variants Pass 2/A. |
 | S04.05 | save failure | Annotation + pending | S04a note: show retained values and retry if save fails; Pass 2/A. Do not advance on failure. |
-| S04.06 | private by default / complete-address sharing rule | Frame | S04a explains full address always included when deliberately sharing, optional selection of other details, one-day default, automatic expiry and early revocation. No grant created by setup. |
+| S04.06 | private by default / complete-address sharing rule | Frame + approved copy/layout correction pending | Address and access instructions remain private from ordinary community visibility. Address is used internally for Event relevance and included in deliberate request-specific sharing; access details are shared only when selected. One-day default, automatic expiry and early revocation remain. No grant created by setup. |
 | S04.07 | address and entry instructions required | Frame | S04a required complete address and Access instructions; label maps to canonical entry instructions. Door/gate codes remain inside this field, not a separate category. |
 | S04.08 | other approved fields optional | Frame | S04b four optional practical fields and Skip optional details; no standing household-member field. |
 | S04.09 | replaceable starter examples are never stored as resident data. | Frame + annotation | S04b fields explicitly display examples. Notes forbid saving placeholders unless deliberately adopted/replaced; empty skip saves no example data. |
@@ -125,7 +151,7 @@ Threshold: **where the participant meaning or next action changes**. The origina
 | S05.05 | correction suggestion | Pending | Correction suggestion with deliberate acceptance/editing: Pass 2/A. |
 | S05.06 | ambiguous or overly broad result needs clarification | Annotation + pending | City/ZIP/region-only result is not accepted as a home point by default. Clarify/edit; detailed ambiguity/coarse result variants Pass 2/A. |
 | S05.07 | legitimate unvalidated address saved | Frame + annotation | Approximate-but-close usable point can be accepted despite postal-validation uncertainty. Without a usable accepted point, S05b continuation preserves address and explicitly loses both Event capabilities. |
-| S05.08 | no usable resident-accepted home location | Frame | S05b: no Event/alert pushes AND no personalized Events feed; Edit address / Continue without Events → S02b. Community coordination remains subject to membership; S12/S13 show location needed in later chunks. |
+| S05.08 | no usable resident-accepted home location | Frame + verified; downstream persistence pending | Usable location is critical to all approved incident-matrix alerts/Event Types, excluding community actions. S05b: no Event/alert pushes AND no personalized Events feed; Edit address / Continue without Events → S02b. Requests, Offers, claimed-item messages and other approved community functions remain subject to their normal access rules; S12/S13 show location needed in later chunks. Material match/find/validation failures are a major risk to measure; no provider/threshold selected. |
 | S05.09 | Historical in-app notifications on/off — superseded | Retired control; OS states retained | No LHL master switch in S05/S05b/S30. S02/S02b OS permission is the only MVE-1 participant on/off control; it does not replace home-location eligibility. |
 | S05.10 | address change triggers new lookup; stale responses rejected | Annotation | Edit address → S04a → fresh S05 result. An earlier response cannot overwrite newly edited input. Acceptance criterion, not a separate frame. |
 | S05.11 | no operator/admin verification. | Frame + annotation | Static resident review only; no operator/admin verification, draggable pin, device GPS, parcel boundary, or satellite/map-provider choice. |
@@ -133,7 +159,7 @@ Threshold: **where the participant meaning or next action changes**. The origina
 | S01.06 | returning signed-in visit | Annotation | Bypass signup/sign-in → saved starting screen, subject to incomplete setup, membership and suspension. S12 drawing A2; S31 access integrity D. |
 | S01.07 | no duplicate account or repeated signup | Frame + annotation | Separate Create account and Sign in paths. Existing-owner SMS sign-in preserves account/home details. |
 | S01.08 | SMS-code sign-in; username/password paused | Frame | S01-signin and S01-code. Session/recovery enforcement Gate 4; detailed failures Pass 2/A. |
-| S02.08 | no-location notification primer | Frame | S02b (38:82) leads with community pushes and explicitly does not restore Event alerts/feed; OS outcomes and defer all reach S07. |
+| S02.08 | no-location notification primer | Frame + verified | S02b (38:82) leads with community pushes and explicitly does not restore Event alerts/feed; its sole LHL action opens the native OS decision, whose outcomes reach S07. |
 | S03.18 | already-used number blocks new-account completion | Frame | S03d (38:61) Sign in/use another number. No second account/shared-number exception; preserve other form input on number correction. |
 | S03.19 | conflicting replacement number rejected | Annotation + pending | Same unique assignment rule; replacement-number variant Pass 2/A. Authoritative normalization/concurrency/proof timing Gate 4. |
 | S03.20 | returning-owner sign-in is not duplicate failure | Frame + annotation | S01-signin/S01-code allowed for existing account; duplicate creation S03d distinct. No recycled-number takeover assumption. |
@@ -143,7 +169,7 @@ Threshold: **where the participant meaning or next action changes**. The origina
 
 ## Visible controls and transition routes
 
-The following routes were independently read from Round 2 action-node names. S07 and the saved starting screen remain boundary destinations pending A2; sign-in does not bypass membership or suspension. No native dialog design or working prototype is claimed.
+The following 28 routes were independently read after the Round 3 correction. S07 and the saved starting screen remain boundary destinations pending A2; sign-in does not bypass membership or suspension. No native dialog design or working prototype is claimed.
 
 | Source frame | Visible action / condition | Destination or result |
 | --- | --- | --- |
@@ -167,7 +193,6 @@ The following routes were independently read from Round 2 action-node names. S07
 | [S05b](https://www.figma.com/design/GzK3TcwA0mPzn90gG6fWGK?node-id=37-237) | Edit address | S04a → fresh S05 lookup |
 | [S05b](https://www.figma.com/design/GzK3TcwA0mPzn90gG6fWGK?node-id=37-237) | Continue without Events | S02b |
 | [S02](https://www.figma.com/design/GzK3TcwA0mPzn90gG6fWGK?node-id=37-54) | Choose device permission | S02-OS boundary → S07 |
-| [S02](https://www.figma.com/design/GzK3TcwA0mPzn90gG6fWGK?node-id=37-54) | Not now — continue | S07 |
 | [S01-signin](https://www.figma.com/design/GzK3TcwA0mPzn90gG6fWGK?node-id=38-8) | Send sign-in code | S01-code after successful send |
 | [S01-signin](https://www.figma.com/design/GzK3TcwA0mPzn90gG6fWGK?node-id=38-8) | Back | S01 |
 | [S01-code](https://www.figma.com/design/GzK3TcwA0mPzn90gG6fWGK?node-id=38-38) | Send another code | resend |
@@ -176,7 +201,6 @@ The following routes were independently read from Round 2 action-node names. S07
 | [S03d](https://www.figma.com/design/GzK3TcwA0mPzn90gG6fWGK?node-id=38-61) | Sign in | S01-signin |
 | [S03d](https://www.figma.com/design/GzK3TcwA0mPzn90gG6fWGK?node-id=38-61) | Use another number | S03a |
 | [S02b](https://www.figma.com/design/GzK3TcwA0mPzn90gG6fWGK?node-id=38-82) | Choose device permission | S02-OS boundary → S07 (no Events) |
-| [S02b](https://www.figma.com/design/GzK3TcwA0mPzn90gG6fWGK?node-id=38-82) | Not now — continue | S07 (no Events) |
 
 Editable field controls: S03a first name, last name, SMS-capable phone are required; preferred first name is optional. S03b code input allows verification only after entry and successful check. S03c's single checkbox records mandatory member-contact consent and gates successful profile save/Continue. S04a complete address and entry instructions are required. S04b pets/animals, physical access, utility shutoffs, and mobility/practical needs are optional. S01-signin has a required existing-account phone field; S01-code requires a valid authentication code. Fields change only the resident's own data; optional example placeholders are not saved by skipping.
 
@@ -185,7 +209,7 @@ Editable field controls: S03a first name, last name, SMS-capable phone are requi
 X01 email → S01 Create account → S03a → S03b successful verification → S03c mandatory consent and successful save → S04a required home fields → S04b optional details → S05 accepted location → S02 device permission → **S07 pending A2**.
 
 - Wrong location → Edit address/S04a → fresh lookup. No usable home location → S05b explicit warning → S02b community-only permission → S07 without Event alerts or Events feed.
-- Allow/deny returns from native OS boundary to S07; Not now skips the prompt and also goes to S07. No group access granted by A1. Required safety remains fixed in S01.
+- Native Allow/Deny returns to S07; Android dismissal also continues with permission still not determined. No app-level skip remains. No group access is granted by A1. Required safety remains fixed in S01.
 - Duplicate-number creation → S03d Sign in/use another number. Existing-owner sign-in → S01-signin → S01-code → saved starting screen under access restrictions. A valid session bypasses these screens; no recurring SMS on ordinary app open.
 - Placeholder-only entry guidance is not a value: S04a Continue is disabled in this example until required instructions are entered. Optional-field skip saves no examples; no private sharing grant is created by setup.
 
@@ -218,6 +242,6 @@ A1 supplies the common setup segment above. None of the five full product journe
 
 ## Verification and review boundary
 
-Round 2: 15 panels at 390 × 844 (13 app views, email sample, OS boundary), same five app parent families. Persisted geometry/font/action checks found no out-of-viewport text or obsolete in-app master controls. Exactly one required contact-consent checkbox; primary safety matches the approved baseline. Consequential screens, all three contact sheets and the review guide were visually inspected. Original Round 1 IDs/comments were not mutated; original exports stay historical.
+Round 3: the four authorized targets retain 390 × 844 geometry. Persisted readback confirms S05's combined element and deleted notification-next sentence; one action each on S02/S02b; accurate S02-OS Allow/Deny/Android-dismissal outcomes; 28 current routes; and no target-screen overflow. Sheet 02 plus S05, S02 and S02-OS were visually inspected. The only remaining `Not now` matches are historical Round 1 nodes, which were not mutated. The set remains 15 panels (13 app views, email sample, OS boundary) across the same five app parent families.
 
-The [Round 2 handback](gate-3-lowfi-a1-correction-r2-20260909.md) records correction dispositions, all 30 named action routes and remaining work. Product decisions were already canonical before their redraw. Google Docs were reconciled in place; no new review packet before John finishes comments. No unresolved Tier 1 issue found in Cody's scoped self-check; founder review and the remaining bounded Claude re-review are pending, not self-approved. No task Complete, commit, push or production code.
+The [Round 3 handback](gate-3-lowfi-a1-correction-r3-20260910.md) records the executed correction and verification; the [Round 2 handback](gate-3-lowfi-a1-correction-r2-20260909.md) retains the review provenance. Product decisions were canonical before redraw. Claude reported zero Tier 1 findings, and John subsequently approved A1 low-fidelity. The [A2 handback](gate-3-lowfi-a2-20260910.md) records its eight self-verified structural views and John's completed first review; the approved dispositions are now canonical. The [S12 Home-shell exploration](gate-3-lowfi-s12-home-shell-exploration-20260910.md) is a separate next step and does not approve or overwrite A2. Final copy, detailed consequential states, the roadmap task and Gate 3 remain open. No task Complete, commit, push or production code.

@@ -1,10 +1,10 @@
 # Gate 3 — Low-Fidelity Execution Preparation
 
-**Current checkpoint — A1 correction round 2, 2026-09-09:** John authorized the second drawing round for X01/S01–S05, not A2 or global Pass 2. Revised screens and working Docs are self-verified; John reviews Round 2 first, then tells Cody when comments are finished. Only then prepare the updated Claude packet. Original Round 1 screens/comments/exports remain history. Product decisions were recorded before affected redraw; final copy, layouts, further chunks and task completion remain unapproved. See [Round 2 handback](gate-3-lowfi-a1-correction-r2-20260909.md).
+**Current checkpoint — A1 approved low-fidelity; A2 founder review and S12 exploration complete, 2026-09-10:** John approved A1's current low-fidelity structure and authorized A2. Cody constructed and self-verified eight A2 app views across S07–S12, and John completed his first review. His approved membership-gate, administrator-review, and S12 Home-shell directions are canonical. The separate Home-shell exploration is constructed and verified below A2. A2 remains unapproved pending John's exploration review and bounded corrections that preserve reviewed frames/comments. Final copy, detailed consequential states, overall task completion and Gate 3 closure remain open. See the [A2 handback](gate-3-lowfi-a2-20260910.md) and [S12 exploration brief](gate-3-lowfi-s12-home-shell-exploration-20260910.md).
 
 Prepared 2026-09-09 by Cody under `ECA Product Design / Finish approved user flows and low-fidelity screens`.
 
-Status: A1 correction round 2 is ready for John's review. The current frame/route/state index is docs/gate-3-lowfi-traceability.md. The original A1 handback and old packet are dated history, not current review artifacts.
+Status: A1 low-fidelity is founder-approved; final copy remains open. The current frame/route/state index is docs/gate-3-lowfi-traceability.md. The Round 2 packet and Round 3 handback remain review provenance. A2 is constructed and self-verified as a separate Pass 1 structural batch and is ready for John's first review.
 
 ## Authority and artifacts
 
@@ -95,7 +95,7 @@ This later same-day founder direction replaces the earlier review order. John st
 
 1. Cody completes and self-verifies the authorized pass/chunk, provides the Figma review entry point, and alerts John that it is ready.
 2. John reviews first using native Figma comments, then explicitly tells Cody when his review is finished. The existing on-board review guide remains the plain-language scope reminder.
-3. After that notification, Cody prepares Claude's review packet: a Markdown companion containing the Figma board URL, plus a reference PDF showing the layouts with John's comments.
+3. After that notification, Cody prepares Claude's review packet: a Markdown companion containing the Figma board URL, an unannotated reference PDF, and a separate PDF preserving John's exact comments with context.
 4. Claude first reviews the unannotated layouts against canonical requirements and records initial findings without reading John's comments. Claude then reads John's comments, compares them with the initial findings, and discusses the combined feedback with John. Keep the initial findings distinguishable from comment-informed additions or revisions; this is one review, not two review rounds.
 5. Feedback returns to Cody with John's explicit dispositions. Before any affected Figma redraw or implementation, Cody records each approved decision that supersedes canonical content in a dated decision-log entry, identifies the old rule it replaces and the approval evidence, synchronizes the affected canonical source files, and verifies the updated baseline. Only then may Cody redraw against it. A chat handoff, draft, Drive capture entry, or unpromoted staging file alone does not satisfy this prerequisite. If approval or the canonical write is blocked, pause the affected redraw; unresolved questions stay open.
 
@@ -109,7 +109,13 @@ Allow one Claude review and, if corrected, one re-review per chunk. John's initi
 
 Unresolved blocking findings after the bounded re-review remain unresolved and return to the founder; exhaustion of the review allowance is not acceptance. Claude reports to John first, not directly into canonical files. John decides; Cody incorporates approved outcomes. Figma comments and Claude recommendations are not automatic product-scope approval. A product-rule change requires explicit founder disposition, a dated decision entry, and synchronized affected canonical sources before the affected redraw—not afterward. Neither assistant approves layouts or marks the roadmap task Complete.
 
-Round 2 transition: John completed Round 1 comments and reviewed the combined feedback with Cody. The approved corrections are now drawn in the separate Round 2 area. John reviews there first; do not create the new Claude packet until he reports finished. Preserve the original independent review and remaining bounded re-review allowance. The packet links below are Round 1 history only.
+Round 2 review record: John completed the Round 2 review on 2026-09-10. His 11 comments and three explicit follow-up approvals were captured, and the controlling product clarifications were recorded before redraw. Claude then completed the bounded re-review with zero Tier 1 findings. Preserve the packet below as review provenance; Round 3 is the current Figma baseline.
+
+1. [A1 Round 2 Markdown companion](https://drive.google.com/file/d/1Lr9xRczY61eOqrhmHM6VT72HBSWKUQCE/view)
+2. [A1 Round 2 unannotated layouts PDF](https://drive.google.com/file/d/1UC_StkD0AEMpi8IjFdqSNAE155qb-GNx/view)
+3. After recording initial findings, [A1 Round 2 comments PDF](https://drive.google.com/file/d/1wDYQBvqqSW0T_cdvevuSOlL5JsKxrmyJ/view)
+
+The links immediately below are Round 1 history only.
 
 - [A1 Markdown companion](https://drive.google.com/file/d/11vRjy_oCcDeqfCh_73wX5Dv4N9iOazXh/view), including the [Figma board URL](https://www.figma.com/design/GzK3TcwA0mPzn90gG6fWGK).
 - [A1 layout reference PDF](https://drive.google.com/file/d/1X8OIsMVcDOG-FArsaghEnAnLCbnd9Kkp/view).
@@ -121,20 +127,20 @@ The founder's later same-day convention replaces this in-document queue with the
 
 ### Authorization and next entry point
 
-John authorized “START pass #2” after the bounded-A1 recommendation. That means A1 correction round 2, not A2 or the later global consequential-state Pass 2. Thirteen app viewports across five families, an email sample and an OS boundary panel are drawn in the Round 2 area. [John's review guide](https://www.figma.com/design/GzK3TcwA0mPzn90gG6fWGK?node-id=37-257) is the next entry point; [handback](gate-3-lowfi-a1-correction-r2-20260909.md) records scope, 30 routes, deferrals and verification. Layout approval remains pending.
+John authorized the bounded Round 3 correction after Claude's re-review and his own dispositions, then approved A1 low-fidelity after the correction and resolved review threads. The same 13 A1 app viewports across five families, email sample and OS boundary panel remain. The [Round 3 handback](gate-3-lowfi-a1-correction-r3-20260910.md) records that historical correction checkpoint. John then authorized and completed his first review of A2's eight structural views. He approved the resulting membership-gate, administrator-review, and S12 Home-shell product directions, but did not approve A2 low-fidelity. The [separate S12 exploration](gate-3-lowfi-s12-home-shell-exploration-20260910.md) is now constructed and verified below A2. Next is John's exploration review, followed by a bounded correction proposal that preserves reviewed A2 frames/comments. See the [A2 handback](gate-3-lowfi-a2-20260910.md). Final copy, detailed consequential states, task completion and Gate 3 closure remain open.
 
 Astra High remained stable through the correction block. Complexity lies in consequential state meaning and cross-document consistency. No model/provider/architecture change is part of this pass.
 
 ## Ready-to-use next-chunk checklist
 
-- A1 correction round 2 authorized and self-verified; John reviews the revised screens first. A2 is not authorized. This covers invitation/install boundary, welcome/limits, notification primer, independent account/contact consent, home/private fields, and saved-home location setup. S06 stays retired; S07–S12 are pending A2, not silently omitted. A2 ends at saved-home arrival; B, C, and D structural chunks follow. Detailed state expansion stays Pass 2 after the scoped navigation decision.
+- A1 low-fidelity is founder-approved after Round 3. A2 (S07–S12) is constructed and self-verified with eight app views across six parents; John's first review is complete, the resulting product directions are canonical, and the separate S12 Home-shell exploration is constructed and verified. A2 remains unapproved pending John's exploration review and bounded correction. Together A1/A2 cover invitation/install, entry/account/contact, private home setup, joining/membership/admin approval, first-use guidance and saved-home arrival. S06 stays retired; B, C and D structural chunks follow after A2 disposition. Detailed state expansion stays Pass 2 after the scoped navigation decision.
 - Re-read canonical sources and current claim; reserve `docs/gate-3-lowfi-traceability.md`, the dated handback, current-state, and live sync before repository writes. Preserve other operator changes. Never self-approve a chunk or mark the roadmap Complete.
 - Create a traceability row schema: inventory ID / actor / state or transition / source section or decision / Figma node ID and deep link / pass-chunk / frame, annotation, N/A with reason, or pending chunk / verification / founder disposition. Embed the ten-distinction audit here; do not create unnecessary standalone boards.
 - Name frames by inventory ID and actor/state. Draft A1's available entry journey segment only; list missing membership and saved-home-arrival dependencies. Start the five walkthrough indexes without claiming complete journeys.
-- After readback and screenshots, alert John and let him review first. Wait for his explicit review-finished notification before preparing Claude's bounded Markdown/PDF packet with the Figma URL, actual repository index, images, exact comments/replies and pin context, deferrals, and source-linked handback. Claude discusses findings with John; feedback then returns to Cody. Keep findings and later incorporation references; no silent deletion of capture entries.
+- Round 2 founder review and Claude's bounded re-review are complete. Keep their packet and findings as provenance. Use the Round 3 handback and current traceability for the next checkpoint; do not silently delete capture entries or treat the correction as final A1 layout/copy approval.
 
 ## Validation and handoff
 
-Current correction evidence and next action are in the Round 2 handback. The following preparation-only paragraph is retained as historical context, not current drawing status.
+Current correction evidence and next action are in the Round 3 handback. The following preparation-only paragraph is retained as historical context, not current drawing status.
 
 Preparation changes were documentation and isolated diagnostics only. Canonical product inventory rows remain unchanged; roadmap status remains In Progress and dates are unchanged. Existing capability edits in current-state/live-sync are preserved. No commit, push, build, launch, production code, or task-completion action is part of this pass. Staged evidence lives in `.tmp-trusted-gate3-prep-20260909/`; this tracked record preserves the essential evidence even if temporary artifacts are later cleaned up.

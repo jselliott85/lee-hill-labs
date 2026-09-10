@@ -2,9 +2,11 @@
 
 Prepared 2026-09-09 by Cody. Roadmap task: **ECA Product Design / Finish approved user flows and low-fidelity screens** — In Progress. John authorized “START pass #2” after the explicit bounded-A1 recommendation. This is the **second A1 drawing round**, not A2 or the program-wide consequential-state Pass 2.
 
-## John: review here
+**Superseded current-state note, 2026-09-10:** Claude completed the bounded re-review with zero Tier 1 findings. John's dispositions were recorded and the authorized four-frame cleanup was executed in [A1 Correction Round 3](gate-3-lowfi-a1-correction-r3-20260910.md). This Round 2 document and its packet remain review provenance, not the current Figma status.
 
-Start at [the Round 2 review checklist](https://www.figma.com/design/GzK3TcwA0mPzn90gG6fWGK?node-id=37-257), then [the entry walkthrough](https://www.figma.com/design/GzK3TcwA0mPzn90gG6fWGK?node-id=37-264). Original Round 1 screens and comment pins remain unchanged to the left. Leave new native comments on Round 2; tell Cody when finished. Only then prepare Claude's updated Markdown, unannotated reference PDF and separate comments PDF. Existing one-review/one-re-review allowance is not reset.
+## Founder review completed; Claude re-review next
+
+John completed Round 2 review on 2026-09-10 and left 11 new native Figma comments. His three explicit follow-up approvals are now canonical: S02/S02b will use one LHL action to open the native permission decision with no app-level `Not now`; usable saved-home location is critical to the full approved incident-matrix Event/alert experience but is not required for community actions; and the official-alerts sentence is approved as current placeholder copy. The updated [Claude re-review companion](assets/gate-3-lowfi-a1-r2-review/A1-R2-review-companion-20260910.md), [unannotated layouts PDF](assets/gate-3-lowfi-a1-r2-review/A1-R2-unannotated-layouts-20260910.pdf), and [separate comments PDF](assets/gate-3-lowfi-a1-r2-review/A1-R2-comments-20260910.pdf) are the next bounded review artifacts. The current Figma snapshot is intentionally unchanged for that review. Original Round 1 screens/comments and the existing one-review/one-re-review allowance remain unchanged.
 
 - [Sheet 01 — email, entry, sign-in and account setup](https://www.figma.com/design/GzK3TcwA0mPzn90gG6fWGK?node-id=37-2).
 - [Sheet 02 — home, location and notification outcomes](https://www.figma.com/design/GzK3TcwA0mPzn90gG6fWGK?node-id=37-126).
@@ -70,7 +72,7 @@ Review flow, missing dependencies, next actions, required/optional information, 
 | [S05b](https://www.figma.com/design/GzK3TcwA0mPzn90gG6fWGK?node-id=37-237) | Edit address | S04a → fresh S05 lookup |
 | [S05b](https://www.figma.com/design/GzK3TcwA0mPzn90gG6fWGK?node-id=37-237) | Continue without Events | S02b |
 | [S02](https://www.figma.com/design/GzK3TcwA0mPzn90gG6fWGK?node-id=37-54) | Choose device permission | S02-OS boundary → S07 |
-| [S02](https://www.figma.com/design/GzK3TcwA0mPzn90gG6fWGK?node-id=37-54) | Not now — continue | S07 |
+| [S02](https://www.figma.com/design/GzK3TcwA0mPzn90gG6fWGK?node-id=37-54) | `Not now — continue` — superseded 2026-09-10, current snapshot only | Remove on next authorized redraw; native OS decision returns to S07 |
 | [S01-signin](https://www.figma.com/design/GzK3TcwA0mPzn90gG6fWGK?node-id=38-8) | Send sign-in code | S01-code after successful send |
 | [S01-signin](https://www.figma.com/design/GzK3TcwA0mPzn90gG6fWGK?node-id=38-8) | Back | S01 |
 | [S01-code](https://www.figma.com/design/GzK3TcwA0mPzn90gG6fWGK?node-id=38-38) | Send another code | resend |
@@ -79,12 +81,12 @@ Review flow, missing dependencies, next actions, required/optional information, 
 | [S03d](https://www.figma.com/design/GzK3TcwA0mPzn90gG6fWGK?node-id=38-61) | Sign in | S01-signin |
 | [S03d](https://www.figma.com/design/GzK3TcwA0mPzn90gG6fWGK?node-id=38-61) | Use another number | S03a |
 | [S02b](https://www.figma.com/design/GzK3TcwA0mPzn90gG6fWGK?node-id=38-82) | Choose device permission | S02-OS boundary → S07 (no Events) |
-| [S02b](https://www.figma.com/design/GzK3TcwA0mPzn90gG6fWGK?node-id=38-82) | Not now — continue | S07 (no Events) |
+| [S02b](https://www.figma.com/design/GzK3TcwA0mPzn90gG6fWGK?node-id=38-82) | `Not now — continue` — superseded 2026-09-10, current snapshot only | Remove on next authorized redraw; native OS decision returns to S07 (no Events) |
 
 
 All transitions requiring send, verification, authentication or save are contingent on success. Invalid/expired code and connectivity failure are distinct; detailed presentations remain Pass 2/A. One required member-contact checkbox; no profile creation through the sign-in route; immutable member_id is never displayed. The duplicate screen illustrates a confirmed assignment conflict without deciding proof/check timing or permitting recycled-number account takeover.
 
-Location acceptance uses a usable resident-accepted home point, not merely any map result or postal validation. Approximate-but-close is acceptable; wrong result edits S04 and produces a fresh lookup. No-location continuation reaches S02b and S07 without restoring Events. A usable location plus denied OS permission still permits the Events feed; no-location plus allowed OS permission does not.
+Location acceptance uses a usable resident-accepted home point, not merely any map result or postal validation. Approximate-but-close is acceptable; wrong result edits S04 and produces a fresh lookup. A usable location is critical to all alerts and Event Types in the approved incident Matrix, but community actions remain available without it under their own access rules. No-location continuation reaches S02b and S07 without restoring Events. A usable location plus denied OS permission still permits the Events feed; no-location plus allowed OS permission does not. Material address match/find/validation failure rates are a major product risk to measure; no provider, threshold, or metric is selected.
 
 ## Explicit remaining work
 

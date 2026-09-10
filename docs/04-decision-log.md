@@ -625,6 +625,12 @@ Full detail for each item: `docs/functionality-decision-log.md`, entries dated 2
 - **Messages, Profile, and Help:** `Messages` is a persistent inbox limited to claimed Request/Offer threads, including empty and unread states; it does not permit general direct messages or group chat. `Profile` contains the onboarding profile/home information, community membership, and a Notification Settings route that reports OS status and opens native OS settings; leaving a community is future scope. `Help` retains safety/911, privacy, tutorial replay, concern reporting, and a notification explanation linking to the same settings route.
 - **Exploration boundary:** Build one separate, clearly labeled wireframe-like S12 Home-shell exploration below A2. It may show one normal Home frame plus annotated location-needed behavior. Preserve all reviewed A2 frames and comments. Detailed loading/offline/empty/active states, final iconography, final copy, the Event-order hierarchy beyond evacuation-first, reusable component rules, implementation architecture, task completion, and Gate 3 closure remain open.
 
+## 2026-09-10 — S12 Home-Shell Exploration Approved
+
+- **Approval/evidence:** After reviewing the separate Figma exploration and asking whether its annotation text was consumer copy, John accepted the clarification that all material outside the 390 × 844 phone is design/review annotation, the location-needed text is provisional, and even in-phone wording remains low-fidelity placeholder copy. John then said: `Then this is approved!`
+- **Disposition:** The structure shown in Figma exploration `73:2`, including normal Home `73:5` and the location-needed behavior in `73:6`, is founder-approved as the S12 Home-shell structural baseline for the A2 correction. The approved information architecture remains LHL header; short saved-home row; Event preview; Community Summary; inline Home Status; and fixed Home/Community/Messages/Profile/Help footer.
+- **Boundary:** This approves the S12 structural exploration, not its consumer copy, final visual design, reusable component implementation, the outstanding S07–S11 corrections, the full A2 batch, the roadmap task, or Gate 3 closure. The reviewed A2 frames/comments remain provenance until a bounded correction pass is authorized and completed.
+
 ## Product Decisions
 
 The detailed functional product rules are maintained in `docs/functionality-decision-log.md`. The following entries are currently controlling:

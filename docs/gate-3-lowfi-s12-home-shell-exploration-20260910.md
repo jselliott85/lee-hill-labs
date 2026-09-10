@@ -4,7 +4,7 @@ Prepared 2026-09-10 by Cody under `ECA Product Design / Finish approved user flo
 
 ## Purpose and boundary
 
-John's first A2 review identified S12 as the critical structural issue. His paper sketch and follow-up dispositions establish an approved starting information architecture for a separate wireframe-like exploration below A2. The exploration must not alter or imply approval of the reviewed A2 frames. It is not final layout, final copy, a reusable component library, production implementation, A2 approval, task completion, or Gate 3 closure.
+John's first A2 review identified S12 as the critical structural issue. His paper sketch and follow-up dispositions established the information architecture for a separate wireframe-like exploration below A2. After clarifying that the surrounding annotation is not consumer copy and all screen wording remains provisional, John approved the exploration on 2026-09-10 as the S12 structural baseline. This does not alter or approve the reviewed A2 frames. It is not final layout, final copy, a reusable component library, production implementation, full A2 approval, task completion, or Gate 3 closure.
 
 Target: [LHL App — Gate 3 Low-Fi Pass 1](https://www.figma.com/design/GzK3TcwA0mPzn90gG6fWGK), page `Gate 3 — Low-Fi Pass 1` (`0:1`).
 
@@ -64,3 +64,7 @@ Construction, persisted readback, geometry checks, and screenshot inspection pas
 - No inspected child escaped its container; no text has a missing font or literal line-break artifact. All exploration text uses Inter.
 - Screenshot inspection confirmed legible Event, Community Summary, Home Status, location-needed, navigation, and deferral content.
 - Existing reviewed A2 frames/comments were not mutated. No new screen-parent ID or reusable component/library claim was created.
+
+## Founder disposition
+
+Founder-approved on 2026-09-10 as the structural baseline for S12 and the post-approval application shell. All content outside the 390 × 844 phone is design/review annotation rather than consumer copy. The location-needed wording and all in-phone wording remain provisional low-fidelity copy. Outstanding S07–S11 corrections and the full A2 approval remain separate.

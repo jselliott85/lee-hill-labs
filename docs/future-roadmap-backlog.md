@@ -2,6 +2,13 @@
 
 This is an idea/reference log, not a task tracker. Approved future work belongs in `docs/00-master-roadmap.md`.
 
+## Repeat Membership-Denial Constraints
+
+- **Concept:** Prevent an indefinitely repeated join-code resubmission loop after one person has been denied membership multiple times.
+- **MVE-1 baseline:** The current denial screen honestly states that the request was not approved and offers `Resubmit code` plus `Contact Community Administrator`. MVE-1 adds no cooldown, attempt cap, or administrator-set settled state because the known pilot administrator can manage the small participant group directly.
+- **Discovery constraints:** Use pilot evidence to evaluate a cooldown, bounded retry limit, administrator-settled state, or another recovery model. Define which actor can reset the constraint, what the resident sees, how legitimate entry mistakes differ from repeated denied requests, whether the administrator is notified, and how audit, privacy, abuse, and unavailable-administrator cases work. Do not hide a deliberate human denial behind identity-verification wording.
+- **Roadmap status:** Founder-approved long-term backlog discovery from the 2026-09-11 A2 bounded re-review; not approved for MVE-1 implementation. Scheduling review occurs at the G6 go/no-go milestone.
+
 ## App-Load Messages — Future Discovery
 
 - **Concept:** Reconsider rotating short messages on recurring app load only if they offer resident value and an appropriate place exists in the loading/entry experience.

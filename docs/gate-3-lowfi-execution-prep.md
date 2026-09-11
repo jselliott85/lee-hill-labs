@@ -1,10 +1,10 @@
 # Gate 3 — Low-Fidelity Execution Preparation
 
-**Current checkpoint — A1 and S12 Home-shell structure approved; bounded A2 corrections next, 2026-09-10:** John approved A1's current low-fidelity structure and authorized A2. Cody constructed and self-verified eight A2 app views across S07–S12, and John completed his first review. His approved membership-gate, administrator-review, and S12 Home-shell directions are canonical. The separate Home-shell exploration is constructed, verified, and founder-approved as S12's structural baseline after clarification that its annotations are not consumer copy. The full A2 batch remains unapproved pending bounded S07–S11 corrections that preserve reviewed frames/comments. Final copy, detailed consequential states, overall task completion and Gate 3 closure remain open. See the [A2 handback](gate-3-lowfi-a2-20260910.md) and [S12 exploration brief](gate-3-lowfi-s12-home-shell-exploration-20260910.md).
+**Current checkpoint — A1 approved; A2 Round 2 ready for founder review, 2026-09-10:** Claude completed the independent A2 review, John resolved every finding, and Cody synchronized the approved decisions before constructing a separate ten-view correction across S07–S12. Invalid-code and denial recovery, generic administrator language, pending-request address/verification treatment, footer-free S11, and both S12 Home alternatives are now represented and verified. The original A2 frames/comments and founder-approved S12 exploration remain untouched. The full A2 batch remains unapproved. Final copy/layout, detailed consequential states, Event match-basis/order/grouping work, overall task completion and Gate 3 closure remain open. See the [A2 Round 2 handback](gate-3-lowfi-a2-correction-r2-20260910.md).
 
 Prepared 2026-09-09 by Cody under `ECA Product Design / Finish approved user flows and low-fidelity screens`.
 
-Status: A1 low-fidelity is founder-approved; final copy remains open. The current frame/route/state index is docs/gate-3-lowfi-traceability.md. The Round 2 packet and Round 3 handback remain review provenance. A2 is constructed and self-verified as a separate Pass 1 structural batch and is ready for John's first review.
+Status: A1 low-fidelity is founder-approved; final copy remains open. The current frame/route/state index is docs/gate-3-lowfi-traceability.md. The A1 review packet and Round 3 handback remain provenance. A2's independent review/dispositions are complete; its separate Round 2 correction is constructed and verified and now awaits John's review.
 
 ## Authority and artifacts
 
@@ -115,6 +115,12 @@ Round 2 review record: John completed the Round 2 review on 2026-09-10. His 11 c
 2. [A1 Round 2 unannotated layouts PDF](https://drive.google.com/file/d/1UC_StkD0AEMpi8IjFdqSNAE155qb-GNx/view)
 3. After recording initial findings, [A1 Round 2 comments PDF](https://drive.google.com/file/d/1wDYQBvqqSW0T_cdvevuSOlL5JsKxrmyJ/view)
 
+A2 review packet, 2026-09-10:
+
+1. [A2 Markdown companion](https://drive.google.com/file/d/1-lhD41i4WHDD__3RnjwZITwAK9Y-2eH1/view)
+2. [A2 unannotated layouts PDF](https://drive.google.com/file/d/11xfYxKZJ5Uag0e-HrwVEurPbSxEdaxD_/view)
+3. After recording initial findings, [A2 exact-comments PDF](https://drive.google.com/file/d/1VmuX74U0mzOw89PQjZ25YwGbdNtaXB-j/view)
+
 The links immediately below are Round 1 history only.
 
 - [A1 Markdown companion](https://drive.google.com/file/d/11vRjy_oCcDeqfCh_73wX5Dv4N9iOazXh/view), including the [Figma board URL](https://www.figma.com/design/GzK3TcwA0mPzn90gG6fWGK).
@@ -127,13 +133,17 @@ The founder's later same-day convention replaces this in-document queue with the
 
 ### Authorization and next entry point
 
-John authorized the bounded Round 3 correction after Claude's re-review and his own dispositions, then approved A1 low-fidelity after the correction and resolved review threads. The same 13 A1 app viewports across five families, email sample and OS boundary panel remain. The [Round 3 handback](gate-3-lowfi-a1-correction-r3-20260910.md) records that historical correction checkpoint. John then authorized and completed his first review of A2's eight structural views. He approved the resulting membership-gate, administrator-review, and S12 Home-shell product directions, but did not approve the full A2 batch. The [separate S12 exploration](gate-3-lowfi-s12-home-shell-exploration-20260910.md) is constructed, verified, and founder-approved as S12's structural baseline. Next is a bounded S07–S11 correction proposal/execution that preserves reviewed A2 frames/comments. See the [A2 handback](gate-3-lowfi-a2-20260910.md). Final copy, detailed consequential states, task completion and Gate 3 closure remain open.
+John authorized the bounded Round 3 correction after Claude's re-review and his own dispositions, then approved A1 low-fidelity after the correction and resolved review threads. The same 13 A1 app viewports across five families, email sample and OS boundary panel remain. The [Round 3 handback](gate-3-lowfi-a1-correction-r3-20260910.md) records that historical correction checkpoint. John then authorized and completed his first review of A2's eight structural views. He approved the resulting membership-gate, administrator-review, and S12 Home-shell product directions, but did not approve the full A2 batch. The [separate S12 exploration](gate-3-lowfi-s12-home-shell-exploration-20260910.md) is constructed, verified, and founder-approved as S12's structural baseline. The verified A2 Claude packet is now the next step. Claude must record its canonical/layout findings before opening the separate comments PDF, then return combined findings to John. A bounded correction that preserves reviewed A2 frames/comments follows only after John's dispositions. See the [A2 handback](gate-3-lowfi-a2-20260910.md). Final copy, detailed consequential states, task completion and Gate 3 closure remain open.
 
 Astra High remained stable through the correction block. Complexity lies in consequential state meaning and cross-document consistency. No model/provider/architecture change is part of this pass.
 
+### A2 Round 2 correction review, 2026-09-10
+
+Start at [read-first node 84:2](https://www.figma.com/design/GzK3TcwA0mPzn90gG6fWGK?node-id=84-2), then follow the route walkthrough and three correction sheets. Review only the new Round 2 area; original A2 frames/comments and the approved S12 exploration are provenance. John reviews Round 2 next. Do not infer full A2 approval, final copy/layout approval, task completion, or Gate closure.
+
 ## Ready-to-use next-chunk checklist
 
-- A1 low-fidelity is founder-approved after Round 3. A2 (S07–S12) is constructed and self-verified with eight app views across six parents; John's first review is complete, the resulting product directions are canonical, and the separate S12 Home-shell exploration is founder-approved as S12's structural baseline. The full A2 batch remains unapproved pending bounded S07–S11 correction. Together A1/A2 cover invitation/install, entry/account/contact, private home setup, joining/membership/admin approval, first-use guidance and saved-home arrival. S06 stays retired; B, C and D structural chunks follow after A2 disposition. Detailed state expansion stays Pass 2 after the scoped navigation decision.
+- A1 low-fidelity is founder-approved after Round 3. A2 Round 2 has ten verified app views across S07–S12; Claude review and John's dispositions are complete, and the separate S12 Home-shell exploration remains its founder-approved structural reference. The full A2 batch remains unapproved. John reviews the new Round 2 area next. Together A1/A2 cover invitation/install, entry/account/contact, private home setup, joining/membership/admin approval, first-use guidance and saved-home arrival. S06 stays retired; B, C and D structural chunks follow only after A2 approval. Detailed state expansion remains pending.
 - Re-read canonical sources and current claim; reserve `docs/gate-3-lowfi-traceability.md`, the dated handback, current-state, and live sync before repository writes. Preserve other operator changes. Never self-approve a chunk or mark the roadmap Complete.
 - Create a traceability row schema: inventory ID / actor / state or transition / source section or decision / Figma node ID and deep link / pass-chunk / frame, annotation, N/A with reason, or pending chunk / verification / founder disposition. Embed the ten-distinction audit here; do not create unnecessary standalone boards.
 - Name frames by inventory ID and actor/state. Draft A1's available entry journey segment only; list missing membership and saved-home-arrival dependencies. Start the five walkthrough indexes without claiming complete journeys.

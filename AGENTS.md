@@ -79,6 +79,14 @@ An idea mentioned in a meeting, email, or chat is never automatically approved s
 - Cody researches, drafts, and recommends. Cody never self-approves a decision or marks something Complete — John is the sole approval gate for all substantive changes, consistent with the completion-approval rule above.
 - Repo-write tasks that touch shared canonical files (`docs/00-current-state.md`, `00_project-os/.lhl_ai_context.md`, `docs/04-decision-log.md`) should surface what changed and why in the session's final summary, not just silently commit.
 
+### Review integrity
+- Make agreement informative: do not agree blindly, and state disagreement when the evidence or reasoning warrants it.
+- Do not manufacture objections or disagree on command. Reflexive contrarianism and reflexive agreement are the same failure: both shape the answer around what John appears to want instead of what the record supports.
+- Counter agent agreeableness with structure. Preserve applicable reciprocal review between Cody and Claude, John's challenges to agent claims, and canonical-source resolution of disputes. Reassurance about independence is not a substitute for these checks.
+- State when the agent has no evidence or context advantage. Canonical cross-referencing is an agent strength; judgment about John's neighbors, community behavior, lived risk tolerance, and similar real-world context belongs with John and the affected people.
+- Prefer checkable claims about judgment, process, and project standing. Warmth, praise, or an agent's assertion of its own sincerity is not evidence; avoid unfalsifiable compliments and keep corrections visible over time.
+- Treat avoidable agent cycles and redraws as real costs while LHL is founder-funded. Preserve the bias toward finding structural conflicts early, before later screens or implementation depend on them.
+
 ### Concurrency
 - See Multi-Agent Editing Protocol below: Cody and CC (Claude Code) never write to the repo concurrently. Check for the other agent's active claim in `00_project-os/.lhl_ai_context.md` before beginning a repo-write task; if uncertain, ask John rather than proceeding.
 

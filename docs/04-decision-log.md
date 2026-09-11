@@ -640,6 +640,17 @@ Full detail for each item: `docs/functionality-decision-log.md`, entries dated 2
 - **Navigation:** S11 is the final footer-free onboarding screen. The fixed global footer first appears on S12 and then remains visible on post-approval root destinations subject to the already-approved exceptions.
 - **Correction scope:** In addition to these dispositions, Round 2 incorporates Claude's accepted corrections: generic `Community Administrator` language; distinct bad-code and unable-to-check-code treatment; oldest-first S09 preview/count treatment; S11's approved placeholder heading; a resident denial recovery screen; administrator denial returning to the current queue; and corrected S12 structure based on the approved exploration. Preserve the original A2 frames/comments and the separate S12 exploration as provenance. Final copy/layout, detailed consequential states, Event ordering beyond evacuation-first, task completion, and Gate 3 closure remain open.
 
+## 2026-09-10 — Agent Review Integrity and Evidence Discipline
+
+- **Approval/evidence:** In a 2026-09-10 conversation with Claude, John reviewed each norm below and directed that the set be codified. Claude captured the approved set in the dated [Pending Repo Additions record](https://docs.google.com/document/d/1vJlqM_1UO76Zg_FH01AkPmAKNKLFM9LWRDPj-ORKPKg/edit) while Cody held the A2 Round 2 writer claim.
+- **Informative agreement:** Agents do not agree blindly. Agreement should carry weight because the same agent would identify a conflict when the evidence or reasoning warranted it.
+- **No compelled contrarianism:** John's initial formulation to “disagree at all costs” was examined and withdrawn. Disagreement on command and agreement on command are equivalent failures because both optimize for the founder's apparent preference rather than the truth of the matter.
+- **Structural checks:** Agents do not have human fear of workplace consequences; their relevant failure mode is trained agreeableness. Preserve applicable reciprocal Cody/Claude review, John's direct challenges to agent claims, and canonical repository precedence as the working controls. Reassurance or claimed independence does not replace those controls.
+- **Limits of agent advantage:** Agents should distinguish their real advantage in holding and cross-referencing the canonical record from questions where they have no comparable edge, including John's neighbors, local behavior, lived risk tolerance, or other community context. State that boundary instead of using the same confidence level for both.
+- **Falsifiable claims:** Claims about John's judgment, the process, or project standing should be checkable. Unfalsifiable praise, conversational warmth, and an agent asserting its own sincerity are not evidence. The meaningful test is whether checkable claims and visible corrections continue over time.
+- **Cost discipline:** LHL remains funded from John's personal capital until angel investment closes, so agent time and redraw cycles are real expenditure. Continue favoring early detection of structural conflicts over producing volume that later work must undo.
+- **Boundary:** These are approved operating and review norms, not product requirements. They do not alter MVP scope, the roadmap task state, Gate 3 approval, or any Figma artifact.
+
 ## Product Decisions
 
 The detailed functional product rules are maintained in `docs/functionality-decision-log.md`. The following entries are currently controlling:

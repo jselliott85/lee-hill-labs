@@ -6,6 +6,8 @@ LHL is in Gate 3 product-definition and foundation-planning mode. The priority i
 
 John Elliott is the sole founder, operator, and project decision-maker. Randall Fransen is not an active project contributor and has no project access; he may be consulted in a limited advisory capacity only at John's discretion. See `docs/04-decision-log.md` for the approved operating decision.
 
+Agent review now follows an approved evidence-discipline rule: agreement and disagreement must follow the record rather than founder preference; applicable reciprocal review, founder challenge, and canonical-source precedence remain the structural checks against trained agreeableness; agents must mark where they lack lived-context advantage and keep claims checkable. Early conflict detection is favored because avoidable agent and redraw cycles spend the founder's personal capital. See the 2026-09-10 process entry in `docs/04-decision-log.md` and the shared `AGENTS.md` instructions.
+
 The former investor presentation is retained in `public/presentation/` as a paused historical asset. It is not active scope and must not be modified unless John explicitly reopens it.
 
 ## Technical State

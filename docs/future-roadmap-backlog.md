@@ -2,6 +2,13 @@
 
 This is an idea/reference log, not a task tracker. Approved future work belongs in `docs/00-master-roadmap.md`.
 
+## Event-Type-Specific Check-Ins
+
+- **Concept:** Explore an optional future self-report tied to one particular sourced Event, distinct from both the general adult-profile status on Home and the exact-update `I saw this update` acknowledgement.
+- **MVE-1 baseline:** Excluded. MVE-1 uses one general adult-profile check-in/status control directly on S12/Home, with inline `Home`, `Away`, and `Left affected area` actions, plus a separate exact-update acknowledgement on eligible Event updates. S16 is deleted; there is no Event-linked check-in step.
+- **Discovery constraints:** Determine whether an additional crisis-time step creates enough value to justify its cognitive and interaction cost; whether the available states are common or vary by Event Type; how a report attaches to a stable source lifecycle identity when multiple Events coexist; how it expires, resets, or survives material updates; who can see it; and how it remains distinguishable from acknowledgement and any verified-safety claim. Do not infer a status from location or treat a self-report as authoritative safety information.
+- **Roadmap status:** Founder-approved Post-G6 discovery backlog on 2026-09-11. No implementation, date, Event-Type taxonomy, or later inclusion is approved.
+
 ## Repeat Membership-Denial Constraints
 
 - **Concept:** Prevent an indefinitely repeated join-code resubmission loop after one person has been denied membership multiple times.

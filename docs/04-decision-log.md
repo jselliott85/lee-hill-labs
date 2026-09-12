@@ -702,6 +702,42 @@ Full detail for each item: `docs/functionality-decision-log.md`, entries dated 2
 - **Controlling boundaries:** Carry `Family governs; Type displays`; source Alert lifecycle governs identity; Protective Action Event Types remain standalone; leave versus stay is stated in words; all examples are simulated/source-pending; adult-profile status and Event check-in remain separate from acknowledgement and verified-safety claims. S15's location remains a wireframe hypothesis.
 - **Boundary:** This authorizes construction and verification, not approval of resulting Slice B layouts, final copy/layout, detailed Pass 2/B states, source/provider selection, VTEC or Protective Action lifecycle implementation, production code, task completion, Gate 3 closure, commit, or push.
 
+## 2026-09-11 — Slice B Initial Founder Clarifications: Feed Sample and Conditional Related Events
+
+- **Approval/evidence:** During his first Slice B review, John directed Cody to replace the S13a Shelter-in-Place feed sample with `SPECIAL WEATHER STATEMENT`, confirmed the one-row/current-state-plus-detail-history model, and corrected the S14 related-Event and acknowledgement presentation.
+- **Feed sample only:** S13a may show Evacuation Order, Wildfire, Red Flag Warning, and Special Weather Statement. Removing Shelter-in-Place from this sample does not remove it from the approved Protective Action family or from S14's explicit stay-action coverage.
+- **Related Events:** S14 uses one structural pattern. A `Related Events` section appears only when authoritative identity evidence or an approved deterministic relationship links the displayed Event to another Event; otherwise the section/control is absent. LHL does not infer the link from time, geography, Event Type, or similar wording. Evacuation Order may link to a related Wildfire when evidence exists. The current Shelter-in-Place example must not imply a Wildfire relationship.
+- **Acknowledgement consistency:** When the exact displayed update is acknowledgement-eligible, both S14 examples place the same `I saw this update` action consistently. `View responses` remains the route to the provisional S15 community-scoped response view. `Related Events` is navigation to a distinct Event, never an acknowledgement type.
+- **Implementation tradeoff:** Conditional display is small UI complexity. The substantive cost is data integrity: storing and validating the relationship, preserving provenance, handling an unavailable/closed target, and failing closed when the link cannot be established. MVE-1 adds no fuzzy matching, administrator-created link, or manual grouping.
+- **Check-in conflict surfaced (resolved by the next entry):** John directed the team to document and explore the correct check-in states, including whether choices vary by Event Type or one list stays visible, with an always-visible MVE-1 list as the current simpler test direction and `Left affected area` as a required candidate. He also expressed a current preference to keep the interaction on S12/Home and avoid extra crisis steps. At this checkpoint, existing approved requirements still defined Home/Away and Event-specific check-in as separate signals; the immediately following decision records John's explicit supersession before S16 was redrawn.
+- **Boundary at this checkpoint:** This authorized the bounded S13/S14 clarification correction and recorded the S16 decision conflict. It did not approve Slice B, settle the check-in taxonomy, alter S16 yet, authorize a source/provider or relationship inference, approve final copy/layout, start Claude review, mark the roadmap task Complete, or close Gate 3.
+
+## 2026-09-11 — Event-Specific Check-In Removed from MVE-1; S12 General Status Retained
+
+- **Approval/evidence:** After Cody surfaced the controlling earlier three-signal decision, John explicitly chose to supersede it in context: `Lets leave in the future backlog the idea for event type spefic checkins. But leave it out of MVE1`.
+- **MVE-1 interaction model:** MVE-1 retains two separate interaction classes: the optional `I saw this update` acknowledgement on one eligible sourced Event update, and one voluntary general adult-profile check-in/status control directly on S12/Home. There is no Event-specific check-in, separate Event check-in step, or S16 navigation destination in MVE-1.
+- **General state direction:** The S12/Home control remains attributed to the reporting adult rather than the address or household. `Home`, `Away`, and `Left affected area` are required candidates in the current Gate 3 test direction and should be visible together; exact final wording and any additional state taxonomy remain open. Same-address adults may differ, no state is geofenced, and no report is presented as verified safety.
+- **Supersession:** For MVE-1 scope, this supersedes the 2026-08-06 three-signal requirement and the 2026-09-03 S16 Event-check-in direction. Those entries remain visible as decision history. The general S12/Home status and exact-update acknowledgement remain approved; only the separate Event-linked check-in is removed.
+- **Future backlog:** Event-Type-specific check-ins move to Post-G6 discovery. Any later proposal must test whether additional crisis-time interaction cost is justified, whether states vary by Event Type, how identity/lifecycle and concurrent Events affect association, how reports expire/reset, and how the feature remains distinct from acknowledgement and verified safety.
+- **Figma and review boundary — superseded later the same day:** At this checkpoint S16 could remain as an inventory-labeled S12/Home module exploration and the approved A2 S12 frames remained untouched. John's immediately following decision instead deletes S16 and authorizes the bounded inline S12 correction. This entry continues to control the product-model supersession but no longer controls the Figma treatment.
+
+## 2026-09-11 — S16 Deleted; Home Status Updates Inline on S12
+
+- **Approval/evidence:** After reviewing the consolidated S16/S12 treatment, John directed: `add "left affected area" as a check in status on the "home status" section of S12 and just delete s16` and confirmed that selecting an individual status should log the update without requiring a new page.
+- **Interaction:** S12's `HOME STATUS` section shows `Home`, `Away`, and `Left affected area` as individual inline choices. Selecting a choice records the reporting adult profile's voluntary timestamped update directly on S12. It does not navigate to a status-detail page, open a modal solely to choose the state, or require an additional crisis-time step.
+- **S16 disposition:** Delete the S16 Figma frame and its surrounding Slice B review panel. Retain the S16 identifier only in canonical history as a retired/non-applicable destination; there is no active S16 frame, route, or review surface.
+- **Rationale:** A separate S16 has no remaining distinct product responsibility after Event-specific check-ins were removed. Keeping it would duplicate the S12 interaction and create avoidable navigation and review ambiguity. Its limited value as a design-process artifact is preserved by the decision and traceability records rather than a live frame.
+- **Review handling:** This is a founder-authorized consequential correction to the corrected A2 S12a/S12b frames during Slice B review. Original A2 review artifacts remain historical provenance, while the live corrected S12 frames become the current baseline for the upcoming Claude review packet.
+- **Boundary:** Exact final label styling, status-confirmation feedback, loading/failure/stale/not-shared behavior, and any additional taxonomy remain Gate 3 work. This does not approve Slice B, the roadmap task, or Gate 3.
+
+## 2026-09-11 — Slice B S14b Is an Out-of-Flow Pattern Demonstration
+
+- **Approval/evidence:** During the partial founder discussion of Claude's first Slice B review, John dispositioned B-06: S14b is a pattern demonstration, not a reachable frame in the current low-fidelity flow. The complete review and Monday resumption record is [preserved separately](gate-3-lowfi-slice-b-claude-first-review-20260911.md).
+- **Meaning:** The S14b Shelter-in-Place frame remains useful for demonstrating explicit `STAY INDOORS / DO NOT LEAVE` direction and the correct absence of a `Related Events` section when no relationship is established. Because Shelter-in-Place was removed from the current S13 sample, no current drawn feed row routes to S14b.
+- **Future correction boundary:** When John later authorizes the bounded Slice B correction round, annotate S14b explicitly as a pattern demonstration so the route ledger does not represent it as an orphaned reachable state. This entry records the disposition but does not authorize the Figma edit now.
+- **Family boundary:** The Boulder-specific frequency judgment supporting removal from the feed sample does not remove Shelter-in-Place from the approved Protective Action family.
+- **Review status:** Claude's first review reported one Tier 1, five Tier 2, and four Tier 3 findings. B-01 through B-05 remain undispositioned; B-01 is blocking. Slice B, any correction round, S15 placement, final copy/layout, the roadmap task, and Gate 3 remain unapproved.
+
 ## Product Decisions
 
 The detailed functional product rules are maintained in `docs/functionality-decision-log.md`. The following entries are currently controlling:
@@ -749,3 +785,6 @@ The detailed functional product rules are maintained in `docs/functionality-deci
 - 2026-09-11 — Event Display Level and Source-Governed Lifecycle Identity
 - 2026-09-11 — A2 Corrected Low-Fidelity Approved; Slice B Next
 - 2026-09-11 — Slice B Structural Low-Fidelity Drawing Authorized
+- 2026-09-11 — Slice B Initial Founder Clarifications: Feed Sample and Conditional Related Events
+- 2026-09-11 — Event-Specific Check-In Removed from MVE-1; S12 General Status Retained
+- 2026-09-11 — S16 Deleted; Home Status Updates Inline on S12

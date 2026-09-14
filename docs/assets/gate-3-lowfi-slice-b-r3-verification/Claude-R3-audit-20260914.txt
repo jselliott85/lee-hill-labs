@@ -1,0 +1,36 @@
+Correction verification, not a new review. Starting with the companion.Two updates worth noting before I verify: comment #60 evidently continued after my last document — S15 apparently got a "WHAT THIS SHOWS" first-card treatment matching S14's safety-card prominence, which is new to me. And the companion flags that I mislabeled Pass 2/A as the target for the multi-update deferral; it's Pass 2/B. Checking layouts now.Now the comments.Verification complete against all three sources.
+
+## Lane 1 — R2 Tier 2 findings verification
+
+| ID | Result | Evidence |
+|---|---|---|
+| R2-B-01 | **Confirmed** | S14a's Related Events sits below Update History with a `Wildfire. View Event` control, distinct from surrounding text blocks. S14b correctly omits the section — no relationship established. |
+| R2-B-02 | **Confirmed** | `YOUR SAFETY` is the first scroll-content card on both S14a and S14b, above the Event block, with the exact approved body copy. `SAFETY & EMERGENCY HELP` no longer appears anywhere. |
+| R2-B-03 | **Confirmed** | S15's legend reads `No status = never set` / `No recent status = report older than 48h` — no `(S15 only)` annotation leaking into participant-facing copy. |
+| R2-B-04 | **Confirmed** | One legend sits above both `ACKNOWLEDGED` and `NO ACKNOWLEDGEMENT RECORDED`, not embedded in the lower list. |
+| R2-B-05 | **Confirmed, per your correction** | I can't independently verify node labels from a PDF, but I'll adopt the companion's account: current S01 `37:30` retains the approved copy; historical `10:17`/`10:15`/`10:16` is labeled `SUPERSEDED — DO NOT USE`. Noting for the record that my prior document described this as a single `10:17/37:30` node, which the companion flagged as a conflation of two separate nodes — my error, now corrected in this pass. |
+| #58 | **Confirmed** | First-card placement verified on both S14a and S14b, not just S14a. |
+| #59 | **Confirmed, with one open item preserved** | `Open source link` now sits in the Event identity block on both frames; Current Source Update carries only the timestamp, status, and `I saw this update`, with no source-link action. Who Saw This Update remains a separate route. Push-landing destination is canonical. **Multi-update return experience is correctly still undrawn** — this is the deferred item, not a gap in the correction. |
+| #60 | **Confirmed, exceeds original scope** | The disclaimer body is verbatim as approved in my R2 document. Beyond what I dispositioned, S15 now has its own first-card treatment — `WHAT THIS SHOWS` — structurally mirroring `YOUR SAFETY`'s prominence, per John's follow-up reply. This is a **new decision made after my last document**, correctly captured in the layouts. |
+
+One correction to log on myself: my R2 document filed the multi-update deferral under **Pass 2/A**. The companion states it's **Pass 2/B**. Adopting the correction — this is the second small provenance error I've made in this round, alongside the node-conflation above. Both are now fixed in this pass rather than carried forward.
+
+## Lane 2 — comment reconciliation
+
+**#58.** Original: safety block should be at the very top. Resolved 20:27 UTC, noted "shown in R2" — meaning the placement was already correct by the time R2 landed; the reply simply confirms it. Current frames match. No remaining choice.
+
+**#59.** Original: three questions — source link placement, multi-update behavior, push-landing destination. Resolved 20:28 UTC as a bundle: link relocated, landing decided canonically, multi-update explicitly left open for Pass 2/B. Current frames match on the two decided parts. **One remaining founder item, by design, not a defect:** multi-update return behavior has no owner yet beyond the Pass 2/B assignment — worth confirming that's sufficient tracking or whether it needs a named place in the backlog.
+
+**#60.** Original: two-directional disclaimer rewrite. First reply (20:29) escalated it — treat like `YOUR SAFETY` on S14. Final reply (20:39) resolved with a clarification: comparable *treatment*, not the literal heading. Current frame shows `WHAT THIS SHOWS` as working copy, correctly distinct from `YOUR SAFETY`. Matches. No remaining choice — heading wording is explicitly still open, as stated.
+
+## Guardrail spot-check
+
+S13a/S14a/S14b show no synthesized direction lines. One S14 structure confirmed across both frames. `I saw this update` bound to the current update only. S15 shows first-name-plus-initial and community-visible status with no derived urgency, sorting, badge, or chase action. Could not independently re-verify current S12a from this packet's three-page scope — no regression indicated by anything supplied, consistent with the guardrail's own instruction not to re-export unchanged frames.
+
+## New Tier 1 / Tier 2 risks from these corrections
+
+**Zero.** Nothing in the R3 layouts or the comment resolutions introduces a new product, safety, or privacy contradiction. The Related Events sample and simulated source markers remain correctly labeled as structural placeholders, not evidence of real coverage.
+
+## Result
+
+**Ready for John to decide Slice B low-fidelity approval.** All eight R2 items confirmed. All three comment threads resolved and consistent with the current frames. The one open item — multi-update return behavior — is deliberately deferred to Pass 2/B, not an unresolved correction, and does not block approval of the low-fidelity structure now drawn.

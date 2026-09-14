@@ -1,0 +1,153 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Count 1 /Kids [4 0 R] >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Courier >>
+endobj
+4 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 5 0 R >>
+endobj
+5 0 obj
+<< /Length 2939 >>
+stream
+BT
+/F1 9 Tf
+36 756 Td
+11 TL
+(Gate 3 Slice B - R3 founder-comments reference) Tj
+T*
+(Capture: 2026-09-14 after 20:39:21 UTC. Native Figma file ) Tj
+T*
+(GzK3TcwA0mPzn90gG6fWGK.) Tj
+T*
+(All three root threads #58-#60 were resolved at capture. No ) Tj
+T*
+(newer top-level R3 thread appeared in the read. Live Figma ) Tj
+T*
+(controls if later activity differs. The original messages and ) Tj
+T*
+(John's replies below are exact; explanatory labels are packet ) Tj
+T*
+(metadata, not quotations.) Tj
+T*
+() Tj
+T*
+(THREAD #58 - S14 sheet 143:125 - root 1925395534) Tj
+T*
+(John Elliott, 2026-09-14 17:46:18 UTC:) Tj
+T*
+(Think this should be at the VERY TOP above the alert/event) Tj
+T*
+(John reply 1925591644, 2026-09-14 20:27:43 UTC:) Tj
+T*
+(resolved in R3 \(shown in R2\)) Tj
+T*
+(Root resolved 2026-09-14 20:27:45 UTC.) Tj
+T*
+(Context: S14 safety block; verify on both corrected S14 ) Tj
+T*
+(examples.) Tj
+T*
+() Tj
+T*
+(THREAD #59 - S14 sheet 143:125 - root 1925398307) Tj
+T*
+(John Elliott, 2026-09-14 17:48:27 UTC:) Tj
+T*
+(I struggle now with this being here? Should the source link ) Tj
+T*
+(be with the alert \(in this case the Evacuation order box\)? ) Tj
+T*
+(This can just be about acknowledging the update.) Tj
+T*
+() Tj
+T*
+(Also, what if there are multiple updates in the history? Do ) Tj
+T*
+(you have to comeback and mark update on the most current ) Tj
+T*
+(source?) Tj
+T*
+() Tj
+T*
+(We haven't decided, but i'm also assuming THIS IS THE LANDING ) Tj
+T*
+(page for push eligible notifications? It will bring you ) Tj
+T*
+(direct to the event detail page?) Tj
+T*
+(John reply 1925592342, 2026-09-14 20:28:17 UTC:) Tj
+T*
+(resolved in R2 feedback/R3) Tj
+T*
+(Root resolved 2026-09-14 20:28:19 UTC.) Tj
+T*
+(Context: source-link relocation and exact-update ) Tj
+T*
+(acknowledgement were corrected; push landing is recorded ) Tj
+T*
+(canonically; multi-update return remains open in Pass 2/B.) Tj
+T*
+() Tj
+T*
+(THREAD #60 - S15 sheet 143:248 - root 1925399414) Tj
+T*
+(John Elliott, 2026-09-14 17:49:22 UTC:) Tj
+T*
+(I think we should change this to:) Tj
+T*
+(This shows only who has clicked to acknowledge the update in ) Tj
+T*
+(<app name>. It does not...) Tj
+T*
+(I dont want to say "tell you whether anyone is safe". I want ) Tj
+T*
+(this to be more like "does not imply safety status". Cause ) Tj
+T*
+(like wise it also doesn't imply they are in harms-way...) Tj
+T*
+(John reply 1925593303, 2026-09-14 20:29:05 UTC:) Tj
+T*
+(We need to move this up and treat it just like YOUR SAFETY in ) Tj
+T*
+(S14) Tj
+T*
+(John reply 1925604780, 2026-09-14 20:39:19 UTC:) Tj
+T*
+(Resolved in R3 changes) Tj
+T*
+(Root resolved 2026-09-14 20:39:21 UTC.) Tj
+T*
+(Context: the unchanged two-directional disclaimer is now in a ) Tj
+T*
+(first scroll-content card with working heading WHAT THIS ) Tj
+T*
+(SHOWS. John clarified that comparable treatment did not mean ) Tj
+T*
+(the literal YOUR SAFETY heading; this is a copy starting ) Tj
+T*
+(point, not final wording.) Tj
+T*
+() Tj
+T*
+ET
+
+endstream
+endobj
+xref
+0 6
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000183 00000 n 
+0000000309 00000 n 
+trailer
+<< /Size 6 /Root 1 0 R >>
+startxref
+3300
+%%EOF

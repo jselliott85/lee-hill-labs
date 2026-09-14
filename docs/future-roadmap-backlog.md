@@ -5,9 +5,23 @@ This is an idea/reference log, not a task tracker. Approved future work belongs 
 ## Event-Type-Specific Check-Ins
 
 - **Concept:** Explore an optional future self-report tied to one particular sourced Event, distinct from both the general adult-profile status on Home and the exact-update `I saw this update` acknowledgement.
-- **MVE-1 baseline:** Excluded. MVE-1 uses one general adult-profile check-in/status control directly on S12/Home, with inline `Home`, `Away`, and `Left affected area` actions, plus a separate exact-update acknowledgement on eligible Event updates. S16 is deleted; there is no Event-linked check-in step.
+- **MVE-1 baseline:** Excluded. MVE-1 uses one general adult-profile check-in/status control directly on S12/Home, with inline `Home`, `Away`, and `Evacuated` actions, plus a separate exact-update acknowledgement on eligible Event updates. S16 is deleted; there is no Event-linked check-in step.
 - **Discovery constraints:** Determine whether an additional crisis-time step creates enough value to justify its cognitive and interaction cost; whether the available states are common or vary by Event Type; how a report attaches to a stable source lifecycle identity when multiple Events coexist; how it expires, resets, or survives material updates; who can see it; and how it remains distinguishable from acknowledgement and any verified-safety claim. Do not infer a status from location or treat a self-report as authoritative safety information.
 - **Roadmap status:** Founder-approved Post-G6 discovery backlog on 2026-09-11. No implementation, date, Event-Type taxonomy, or later inclusion is approved.
+
+## Event-Aware Status and Member Relevance
+
+- **Concept:** One shared future capability for determining whether a sourced Event affects a particular saved home. Evaluate three dependent treatments together: showing `Evacuated` only when an Event is active/relevant, showing a member's Event relevance alongside their S15 status, and automating Home/Away. These are not three separate implementation features.
+- **MVE-1 boundary:** None is included. `Evacuated` remains a generally visible voluntary action on S12; S15 shows self-reported status but not member Event-relevance; Home/Away are never inferred from location. Self-report is not verified safety.
+- **Discovery constraints:** Define authoritative Event/home matching, identity and freshness, concurrent Events, failure/uncertainty behavior, privacy/retention, and whether the extra complexity benefits residents. Member Event-relevance is a new coarse-location disclosure requiring a founder privacy decision before any design or implementation. Automated Home/Away also needs explicit consent and safety analysis; no geofencing approval is implied.
+- **Roadmap status:** Founder-directed Post-MVE discovery from the 2026-09-14 Slice B dispositions, with scheduling review at G6 go/no-go. No implementation or provider is approved.
+
+## Source-Grounded Protective-Action Direction Language
+
+- **Concept:** Revisit whether an LHL-presented direction line beyond the Event Type itself helps residents after a Protective Action source is selected and its wording/identity semantics are verified.
+- **MVE-1 boundary:** No synthesized `LEAVE NOW` or `STAY INDOORS. DO NOT LEAVE.` line. Show the sourced Event Type and required source link to official instructions; LHL does not author an imperative from a Type label.
+- **Discovery constraints:** Preserve source attribution, corrections/lifts, accessible meaning without color, and the boundary against LHL posing as the authority. Require a new founder decision before display or implementation.
+- **Roadmap status:** Founder-directed Post-MVE discovery from the 2026-09-14 Slice B dispositions; scheduling review at G6 go/no-go.
 
 ## Repeat Membership-Denial Constraints
 

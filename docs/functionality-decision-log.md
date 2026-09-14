@@ -389,6 +389,8 @@ When `devlog` appears, capture the decision here, organize it by feature area, a
 - **Open questions**: Gate 3 wireframes and scenario testing finalize the exact wording, hierarchy, accessibility treatment, and placement on each required surface. These questions may refine presentation but do not reopen the approved no-action boundary.
 - **Source**: John's Gate 3 Google Doc comment, Codex review and challenge, and John's explicit approval of the recommendations on 2026-09-01.
 
+**2026-09-14 supersession:** The current safety baseline replaces `move to safety` with `move to a safe place`: `Follow instructions from public authorities. If you believe you are in danger, move to a safe place and call 911 when able. LHL does not contact emergency services.` Apply it on current S01/Help and both S14 examples, and carry it into Slice C request creation. Contextual shortening must preserve public-authority instruction, resident-believed danger with 911 when able, and LHL's no-contact boundary. The earlier baselines above remain historical; the new baseline controls. Source: [Slice B founder dispositions](gate-3-lowfi-slice-b-founder-dispositions-20260914.md).
+
 ### 2026-09-01 - Gate 3 Experience-Map Role, Claim, Reminder, and First-Use Rules
 
 - **Product rule**: The five experience-map lanes are approved for Gate 3 low-fidelity screen drafting: resident/household, LHL and sourced information, trusted member/helper, administrator, and safety/privacy/permission/failure. Lanes describe the active role or system responsibility, not necessarily different people (`devlog`).

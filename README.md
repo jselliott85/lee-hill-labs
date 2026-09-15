@@ -50,4 +50,4 @@ npm run build
 npm run lint
 ```
 
-`npm run lint` and `npm run build` currently succeed without warnings. No automated test suite is configured.
+`npm run lint` and `npm run build` currently succeed. Local trusted staging under `Cody Temp/` is excluded from lint because it may contain generated review and build artifacts rather than maintained source. No automated test suite is configured. See `docs/00-current-state.md` for the dated dependency-audit status.

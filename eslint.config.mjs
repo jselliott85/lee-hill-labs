@@ -7,6 +7,7 @@ const eslintConfig = defineConfig([
   ...nextTs,
   globalIgnores([
     ".tmp-trusted-*/**",
+    "Cody Temp/**",
     ".next/**",
     "out/**",
     "build/**",

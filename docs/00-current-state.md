@@ -70,14 +70,14 @@ The former investor presentation is retained in `public/presentation/` as a paus
 - Randall document-delivery reminder: Open under `Final Signatures`. John reports Randall expects future dilution mechanics to be addressed in the stock documents; clarify that no such scenario language is planned when sending his SPA/Notice, not now. The supplied placeholder is preserved in `docs/clerky-post-incorporation-follow-up-notes.md`; keep the reminder open until the note or equivalent is actually sent alongside the documents and John confirms closure. Legal decision statuses remain unchanged.
 - Asana: retired as a task tracker; exports are historical reference only.
 - GEM: read-only Google Workspace support; it may summarize and propose work but cannot change canonical project records.
-- Domain: `leehilllabs.com` is transferred to John's GoDaddy account and the approved responsive website is publicly live on Vercel. John controls the LHL Hobby team as its sole Owner (`jselliott85 / john@leehilllabs.com`), project `lee-hill-labs` is connected to `jselliott85/lee-hill-labs` branch `main`, and usage visibility is confirmed. The secure Next.js 16.3.1 deployment succeeded with zero known npm audit findings. Vercel reports valid configuration for the apex, `www`, and Vercel production domains; the apex returns HTTP 308 to the current canonical host `www.leehilllabs.com`, which returns HTTP 200 with the approved page. The $0 Hobby plan remains appropriate only while the site is passive; upgrade before adding operational or commercial product functionality. Enabling Vercel account 2FA is a recommended follow-up.
+- Domain: `leehilllabs.com` is transferred to John's GoDaddy account and the approved responsive website is publicly live on Vercel. John controls the LHL Hobby team as its sole Owner (`jselliott85 / john@leehilllabs.com`), project `lee-hill-labs` is connected to `jselliott85/lee-hill-labs` branch `main`, and usage visibility is confirmed. The Next.js 16.3.1 deployment succeeded and remains the current repository version; the dated validation snapshot below records advisories disclosed after that deployment. Vercel reports valid configuration for the apex, `www`, and Vercel production domains; the apex returns HTTP 308 to the current canonical host `www.leehilllabs.com`, which returns HTTP 200 with the approved page. The $0 Hobby plan remains appropriate only while the site is passive; upgrade before adding operational or commercial product functionality. Enabling Vercel account 2FA is a recommended follow-up.
 
 ## Validation Snapshot
 
 - `npm run build` succeeds.
-- `npm run lint` succeeds with no warnings or errors after installing the Next.js-matched ESLint preset and its ESLint 9 compatibility adapter.
+- `npm run lint` succeeds after excluding local-only trusted staging under `Cody Temp/`; maintained source remains covered by the Next.js-matched ESLint preset and its ESLint 9 compatibility adapter.
 - `metadataBase` is set to `https://leehilllabs.com`, so social-image URLs resolve correctly and the production build completes without warnings.
-- The canonical Next.js 16.3.1 dependency installation reports zero known npm audit findings.
+- Live `npm audit --omit=dev` on 2026-09-15 reports one critical direct advisory affecting Next.js 16.3.1 and one high indirect advisory affecting `sharp` 0.35.3. A controlled dependency update and redeployment are separate follow-up work; this factual cleanup does not change versions.
 - No automated test suite is configured.
 
 ## Active Documentation

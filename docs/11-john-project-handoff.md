@@ -6,7 +6,7 @@ Lee Hill Labs is building the Emergency Coordination App (ECA), a trusted-commun
 
 John Elliott is the sole founder, operator, and project decision-maker. Randall Fransen is not an active contributor and has no project access. The former investor presentation is paused historical material. The MVP application workspace is `01_app/`; production MVP implementation has not started.
 
-The first test community is one closed, invitation-only Boulder Heights group. MVE-1 is the first validation slice within the MVP. Gate 1 closed on 2026-08-07. Gate 2 now tests external incident-source feasibility and defines notification, liability, safeguard, and closed-pilot constraints before Gate 3 product definition.
+The first test community is one closed, invitation-only Boulder Heights group. MVE-1 is the first validation slice within the MVP. Gate 1 closed on 2026-08-07 and Gate 2 closed on 2026-08-26. Gate 3 product definition is current. Later source-access or provider findings are evaluated prospectively without reopening Gate 2 unless John explicitly decides otherwise.
 
 ## How to orient
 
@@ -28,6 +28,6 @@ The first test community is one closed, invitation-only Boulder Heights group. M
 - **Push:** A device notification. Unknown or unapproved event/source combinations fail closed to no push.
 - **In-app:** Information visible after opening the application; visibility does not imply device-notification eligibility.
 - **CAP:** Common Alerting Protocol, a standard format used by authorities to publish alert classifications, geography, timestamps, identifiers, and updates.
-- **IPAWS:** FEMA's Integrated Public Alert and Warning System; a candidate CAP source requiring access and Gate 2 evaluation, not an approved MVE-1 provider.
+- **IPAWS:** FEMA's Integrated Public Alert and Warning System; a candidate CAP source, not an approved MVE-1 provider. Any later access or provider decision remains separately gated.
 - **GEM:** The read-only Google Workspace support agent. GEM may summarize and propose work but cannot change canonical project records.
 - **CC / Cody:** Claude Code and Codex, the repository assistants authorized alongside John to update canonical records under the shared editing protocol.

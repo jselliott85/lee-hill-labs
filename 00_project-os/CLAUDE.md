@@ -27,4 +27,4 @@ John is the sole founder, operator, and project decision-maker. Randall Fransen 
 2. List anything unresolved.
 3. Update `docs/00-current-state.md`.
 4. Update `00_project-os/.lhl_ai_context.md` with the sprint state and next entry point.
-5. Commit and push when a remote exists.
+5. Commit and push only when John requests repository synchronization, the work block explicitly includes it, or the shared `AGENTS.md` evening/day closeout rule applies. Never infer push authorization merely because a remote exists.
